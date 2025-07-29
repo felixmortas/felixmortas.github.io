@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flasholator Privacy policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .lang-buttons {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    button {
+      margin-left: 0.5rem;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    h1 {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-buttons">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('fr')">Français</button>
+    <button onclick="setLang('es')">Español</button>
+  </div>
+
+  <div id="content"></div>
+
+  <script>
+    const privacyTexts = {
+      fr: `
+        <h1>Politique de confidentialité Flasholator</h1>
+        <p>Dernière mise à jour : 27 juillet 2025</p>
+        <p>Merci d'utiliser notre application. Cette politique décrit comment nous collectons, utilisons et protégeons vos données personnelles.</p>
+        <h2>1. Données collectées</h2>
+        <p>Nous pouvons collecter des données techniques telles que le type d'appareil, l'identifiant publicitaire, et des statistiques d'utilisation.</p>
+        <h2>2. Publicité avec Google AdMob</h2>
+        <p>Nous utilisons Google AdMob pour afficher des annonces. AdMob peut collecter des données pour personnaliser les publicités.</p>
+        <p><a href="https://policies.google.com/technologies/ads?hl=fr" target="_blank">Voir la politique de Google</a></p>
+        <h2>3. Consentement</h2>
+        <p>Un message de consentement s'affichera si nécessaire. Vous pouvez modifier votre choix dans les paramètres de l'application.</p>
+        <h2>4. Contact</h2>
+        <p>Pour toute question, contactez-nous à : <a href="mailto:felix.mortas@hotmail.fr">felix.mortas@hotmail.fr</a></p>
+      `,
+      en: `
+        <h1>Flasholator Privacy Policy</h1>
+        <p>Last updated: July 27, 2025</p>
+        <p>Thank you for using our app. This policy explains how we collect, use, and protect your personal data.</p>
+        <h2>1. Data Collected</h2>
+        <p>We may collect technical data such as device type, advertising ID, and usage statistics.</p>
+        <h2>2. Advertising with Google AdMob</h2>
+        <p>We use Google AdMob to serve ads. AdMob may collect data to personalize the ads you see.</p>
+        <p><a href="https://policies.google.com/technologies/ads?hl=en" target="_blank">See Google’s policy</a></p>
+        <h2>3. Consent</h2>
+        <p>A consent message will be displayed if required. You can modify your choice in the app settings.</p>
+        <h2>4. Contact</h2>
+        <p>If you have questions, contact us at: <a href="mailto:felix.mortas@hotmail.fr">felix.mortas@hotmail.fr</a></p>
+      `,
+      es: `
+        <h1>Política de privacidad Flasholator</h1>
+        <p>Última actualización: 27 de julio de 2025</p>
+        <p>Gracias por usar nuestra aplicación. Esta política explica cómo recopilamos, usamos y protegemos sus datos personales.</p>
+        <h2>1. Datos recogidos</h2>
+        <p>Podemos recopilar datos técnicos como el tipo de dispositivo, el ID de publicidad y estadísticas de uso.</p>
+        <h2>2. Publicidad con Google AdMob</h2>
+        <p>Usamos Google AdMob para mostrar anuncios. AdMob puede recopilar datos para personalizar los anuncios.</p>
+        <p><a href="https://policies.google.com/technologies/ads?hl=es" target="_blank">Ver la política de Google</a></p>
+        <h2>3. Consentimiento</h2>
+        <p>Se mostrará un mensaje de consentimiento si es necesario. Puede cambiar su elección en la configuración de la aplicación.</p>
+        <h2>4. Contacto</h2>
+        <p>Si tiene preguntas, contáctenos en: <a href="mailto:felix.mortas@hotmail.fr">felix.mortas@hotmail.fr</a></p>
+      `
+    };
+
+    function setLang(lang) {
+      document.getElementById('content').innerHTML = privacyTexts[lang];
+    }
+
+    // Par défaut en français
+    setLang('en');
+  </script>
+</body>
+</html>
