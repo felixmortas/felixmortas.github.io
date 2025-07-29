@@ -1,0 +1,1060 @@
+<!doctype html5>
+<html>
+
+  <head>
+
+    <title>Currículo Félix MORTAS</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "style.css" />
+    <link rel = "shortcut icon" href = "images/project-felix.ico" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  </head>
+
+
+
+  <body>
+
+<!-- CARTE GOOGLE MAPS -->
+
+  <div id = "map">    
+    <button class = "map-button go-cv" >Volver al currículo</button>
+    <button onclick = "fly_to_next_step(event)" class = "map-button next-step" >Inicie</button>
+  </div>
+
+
+
+<!-- CV MODÈLE CONVENTIONNEL -->
+
+  <div id = "cv" class = "main">
+
+
+    <!-- Tête de page -->
+
+    <header>
+
+      <span class="other-language-button">
+        <a href='cv_fr.html'><img src="images/icones/french_flag.png" /></a>
+        <a href='cv_en.html'><img src="images/icones/english_flag.png" /></a>
+      </span>
+
+      <div class = "picture">
+        <img class = "id-picture" src="images/pp.jpg">
+      </div>
+      <div class = "name-title">
+        <h1>
+          Félix MORTAS
+        </h1>
+        <h2>
+          Buscando un puesto de trabajo-estudio en ciencias de datos
+        </h2>
+      </div>
+
+    </header>
+
+
+
+    <!-- Corps -->
+
+    <div class = "body">
+
+      <!-- Colonne de gauche -->
+
+      <div class="second-column">
+
+
+        <div class="description-big">
+          <p class = "description-text">
+            Soltero, 24 años,<br>Permiso de conducir, <br>Nacionalidad Francesa
+          </p>
+          <div class = "div-button-go-map">
+            <button class = "map-button go-map">Ver CV dinámico</button>
+        </div>
+        </div>
+        
+
+        <div class="box small-categorie" id = "contacts">
+          <h3 class="no-margin">
+            Contacto
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+          </h3>
+          <ul class="list marginleft details">
+            <li class="element address">
+              <h5>
+                Dirección :
+              </h5>
+              <a href="https://www.google.com/maps/search/le%20perreux%20sur%20marne" target="_blank">
+                <p>
+                  47 B Avenue Montaigne,<br />
+                  94170 Le Perreux-sur-Marne<br />
+                  Francia
+                </p>
+              </a>
+            </li>
+            <li class="element phone">
+              <h5>
+                Teléfono :
+              </h5>
+              <a href="tel:0779806147">
+                <p>
+                  +33 7 79 80 61 47
+                </p>
+              </a>
+            </li>
+            <li class="element email">
+              <h5>
+                Correo electrónico :
+              </h5>
+              <a href="mailto:felix.mortas@hotmail.fr">
+                <p>
+                  felix.mortas@hotmail.fr
+                </p>
+              </a>    
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="box big-categorie">
+          <h3>
+            Idiomas
+          </h3>
+          <ul class="list">
+            <li class="element french">
+              <h5>
+                Francés - Nativo
+              </h5>
+            </li>
+            <li class="element english">
+              <h5>
+                Inglés - Fluido (Referencia Europea : C1)
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+              </h5>
+              <ul class="list details">
+                <li>
+                  <h6>
+                    TOEIC :
+                  </h6>
+                  <p>
+                    870/990
+                  </p>
+                </li>
+                <li>
+                  <h6>
+                    TOEFL :
+                  </h6>
+                  <p>
+                    567/680
+                  </p>
+                </li>
+                <li>
+                  <h6>
+                    Pasantía :
+                  </h6>
+                  <p>
+                    3 meses en Viêt Nam
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="element spanish">
+              <h5>
+                Español - Independiente (Referencia Europea : B2)
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+              </h5>
+              <ul class="list details">
+                <li>
+                  <h6>
+                    Clase "bilingüe" :
+                  </h6>
+                  <p>
+                    Aprender un segundo idioma a partir del 6º año
+                  </p>
+                </li>
+                <li>
+                  <h6>
+                    2015 :
+                  </h6>
+                  <p>
+                    Intercambio escolar en la periferia de Madrid
+                  </p>
+                </li>
+                <li>
+                  <h6>
+                    2016 :
+                  </h6>
+                  <p>
+                    Intercambio escolar en Andalucía  
+                  </p>
+                </li>
+                <li>
+                  <h6>
+                    Práctica :
+                  </h6>
+                  <p>
+                    3 meses en Salamanca
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="box small-categorie">
+          <h3 class = "no-margin">
+            Informática
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+          </h3>
+          <ul class="list marginleft details">
+            <li class = "element programming-languages">
+              <h5>
+                Lenguajes y Frameworks
+              </h5>
+              <p>
+                C++, Flutter, R, Python, <a href="https://kivy.org/#home" title = "Python framework to build mobile, tablet and computer applications" target = "_blank">Kivy</a>, HTML, CSS, JavaScript, SQL
+              </p>
+            </li>
+            <li class = "element tools">
+              <h5>
+                Herramientas
+              </h5>
+              <p>
+                Spyder IDE, Visual Studio Code, Sublime Text, R Studio, Paquete Office
+              </p>
+            </li>
+            <li class = "element os">
+              <h5>
+                Sistemas operativos
+              </h5>
+              <p>
+                Windows, Linux (Ubuntu)
+              </p>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="box small-categorie">
+          <h3 class="no-margin">
+            Áreas de interés
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+          </h3>
+          <ul class="list marginleft details">
+            <li class = "element">
+              <p>
+                Gusto por las <span class = "bold">ciencias</span> (genética, neurociencia, biotecnología, fisiología vegetal, informática, estadística).
+              </p>
+            </li>
+            <li class = "element">
+              <p>
+                <span class="bold">Desarrollo personal</span> (ciencias del comportamiento, psicología, filosofía).
+              </p>
+            </li>
+            <li class = "element">
+              <p>
+                Gusto por la <span class="bold">interculturalidad</span> a través de los viajes (España, Italia, Portugal, Madeira, Grecia, Croacia, Inglaterra, Países Bajos, Tailandia, Vietnam, Camboya), apetito por las culturas del <span class="bold">Sudeste Asiático</span>.
+              </p>
+            </li>           
+            <li class="element">
+              <p>
+                <span class="bold">Organización</span> y <span class="bold">optimización</span> del espacio.
+              </p>
+            </li>
+            <li class="element">
+              <p>
+                <span class="bold">Alimentación</span> saludable y sostenible, <span class="bold">ahorro</span> de energía.
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+      <!-- Colonne de droite -->
+
+      <div class="main-column">
+
+        <div class="description-little">
+          <p class="description-text">
+            Soltero, 24 años,<br>Permiso de conducir, <br>Nacionalidad Francesa
+          </p>
+          <div class = "div-button-go-map">
+            <button class = "map-button go-map">Ver CV dinámico</button>
+        </div>
+        </div>
+        
+
+        <div class="box big-categorie">
+          <h3>
+            Formaciones
+          </h3>
+          <ul class="list">
+            
+            <li class = "element engineer">
+              <h5>
+                Ingeniero agrónomo por aprendizaje
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+              </h5>
+              <div class="details">
+                <p class="h7">
+                  École Nationale Supérieure Agronomique de Toulouse, Toulouse | Septiembre 2020 - Presente
+                </p>
+                <ul>
+                  <li class = "no-chip">
+                    <a href = "https://www.ensat.fr/fr/formations/formation-ingenieur-par-apprentissage.html" target = "_blank">
+                      <p>
+                        Página web de la formación
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <p>
+                      Ciencias básicas, agronomía, ecología, agricultura urbana, huella de carbono, ACV
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Economía, marketing, gestión de proyectos, contabilidad, economía social y solidaria, innovación, estrategia empresarial, RSE, estudios de mercado
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Estadística, modelización, física, SIG, informática básica
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class = "element licence">
+              <h5>
+                Diplomatura Bioinformática, Estadística y Modelización
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+              </h5>
+              <div class="details">
+                <p class="h7">
+                  Université Lyon 1, Villeurbanne | Septiembre 2019 - Mayo 2020 | 1 año
+                </p>
+                <ul>
+                  <li class = "no-chip">
+                    <a href = "offre-de-formations.univ-lyon1.fr/ue-16297-321/bio-informatique-bism.html" target = "_blank">
+                      <p>
+                        Página web de la formación
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <p>
+                      C++, R, UNIX, Python, bases de datos, estadística, modelización
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Genética, ecología, interacción entre macromoléculas
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class = "element dut">
+              <h5>
+                 Título de Técnico Superior de Formación Profesional en biológica - opción Agronomía
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+              </h5>
+              <div class="details">
+                <p class="h7">
+                  Université de Picardie Jules Vernes, Amiens | Septiembre 2017 - Junio 2019 | 2 años
+                </p>
+                <ul>
+                  <li class = "no-chip">
+                    <a href = "http://www.iut-amiens.fr/genie-biologique/" target = "_blank">
+                      <p>
+                        Página web de la formación
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <p>
+                      Ciencias básicas, agronomía
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Contabilidad y gestión, sectores agrícolas, descubrimiento de empresas
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class = "element bac">
+              <h5>
+                Bachillerato científico - 14,94/20
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+              </h5>
+              <div class="details">
+                <p class="h7">
+                  Lycée Paul Doumer, Le Perreux-sur-Marne | Septiembre 2014 - Junio 2017 | 3 años
+                </p>
+                <ul>
+                  <li class = "no-chip">
+                    <a href = "https://lyceepauldoumer94.fr/" target = "_blank">
+                      <p>
+                        Página web de la formación
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <p>
+                      Especialidad matemática
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Clase "bilingüe"
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+
+        <div class="box big-categorie">
+          <h3>
+            Actividades profesionales
+          </h3>
+          <div class="sub-box">
+            <h4>
+              Prácticas
+            </h4>
+            <ul class="list">
+
+              <li class="element spain">
+                <h5>
+                  Práctica Internacional - Asistente de Investigación en un laboratorio de Biología Funcional y Genómica en España
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                  </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    Universidad de Salamanca, Salamanca, ESPAÑA | Abril 2023 - Junio 2023 | 3 meses
+                  </p>
+                  <ul>
+                    <li class="no-chip">
+                      <a href="https://fcaa.usal.es/" target="_blank">
+                        <p>
+                          Página web de la institución
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Estudio del efecto inhibitorio de 2 componentes fenólicos presentes en las hojas del pistachero en la germinación de 4 malezas
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Estudio del efecto inhibitorio de extractos de plantas en el crecimiento de 3 hongos patógenos
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Estudio del efecto bioestimulante del té de compost en el crecimiento de tomates y su efecto inhibitorio en Fusarium
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Estudio del efecto preventivo del té de compost en el estrés hídrico en tomates
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              
+              <li class = "element vietnam">
+                <h5>
+                  Práctica de fin de estudios - Asistente de investigación en un laboratorio de biología molecular en Viêt Nam
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    Nong Lam University, Ho-Chi-Minh City, VIETNAM | Abril 2019 - Junio 2019 | 2 meses y medio
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "http://en.hcmuaf.edu.vn/" target = "_blank">
+                        <p>
+                          Página web de la institución
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Identificación de microorganismos mediante técnicas de biología molecular (incluida la PCR)
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class = "element gardening">
+                <h5>
+                  Práctica laboral - Trabajador agrícola y vendedor en una granja de huerta ecológica
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    Le Pré du Puy | Julio 2018 - Agosto 2018 | 1 mes (+1 semana en contrato temporal)
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "https://www.lepredupuy.com/" target = "_blank">
+                        <p>
+                          Página web de la empresa
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Deshierbe, siembra, cosecha, mantenimiento
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Responsabilidad de la tienda de venta directa (apertura, caja, asesoramiento al cliente, mantenimiento, cierre)
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          
+          <div class="sub-box">
+            <h4>
+              Puestos de trabajo
+            </h4>
+            <ul class="list">
+              
+
+              <li class = "element vergers-urbains">
+                <h5>
+                  Aprendiz de agricultor urbano
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    Vergers Urbains, Paris 18 | Mayo 2021 - Presente
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "http://www.vergersurbains.org/" target = "_blank">
+                        <p>
+                          Página web de la asociación
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Experimentación de la contaminación del suelo en el "Jardín Esperanza" en Aubervilliers:
+                        <br>- Búsqueda de bibliografía sobre la fitoinmovilización de los metales pesados (Zinc, Mercurio)
+                        <br>- Diseño del plan experimental
+                        <br>- Supervisión de los talleres participativos para la realización y el seguimiento del experimento (enmienda, plantación, muestreo, análisis de los resultados)
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Referente del <a href="http://www.toitsvivants.org/le-toit-du-bout-du-monde-lance-une-campagne-de-financement/" target="_blank">"Techo del final del mundo"</a>:
+                        <br>- Planificación de los cultivos
+                        <br>- Supervisión de los miembros y realización de talleres educativos
+                        <br>- Experimentación sobre el mejor sustrato para el techo
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Creación de una guardería en el tejado de la <a href="https://www.google.com/maps/place/%C3%89cole+de+la+Propret%C3%A9/@48.8898442,2.3316856,21z/data=!4m13!1m7!3m6!1s0x47e66e516d791c0b:0x20ee2338be254696!2s56-58+Rue+Joseph+de+Maistre,+75018+Paris!3b1!8m2!3d48.8898752!4d2.3316058!3m4!1s0x47e66e51506013ab:0xe0b2f9cd17318df9!8m2!3d48.8898705!4d2.331574" target="_blank">Escuela de Limpieza</a>:
+                        <br>- Desarrollo de un modelo económico
+                        <br>- Planificación de los cultivos
+                        <br>- Instalación del proyecto
+                        <br>- Mantenimiento y venta de productos (comunicación, ventas, facturación)
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Ayuda a la organización interna de la asociación:
+                        <br>- Reorganización de la gestión electrónica de documentos
+                        <br>- Formación interna en gestión de proyectos
+                        <br>- Facilitación de la reunión semanal del equipo
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+
+              <li class = "element syngenta">
+                <h5>
+                  Aprendiz de gestión de datos
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    Syngenta, Saint-Sauveur | Septiembre 2020 - Mayo 2021 | 8 meses
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "https://www.syngenta.fr/" target = "_blank">
+                        <p>
+                          Página web de la empresa
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Implantación de una herramienta de gestión de proyectos y carteras con SmartSheet
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Creación de un sitio de exhibición para utilizar las herramientas estadísticas de la empresa
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Análisis estadístico de la calidad de todos los lotes de semillas producidos:
+                        <br>- Regresión lineal y matriz de confusión con Excel
+                        <br>- ANOVA y diagrama de caja con RStudio
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+
+              <li class = "element bureau-vallee">
+                <h5>
+                  Vendedor de papelería
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    Bureau Vallée, Lyon 6 | Octubre 2019 - Mayo 2020 | 7 meses
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "https://magasins.bureau-vallee.fr/fr/france-33/rhone-69/lyon-6-69386/lyon-6eme-BV186" target = "_blank">
+                        <p>
+                          Página web de la empresa
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Cajero, estantería, reposición, asesoramiento y asistencia al cliente en el área de servicio, preparación de pedidos durante COVID-19 | 12h/semana
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class = "element lmi">
+                <h5>
+                  Asignaciones provisionales
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                  </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    La Maison de l'Intérim, Lyon 6 | Septiembre 2019 - Octubre 2019
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "https://www.lamaisondelinterim.fr/" target = "_blank">
+                        <p>
+                          Página web de la empresa
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Manipulador de materiales en <a href="https://www.xpo.com/">XPO Logistic</a> | 1 día
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Preparador de bandejas de comida gourmet en <a href="https://www.sergemagner.fr/">Serge MAGNER Traiteur</a> | 4 días
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class = "element uber-eats">
+                <h5>
+                  Microempresa - Servicio de reparto en bicicleta
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                  </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    UberEats, Amiens | Diciembre 2018 - Marzo 2019 | 4 meses
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "https://www.ubereats.com/" target = "_blank">
+                        <p>
+                          Página web de la empresa
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <p>
+                        Volumen de ventas: acerca de 50€/semana
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class = "element intermarche">
+                <h5>
+                  Empleado comercial
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                  </svg>
+                </h5>
+                <div class="details">
+                  <p class="h7">
+                    Intermarché, Le Perreux-sur-Marne | Febrero 2017 - Marzo 2017 | 2 meses
+                  </p>
+                  <ul>
+                    <li class = "no-chip">
+                      <a href = "https://www.intermarche.com/magasins/06806/le-perreux-sur-marne-94170/infos-pratiques" target = "_blank">
+                        <p>
+                          Página web de la empresa
+                        </p>
+                      </a>
+                    </li>
+                    <li class = "standard-chip">
+                      <p>
+                        Estantería y caja los fines de semana | 12 horas/semana
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="box big-categorie">
+          <h3>
+            Voluntariado
+          </h3>
+          <ul class="list">
+
+            <li class = "element professor">
+              <h5>
+                Tutoría estudiantes de 1er año del Título de Técnico Superior de Formación Profesional en biológica
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+                </svg>
+              </h5>
+              <div class="details">
+                <p class="h7">
+                  Université de Picardie Jules Vernes, Amiens | Enero 2019 - Marzo 2019 | 3 meses
+                </p>
+                <ul>
+                  <li class = "no-chip">
+                    <a href = "https://www.u-picardie.fr/instituts/iut-amiens/accueil/" target = "_blank">
+                      <p>
+                        Página web de la institución
+                      </p>
+                    </a>
+                  </li>
+                  <li class = "standard-chip">
+                    <p>
+                      Cursos de apoyo en materias científicas para estudiantes que hayan cursado un Bachillerato Tecnológica
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Pied de page -->
+
+    <footer>
+      <p class = credits>
+        CV en HTML, CSS y JavaScript - 4 de Agosto de 2023
+      </p>
+    </footer>
+
+  </div>
+
+
+
+<!-- Popups sur la carte pour chaque étape de ma vie professionnelle -->
+
+  <div id = "paris12-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Paris 12
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Nacimiento el lunes 18 de enero de 1999 en el Hospital Saint-Antoine
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'paris12-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id = "perreux-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Le Perreux-sur-Marne
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Bachillerato científico - 14,94/20
+        </li>
+        <li class = 'popup-list-element'>
+          Empleado comercial en Intermarché
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'perreux-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id = "amiens-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Amiens
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+         Título de Técnico Superior de Formación Profesional en biológica - opción Agronomía
+        </li>
+        <li class = 'popup-list-element'>
+          Microempresa - Servicio de reparto en bicicleta
+        </li>
+        <li class = 'popup-list-element'>
+          Tutoría estudiantes de 1er año del Título de Técnico Superior de Formación Profesional en biológica
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'amiens-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id = "clermont-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Clermont-Ferrand
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Pasantía laboral - Trabajador agrícola y vendedor en una granja de huerta ecológica        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'clermont-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id = "vietnam-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Ho-Chi-Minh City, Vietnam
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Pasantía de fin de estudios - Asistente de investigación en un laboratorio de biología molecular en Viêt Nam
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'vietnam-details' onclick = 'go_details(event')>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id = "lyon-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Lyon
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Diplomatura Bioinformática, Estadística y Modelización
+        </li>
+        <li class = 'popup-list-element'>
+          Vendedor de papelería en Bureau Vallée
+        </li>
+        <li class = 'popup-list-element'>
+          Asignaciones provisionales en La Maison de l'Intérim
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'lyon-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id = "toulouse-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Toulouse
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Ingeniero agrónomo por aprendizaje
+        </li>
+        <li class = 'popup-list-element'>
+          Aprendiz de gestión de datos en Syngenta
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'toulouse-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id = "paris18-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Paris 18
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Aprendiz de agricultor urbano en Vergers Urbains
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'paris18-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+  <div id = "salamanca-popup" class="html-popups">
+    <div class = 'my-popup-content'>
+      <div class = 'popup-title'>
+        Salamanca
+      </div>
+      <ul class = 'popup-list'>
+        <li class = 'popup-list-element'>
+          Asistente de Investigación en un laboratorio de Biología Funcional y Genómica
+        </li>
+        <!--
+        <li class = 'popup-list-element div-button-go-map'>
+          <button class = 'map-button go-details' id = 'salamanca-details' onclick = 'go_details(event)'>
+            Détails
+          </button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src = "scripts.js"></script>
+
+  </body>
+
+</html>

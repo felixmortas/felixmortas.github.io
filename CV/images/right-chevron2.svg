@@ -1,0 +1,27 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="482" width="642" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse ry="219.50002" rx="220.49996" id="svg_17" cy="244.62901" cx="298.12898" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <polygon id="svg_1" points="263.33099365234375,40 239.33100128173828,58 377.427001953125,242.12899780273438 239.33100128173828,426.25799560546875 263.33099365234375,444.25799560546875 414.927001953125,242.12899780273438 "/>
+  <g id="svg_2"/>
+  <g id="svg_3"/>
+  <g id="svg_4"/>
+  <g id="svg_5"/>
+  <g id="svg_6"/>
+  <g id="svg_7"/>
+  <g id="svg_8"/>
+  <g id="svg_9"/>
+  <g id="svg_10"/>
+  <g id="svg_11"/>
+  <g id="svg_12"/>
+  <g id="svg_13"/>
+  <g id="svg_14"/>
+  <g id="svg_15"/>
+  <g id="svg_16"/>
+ </g>
+</svg>

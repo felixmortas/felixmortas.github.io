@@ -1,0 +1,591 @@
+		/* ------------------------- Map ------------------------- */
+
+.map-button {
+	position: absolute;
+	text-align: center;
+	padding: 1em;
+	background-color: #164E98;
+	color: white;
+	top: 2em;
+	z-index: 401;
+}
+
+.map-button:hover {
+	cursor: pointer;
+}
+
+.next-step {
+	right: 3em;
+}
+
+.go-cv {
+	left: 5em;
+}
+
+.go-details{
+	position: relative;
+	top: 0;
+}
+
+.div-button-go-map {
+	display: flex;
+	justify-content: center;
+}
+
+.go-map {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+#map {
+	height: 100vh;
+	width: 100vw;
+}
+
+
+
+
+
+/* Popups */
+
+.leaflet-popup-content-wrapper {
+	background-color: #F5F9F6;
+}
+
+.leaflet-popup-content {
+	display: flex;
+}
+
+.nav-left {
+	content: url(images/right-chevron.svg);
+	width: 40px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: -4%;
+	transform: rotate(180deg);
+}
+
+.nav-right {
+	content: url(images/right-chevron.svg);
+	width: 40px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: -4%;
+}
+
+.my-popup-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.popup-title {
+	font-size: 2em;
+	text-align: center;
+	border-bottom: 3px solid #164E98;
+}
+
+.popup-list {
+	margin: 0 0 0 5%;
+	padding: 0;
+}
+
+.popup-list-element {
+	background-color: #eff5f1;
+	border-radius: 15px;
+	padding: 5%;
+	font-size: 1.2em;
+	list-style-type: square;
+}
+
+
+
+
+
+
+
+
+
+
+
+		/* ------------------------- CV ------------------------- */
+
+/* Comment .main margins to print as a single page pdf */
+.main {
+	margin: 0 15% 0 15%;
+}
+
+header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 3px solid black;
+}
+
+footer {
+	border-top: 3px solid black;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.other-language-button {
+	width: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 401;
+	padding: 0 5px 0 5px;
+	background-color: white;
+}
+
+
+
+/* Header */
+
+header, footer {
+	background-color: #164E98;
+	color: white;
+}
+
+.picture {
+	width: 33%;
+}
+
+.id-picture {
+	width: 40%;
+	display: block;
+	margin: 7% auto 7% auto;
+	border-radius: 15px;
+}
+
+.name-title {
+	text-align: center;
+	width: 66%;
+}
+
+h1 {
+	font-size: 4em;
+	margin: 4% auto 2% auto;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.description-text {
+	font-size: 1.2em;
+}
+
+h3, h4, h5 {
+	color: #164E98;
+}
+
+.h7 {
+	color: #6D6D6D;
+}
+
+
+
+/* Body */
+
+.body {
+	display: flex;
+	flex-direction: row;
+	background-color: #F5F9F6;
+	padding-bottom: 30px;
+}
+
+.main-column {
+	width: 66.66%;
+}
+
+.description-little {
+	display: none;
+}
+
+.second-column {
+	width: 33.33%;
+}
+
+.description-big {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.box {
+	margin: 30px 30px 0 30px;
+}
+
+.sub-box {
+	margin-top: 15px;
+}
+
+.element {
+	margin-top: 30px;
+	background-color: #eff5f1;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.list > :first-child {
+	margin-top: 10px;
+}
+
+h3 {
+	margin: 0 0 0 30px;
+	border-bottom: 2px solid #164E98;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+h4 {
+	text-align: center;
+	margin: 0;
+	font-size: 1.8em;
+}
+
+h5 {
+	font-size: 1.2em;
+	color: #164E98;
+	margin: 0;
+}
+
+h6 {
+	margin:	0;
+	font-size: 1em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+
+
+/* Details */
+
+h5, .small-categorie h3 {
+	cursor: pointer;
+}
+
+.french h5 {
+	cursor: default;
+}
+
+.small-categorie .list .element h5 {
+	cursor: default;
+}
+
+.h7 {
+	padding-top: 10px;
+}
+
+.details {
+	transition: visibility 0.5s, max-height 0.5s ease-out, opacity 0.5s ease-out;
+  max-height: 200em; /* A augmenter si chevauchement des détails sur plusieurs régions */
+  opacity: 1;
+  visibility: visible;
+  background-color: #eff5f1;
+  border-radius: 15px;
+}
+
+.details.close {
+	transition: visibility 0.5s, max-height 0.5 ease-in, opacity 0.5s ease-in;
+	max-height: 0em;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.bi-chevron-compact-down {
+	margin-top: 0.5em;
+	float: right;
+	color: #164E98;
+	transform: rotate(180deg);
+  transition: transform 0.5s ease-out;
+}
+
+.bi-chevron-compact-down.close {
+	margin-top: 0.5em;
+	float: right;
+	color: #164E98;
+	transform: rotate(0deg);
+  transition: transform 0.5s ease-in;
+}
+
+
+
+
+
+	/* Chips */
+
+.vergers-urbains, .engineer, .dut, .gardening, .tresorier {
+	list-style-image: url('images/puces/tomato.png');
+}
+
+.licence, .syngenta, .axa, .datascience, .fdn {
+	list-style-image: url('images/puces/chip.png');
+}
+
+.bac, .professor {
+	list-style-image: url('images/puces/light-bulb.png')
+}
+
+.vietnam, .spain {
+	list-style-image: url('images/puces/pipette.png');
+}
+
+.bureau-vallee {
+	list-style-image: url('images/puces/printer.png')
+}
+
+.lmi {
+	list-style-image: url('images/puces/wrench.png');
+}
+
+.uber-eats {
+	list-style-image: url('images/puces/bike.png');
+}
+
+.intermarche {
+	list-style-image: url('images/puces/percentage.png');
+}
+
+.address {
+	list-style-image: url('images/puces/home.png');
+}
+
+.phone {
+	list-style-image: url('images/puces/phone.png');
+}
+
+.email {
+	list-style-image: url('images/puces/email.png');
+}
+
+.french {
+	list-style-image:  url('images/puces/french-language.png');
+}
+
+.english {
+	list-style-image: url('images/puces/english-language.png');
+}
+
+.spanish {
+	list-style-image: url('images/puces/spanish-language.png');
+}
+
+.os {
+	list-style-image: url('images/puces/windows.png');
+}
+
+.tools {
+	list-style-image: url('images/puces/settings.png');
+}
+
+.programming-languages {
+	list-style-image: url('images/puces/language.png');
+}
+
+
+.details li.no-chip {
+	list-style-type: none;
+}
+
+.details li {
+	list-style-type: square;
+}
+
+li {
+	margin-top: 10px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+
+
+
+
+/* Links & Hover effects */
+
+a:link { 
+ 	text-decoration: none; 
+ 	color: #164E98;
+} 
+
+a:visited {
+  	color: #164E98;
+}
+
+a:hover {
+	color: #2C75FF;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------- Pages des villes ------------------------- */
+
+.ville {
+	height: 100vh;
+	width: 100vw;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+}
+
+.ville-col {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+	width: 50%;
+}
+
+.div-element-ville {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.div-nom-ville {
+	height: 15%;
+}
+
+.div-descr-ville {
+	height: 15%;
+}
+
+.div-photo-ville {
+	height: 70%;
+	}
+
+.div-details-ville {
+	height: 100%;
+}
+
+.element-ville {
+	position: relative;
+	height: 90%;
+	width: 90%;
+	left: 0.5%;
+	bottom: 1.5%;
+	box-shadow: -10px 10px 10px #f7f7f7;
+ 	background-color: #eff5f1;
+
+}
+
+.nom-ville {
+}
+
+.description-ville {
+
+}
+
+.photo-ville {
+
+}
+
+.details-ville {
+
+}
+
+
+
+
+
+
+
+
+
+		/* ------------------------- Mobile Screen ------------------------- */
+
+@media screen and (max-width: 1200px)
+{
+
+
+
+
+
+/* CV */
+
+	.main {
+		margin: 0;
+	}
+	header {
+		display: block;
+	}
+
+	.picture {
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.name-title {
+		width: 100%;
+	}
+
+	.body {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.description-little {
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.main-column {
+		width: 100%;
+	}
+
+	.second-column {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+ 	.description-big {
+ 		display: none;
+ 	}
+
+	#contacts {
+		order: 1;
+	}
+
+	.big-categorie {
+		margin: 30px 30px 0 0;
+	}
+
+	.marginleft {
+		margin: 30px 30px 0 0;
+	}
+
+	h3.no-margin {
+		margin: 0;
+	}
+
+	h2 {
+		margin: 0 30px 30px 30px;
+
+	}
+	
+
+
+
+
+}
