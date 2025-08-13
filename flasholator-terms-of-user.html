@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flasholator Terms and Conditions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .lang-buttons {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    button {
+      margin-left: 0.5rem;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    h1 {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-buttons">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('fr')">Français</button>
+    <button onclick="setLang('es')">Español</button>
+  </div>
+
+  <div id="content"></div>
+
+  <script>
+    const termsTexts = {
+      fr: `
+        <h1>Conditions d'utilisation Flasholator</h1>
+        <p>Dernière mise à jour : 13 août 2025</p>
+        
+        <h2>1. Acceptation des conditions</h2>
+        <p>En utilisant l'application Flasholator, vous acceptez d'être lié par ces conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'application.</p>
+        
+        <h2>2. Description du service</h2>
+        <p>Flasholator est une application d'apprentissage de langues proposant des fonctionnalités gratuites et premium via un système d'abonnement.</p>
+        
+        <h2>3. Abonnements et paiements</h2>
+        <p>L'abonnement premium est géré par RevenueCat et les paiements sont traités par Stripe. Les prix et périodes d'abonnement sont indiqués dans l'application.</p>
+        <p>Les abonnements se renouvellent automatiquement sauf annulation avant la date de renouvellement.</p>
+        <p>Les tarifs peuvent changer avec un préavis de 30 jours minimum.</p>
+        
+        <h2>4. Annulation et remboursements</h2>
+        <p>Vous pouvez annuler votre abonnement à tout moment dans les paramètres de votre compte. L'annulation prendra effet à la fin de la période de facturation en cours.</p>
+        <p>Aucun remboursement ne sera accordé pour les périodes d'abonnement partiellement utilisées, sauf obligation légale.</p>
+        
+        <h2>5. Utilisation acceptable</h2>
+        <p>Vous vous engagez à utiliser l'application de manière légale et conforme à ces conditions. Il est interdit de :</p>
+        <p>• Partager vos identifiants de compte</p>
+        <p>• Tenter de contourner les restrictions d'abonnement</p>
+        <p>• Utiliser l'application à des fins commerciales sans autorisation</p>
+        <p>• Perturber le fonctionnement de l'application</p>
+        
+        <h2>6. Propriété intellectuelle</h2>
+        <p>Flasholator et son contenu sont protégés par les droits d'auteur et autres droits de propriété intellectuelle. Vous obtenez une licence limitée d'utilisation personnelle.</p>
+        
+        <h2>7. Limitation de responsabilité</h2>
+        <p>L'application est fournie "en l'état" sans garanties. Nous ne saurions être tenus responsables des dommages indirects ou consécutifs.</p>
+        
+        <h2>8. Résiliation</h2>
+        <p>Nous nous réservons le droit de suspendre ou résilier votre compte en cas de violation de ces conditions.</p>
+        
+        <h2>9. Modifications des conditions</h2>
+        <p>Ces conditions peuvent être modifiées. Les modifications importantes seront notifiées dans l'application avec un préavis de 30 jours.</p>
+        
+        <h2>10. Droit applicable</h2>
+        <p>Ces conditions sont régies par le droit français. Tout litige sera soumis aux tribunaux compétents.</p>
+        
+        <h2>11. Contact</h2>
+        <p>Pour toute question concernant ces conditions, contactez-nous à : <a href="mailto:felix.mortas@hotmail.fr">felix.mortas@hotmail.fr</a></p>
+      `,
+      en: `
+        <h1>Flasholator Terms and Conditions</h1>
+        <p>Last updated: August 13, 2025</p>
+        
+        <h2>1. Acceptance of Terms</h2>
+        <p>By using the Flasholator application, you agree to be bound by these terms of service. If you do not agree to these terms, please do not use the application.</p>
+        
+        <h2>2. Service Description</h2>
+        <p>Flasholator is a language learning application offering free and premium features through a subscription system.</p>
+        
+        <h2>3. Subscriptions and Payments</h2>
+        <p>Premium subscriptions are managed by RevenueCat and payments are processed by Stripe. Prices and subscription periods are displayed in the application.</p>
+        <p>Subscriptions automatically renew unless cancelled before the renewal date.</p>
+        <p>Prices may change with a minimum 30-day notice.</p>
+        
+        <h2>4. Cancellation and Refunds</h2>
+        <p>You can cancel your subscription at any time in your account settings. Cancellation will take effect at the end of the current billing period.</p>
+        <p>No refunds will be provided for partially used subscription periods, except where legally required.</p>
+        
+        <h2>5. Acceptable Use</h2>
+        <p>You agree to use the application legally and in accordance with these terms. It is prohibited to:</p>
+        <p>• Share your account credentials</p>
+        <p>• Attempt to bypass subscription restrictions</p>
+        <p>• Use the application for commercial purposes without authorization</p>
+        <p>• Disrupt the operation of the application</p>
+        
+        <h2>6. Intellectual Property</h2>
+        <p>Flasholator and its content are protected by copyright and other intellectual property rights. You receive a limited license for personal use.</p>
+        
+        <h2>7. Limitation of Liability</h2>
+        <p>The application is provided "as is" without warranties. We cannot be held responsible for indirect or consequential damages.</p>
+        
+        <h2>8. Termination</h2>
+        <p>We reserve the right to suspend or terminate your account in case of violation of these terms.</p>
+        
+        <h2>9. Changes to Terms</h2>
+        <p>These terms may be modified. Significant changes will be notified in the application with 30 days' notice.</p>
+        
+        <h2>10. Governing Law</h2>
+        <p>These terms are governed by French law. Any disputes will be subject to the competent courts.</p>
+        
+        <h2>11. Contact</h2>
+        <p>For any questions regarding these terms, contact us at: <a href="mailto:felix.mortas@hotmail.fr">felix.mortas@hotmail.fr</a></p>
+      `,
+      es: `
+        <h1>Términos y Condiciones de Flasholator</h1>
+        <p>Última actualización: 13 de agosto de 2025</p>
+        
+        <h2>1. Aceptación de los términos</h2>
+        <p>Al usar la aplicación Flasholator, acepta estar sujeto a estos términos de servicio. Si no acepta estos términos, por favor no use la aplicación.</p>
+        
+        <h2>2. Descripción del servicio</h2>
+        <p>Flasholator es una aplicación de aprendizaje de idiomas que ofrece funciones gratuitas y premium a través de un sistema de suscripción.</p>
+        
+        <h2>3. Suscripciones y pagos</h2>
+        <p>Las suscripciones premium son gestionadas por RevenueCat y los pagos son procesados por Stripe. Los precios y períodos de suscripción se muestran en la aplicación.</p>
+        <p>Las suscripciones se renuevan automáticamente a menos que se cancelen antes de la fecha de renovación.</p>
+        <p>Los precios pueden cambiar con un aviso mínimo de 30 días.</p>
+        
+        <h2>4. Cancelación y reembolsos</h2>
+        <p>Puede cancelar su suscripción en cualquier momento en la configuración de su cuenta. La cancelación tendrá efecto al final del período de facturación actual.</p>
+        <p>No se proporcionarán reembolsos por períodos de suscripción parcialmente utilizados, excepto donde sea legalmente requerido.</p>
+        
+        <h2>5. Uso aceptable</h2>
+        <p>Se compromete a usar la aplicación legalmente y de acuerdo con estos términos. Está prohibido:</p>
+        <p>• Compartir sus credenciales de cuenta</p>
+        <p>• Intentar eludir las restricciones de suscripción</p>
+        <p>• Usar la aplicación con fines comerciales sin autorización</p>
+        <p>• Interrumpir el funcionamiento de la aplicación</p>
+        
+        <h2>6. Propiedad intelectual</h2>
+        <p>Flasholator y su contenido están protegidos por derechos de autor y otros derechos de propiedad intelectual. Obtiene una licencia limitada para uso personal.</p>
+        
+        <h2>7. Limitación de responsabilidad</h2>
+        <p>La aplicación se proporciona "tal como está" sin garantías. No podemos ser responsables de daños indirectos o consecuentes.</p>
+        
+        <h2>8. Terminación</h2>
+        <p>Nos reservamos el derecho de suspender o terminar su cuenta en caso de violación de estos términos.</p>
+        
+        <h2>9. Cambios en los términos</h2>
+        <p>Estos términos pueden ser modificados. Los cambios significativos serán notificados en la aplicación con 30 días de anticipación.</p>
+        
+        <h2>10. Ley aplicable</h2>
+        <p>Estos términos se rigen por la ley francesa. Cualquier disputa estará sujeta a los tribunales competentes.</p>
+        
+        <h2>11. Contacto</h2>
+        <p>Para cualquier pregunta sobre estos términos, contáctenos en: <a href="mailto:felix.mortas@hotmail.fr">felix.mortas@hotmail.fr</a></p>
+      `
+    };
+
+    function setLang(lang) {
+      document.getElementById('content').innerHTML = termsTexts[lang];
+    }
+
+    // Langue par défaut
+    setLang('en');
+  </script>
+</body>
+</html>
