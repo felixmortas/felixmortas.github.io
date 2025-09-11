@@ -54,6 +54,84 @@
       <h2>Projets</h2>
 
       <div class="project">
+        <h1>Generate L10n – AI-Powered Flutter Localization VSCode Extension</h1>
+        <p><strong>Simplify and automate localization of Dart/Flutter projects directly within VSCode using AI/LLMs.</strong></p>
+        <!-- add small logo image-->
+        <img src="img/generate-l10n.png" alt="Logo Generate L10n" style="width:150px;">
+        <h3>Overview</h3>
+        <p>
+          Generate L10n is a VSCode extension designed to streamline the <strong>localization workflow for Flutter/Dart projects</strong>.
+          It allows developers to automatically update <code>.dart</code> files and generate <code>.arb</code> translation files using AI models
+          like <strong>Mistral, OpenAI, or Google LLMs</strong>, directly from VSCode without leaving the editor.
+        </p>
+        <p>
+          This extension is ideal for Flutter developers aiming to maintain multilingual applications efficiently while leveraging AI for generating translations.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li>Interactive <strong>tree view</strong> of /lib Dart files with check/uncheck functionality.</li>
+          <li>Selection of multiple <strong>ARB localization files</strong> for multi-language support.</li>
+          <li>Input your <strong>API key</strong> to connect to the AI provider of your choice.</li>
+          <li>Automatic execution of <code>flutter gen-l10n</code> after processing.</li>
+          <li>Native <strong>VSCode integration</strong>: activity bar icon, command palette commands, tree view.</li>
+          <li>Support for multiple <strong>LLM providers and models</strong>.</li>
+        </ul>
+
+        <h3>Technologies Used</h3>
+        <ul>
+          <li><strong>TypeScript</strong> – core language for VSCode extension development.</li>
+          <li><strong>VSCode Extension API</strong> – for commands, tree views, terminal integration.</li>
+          <li><strong>auto-l10n-ts</strong> – library to process Dart and ARB files programmatically.</li>
+          <li><strong>LLM APIs</strong> – Mistral, OpenAI, Google for automated translation generation.</li>
+          <li><strong>Flutter SDK</strong> – to generate localization files via <code>flutter gen-l10n</code>.</li>
+        </ul>
+
+        <h3>How It Works</h3>
+        <ol>
+          <li>Open a Flutter project in VSCode.</li>
+          <li>Click the <strong>L10n Generator</strong> icon in the activity bar.</li>
+          <li>Select the Dart files to process and choose the target ARB files.</li>
+          <li>Enter your API key for the chosen LLM provider.</li>
+          <li>Press <strong>Play ▶</strong> or run <code>Process Selected Files</code>.</li>
+          <li>The extension modifies the Dart/ARB files and executes <code>flutter gen-l10n</code>.</li>
+          <li>Receive a success/failure notification directly in VSCode.</li>
+        </ol>
+
+        <h3>Architecture & Technical Details</h3>
+        <ul>
+          <li><strong>Modular design</strong>: separate modules for tree view, commands, and file processing.</li>
+          <li>Tree view displays <code>/lib</code> folder hierarchy and allows checking files for processing.</li>
+          <li>Commands: <code>toggleCheck</code>, <code>processSelectedFiles</code>, <code>configureExtension</code>, <code>refreshView</code>.</li>
+          <li>Integration with LLMs for generating translation keys and values.</li>
+          <li>Terminal execution for Flutter localization commands.</li>
+        </ul>
+
+        <h3>Challenges & Solutions</h3>
+        <ul>
+          <li><strong>Challenge:</strong> Seamlessly integrating AI-based translation into the VSCode workflow.<br>
+              <strong>Solution:</strong> Abstracted all file processing in <code>auto-l10n-ts</code> and connected commands to tree view events.</li>
+          <li><strong>Challenge:</strong> Providing a 1-click experience without external setup.<br>
+              <strong>Solution:</strong> Built full UI in VSCode with API key configuration and automatic terminal execution.</li>
+        </ul>
+
+        <h3>Benefits</h3>
+        <ul>
+          <li>Saves developers hours of manual localization work.</li>
+          <li>Ensures consistent translation generation across multiple languages.</li>
+          <li>Enables rapid integration of AI-powered localization directly from the editor.</li>
+        </ul>
+
+        <h3>Links & Resources</h3>
+        <ul>
+          <li>GitHub VSCode extension: <a href="https://github.com/felixmortas/generate-l10n" target="_blank">https://github.com/felixmortas/generate-l10n</a></li>
+          <li>GitHub L10n Auto Generator with LLM: <a href="https://github.com/felixmortas/auto-l10n-ts" target="_blank">https://github.com/felixmortas/auto-l10n-ts</a></li>
+          <li>VSCode Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=felixmortas.generate-l10n" target="_blank">Generate L10n</a></li>
+        </ul>
+      </div>
+
+
+      <div class="project">
         <h3>Flasholator</h3>
         <img src="img/flasholator.png" alt="Capture d'écran de Flasholator">
         <p>Application de traduction et révision intelligente pour les apprenants en langues.</p>
