@@ -4,8 +4,8 @@
 :root {
   --bg: #f4f4f4;
   --text: #1c1c1c;
-  --primary: #2a7a66;
-  --accent: #f08c00;
+  --primary: #4285F4;
+  --accent: #F4B400;
   --font-main: 'Inter', sans-serif;
 }
 
@@ -143,7 +143,8 @@ form button {
 }
 
 form button:hover {
-  background-color: #1f5c4f;
+  background-color: white;
+  color: var(--primary);
 }
 
 .social {
@@ -175,6 +176,41 @@ form button:hover {
   max-width: 150px;
   height: auto;
   object-fit: contain;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--accent);
+}
+
+.cta-button.outline {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.cta-button.outline:hover,
+.cta-button.outline:focus {
+  background-color: var(--primary);
+  color: white;
 }
 
 footer {
