@@ -79,20 +79,66 @@ h2 {
   margin-top: 3rem;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
+/* ===== DESIGN SECTION SKILLS AMÉLIORÉ ===== */
+
+#skills {
+  padding-bottom: 4rem;
 }
 
-.skills li {
-  background-color: #eafaf6;
-  color: var(--primary);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+/* On transforme la liste en grille de cartes */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  margin-top: 2rem;
   list-style: none;
-  font-weight: 500;
+}
+
+/* Style de chaque carte de catégorie */
+.skills li {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  color: var(--text); /* Reset la couleur héritée */
+  font-weight: normal; /* Reset */
+}
+
+.skills li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  border-color: var(--primary);
+}
+
+/* Style des titres de catégories (ex: "Programming languages:") */
+.skills li strong {
+  display: block;
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+/* Optionnel : Transformer le texte brut en "Badges/Tags" visuels */
+/* Si tu veux garder le texte tel quel, ignore ce qui suit. 
+   Mais pour un effet visuel fort, on peut styliser le contenu. */
+
+.skills li {
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Media Query pour mobile */
+@media (max-width: 600px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --- Section Contact Design --- */
@@ -291,9 +337,5 @@ footer {
   nav ul {
     flex-direction: column;
     align-items: center;
-  }
-
-  .skills {
-    flex-direction: column;
   }
 }
