@@ -162,9 +162,9 @@ form button:hover {
 
 .project-logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem 0;
   flex-wrap: wrap;
 }
@@ -172,9 +172,9 @@ form button:hover {
 .project-logos img,
 .project-logos svg {
   flex: 1;
-  min-width: 80px;
-  max-width: 150px;
-  height: auto;
+  width: auto;
+  max-width: 120px;
+  height: 50px;
   object-fit: contain;
 }
 
