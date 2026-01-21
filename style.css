@@ -95,6 +95,66 @@ h2 {
   font-weight: 500;
 }
 
+/* --- Section Contact Design --- */
+
+.contact-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Permet de passer sur plusieurs lignes sur mobile si besoin */
+  margin-top: 2rem;
+  justify-content: flex-start;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Couleurs spécifiques */
+.contact-btn.email {
+  background-color: #ea4335; /* Rouge Google/Email */
+}
+
+.contact-btn.phone {
+  background-color: #34a853; /* Vert Appel/WhatsApp */
+}
+
+.contact-btn.linkedin {
+  background-color: #0077b5; /* Bleu LinkedIn */
+}
+
+/* Effets au survol */
+.contact-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: white; /* Garde le texte blanc même si un style parent essaie de le changer */
+}
+
+.contact-btn i {
+  font-size: 1.2rem;
+}
+
+/* Responsive : Boutons pleine largeur sur petits écrans */
+@media (max-width: 600px) {
+  .contact-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-btn {
+    justify-content: center;
+  }
+}
+
 .project {
   background-color: #fff;
   padding: 1rem;
