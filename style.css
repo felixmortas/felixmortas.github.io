@@ -221,7 +221,8 @@ h2 {
   margin: 1rem 0;
 }
 
-.project a {
+.project a, 
+#about a {
   color: var(--accent);
   text-decoration: none;
   font-weight: bold;
@@ -248,7 +249,6 @@ h2 {
 .cta-button {
   display: inline-block;
   background-color: var(--primary);
-  color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 0.75rem 1.5rem;
@@ -262,7 +262,9 @@ h2 {
 }
 
 .cta-button:hover,
-.cta-button:focus {
+.cta-button:focus,
+#about .cta-button:hover,
+#about .cta-button:focus {
   background-color: transparent;
   color: var(--primary);
   border-color: var(--accent);
