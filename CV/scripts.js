@@ -1,3 +1,31 @@
+// CHANGE LANGUAGE FUNCTIONNALITY
+
+async function changeLanguage(lang) {
+  // 1. Charger le fichier de langue
+  
+  const response = await fetch(`./lang/${lang}.json`);
+  console.log(response);
+  const translations = await response.json();
+
+  // 2. Parcourir tous les éléments qui ont l'attribut data-key
+  document.querySelectorAll('[data-key]').forEach(element => {
+    const key = element.getAttribute('data-key');
+    if (translations[key]) {
+      element.innerText = translations[key];
+    }
+  });
+
+  // Optionnel : Sauvegarder la langue dans le navigateur
+  localStorage.setItem('preferredLang', lang);
+}
+
+// Au chargement de la page, charger la langue par défaut ou sauvegardée
+window.onload = () => {
+  const savedLang = localStorage.getItem('preferredLang') || 'fr';
+  changeLanguage(savedLang);
+};
+
+
 // DÉROULE LES DETAILS D'UNE RUBRIQUE SUR LE CV
 
 // Affecte l'écouteur d'évenement aux titres des rubriques sur le CV

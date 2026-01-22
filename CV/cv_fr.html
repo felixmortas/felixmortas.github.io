@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>CV Félix MORTAS</title>
+		<title data-key="title"></title>
 		<meta charset = "utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel = "stylesheet" href = "style.css" />
@@ -24,8 +24,8 @@
 <!-- CARTE GOOGLE MAPS -->
 
 	<div id = "map">		
-		<button class = "map-button go-cv" >Retour au CV</button>
-		<button onclick = "fly_to_next_step(event)" class = "map-button next-step" >Commencer</button>
+		<button class = "map-button go-cv" data-key="back-to-cv"></button>
+		<button onclick = "fly_to_next_step(event)" class = "map-button next-step" data-key="start"></button>
 	</div>
 
 
@@ -34,15 +34,13 @@
 
 	<div id = "cv" class = "main">
 
-
-
 		<!-- Tête de page -->
 
 		<header>
 		
 			<span class="other-language-button">
-				<a href='cv_en.html'><img src="images/icones/english_flag.png" /></a>
-				<a href='cv_es.html'><img src="images/icones/spanish_flag.png" /></a>
+				<button onclick="changeLanguage('en')"><img src="images/icones/english_flag.png" /></button>
+				<button onclick="changeLanguage('es')"><img src="images/icones/spanish_flag.png" /></button>
 			</span>
 
 			<div class = "picture">
@@ -52,273 +50,194 @@
 				<h1>
 					Félix MORTAS
 				</h1>
-				<h2>
-					Ingénieur IA Full Stack
-				</h2>
+				<h2 data-key="job-title"></h2>
 			</div>
 
 		</header>
 
 
 
-		<!-- Corps -->
-
-		<div class = "body">
-
-			<!-- Colonne de gauche -->
+		<div class="body">
 
 			<div class="second-column">
 
-
 				<div class="description-big">
-					<p class = "description-text">
-						Célibataire, 27 ans,<br />Permis B, Nationalité française
-					</p>
-					<div class = "div-button-go-map">
-						<button class = "map-button go-map">Voir CV dynamique</button>
+					<p class="description-text" data-key="description-text"></p>
+					<div class="div-button-go-map">
+						<button class="map-button go-map" data-key="go-to-map"></button>
 					</div>
 				</div>
-				
 
-				<div class="box small-categorie" id = "contacts">
+				<div class="box small-categorie" id="contacts">
 					<h3 class="no-margin">
-						Contact 
+						<span data-key="contact"></span>
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
-								</svg>
+							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+						</svg>
 					</h3>
 					<ul class="list marginleft details">
 						<li class="element address">
-							<h5>
-								Adresse :
-							</h5>
+							<h5 data-key="address"></h5>
 							<a href="https://www.google.com/maps/search/le%20perreux%20sur%20marne" target="_blank">
-								<p>
-									47 B Avenue Montaigne,<br />
-									94170 Le Perreux-sur-Marne
-								</p>
+								<p data-key="adress-details"></p>
 							</a>
 						</li>
 						<li class="element phone">
-							<h5>
-								Téléphone :
-							</h5>
+							<h5 data-key="phone"></h5>
 							<a href="tel:0779806147">
-								<p>
-									07 79 80 61 47
-								</p>
+								<p>07 79 80 61 47</p>
 							</a>
 						</li>
 						<li class="element email">
-							<h5>
-								E-mail :
-							</h5>
+							<h5>E-mail :</h5>
 							<a href="mailto:felix.mortas@hotmail.fr">
-								<p>
-									felix.mortas@hotmail.fr
-								</p>
-							</a>		
+								<p>felix.mortas@hotmail.fr</p>
+							</a>
 						</li>
 					</ul>
 				</div>
 
-
 				<div class="box big-categorie">
-					<h3>
-						Langues
-					</h3>
+					<h3 data-key="languages-title"></h3>
 					<ul class="list">
 						<li class="element english">
 							<h5>
-								Anglais - Courant (C1)
+								<span data-key="lang-en"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 								</svg>
 							</h5>
 							<ul class="list details">
 								<li>
-									<h6>
-										TOEIC :
-									</h6>
-									<p>
-										870/990
-									</p>
+									<h6 data-key="toeic-label"></h6>
+									<p>870/990</p>
 								</li>
 								<li>
-									<h6>
-										TOEFL :
-									</h6>
-									<p>
-										567/680
-									</p>
+									<h6 data-key="toefl-label"></h6>
+									<p>567/680</p>
 								</li>
 								<li>
-									<h6>
-										Stage :
-									</h6>
-									<p>
-										3 mois au Viêt Nam
-									</p>
+									<h6 data-key="internship-label"></h6>
+									<p data-key="internship-vn"></p>
 								</li>
 							</ul>
 						</li>
 						<li class="element spanish">
 							<h5>
-								Espagnol - Indépendant (B2)
+								<span data-key="lang-es"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 								</svg>
 							</h5>
 							<ul class="list details">
 								<li>
-									<h6>
-										Classe bilangue :
-									</h6>
-									<p>
-										Apprentissage d'une 2ème langue dès la 6ème
-									</p>
+									<h6 data-key="bilangue-label"></h6>
+									<p data-key="bilangue-desc"></p>
 								</li>
 								<li>
-									<h6>
-										2015 :
-									</h6>
-									<p>
-										Echange scolaire dans la banlieue de Madrid
-									</p>
+									<h6>2015 :</h6>
+									<p data-key="exchange-madrid"></p>
 								</li>
 								<li>
-									<h6>
-										2016 :
-									</h6>
-									<p>
-										Echange scolaire en Andalousie
-									</p>
+									<h6>2016 :</h6>
+									<p data-key="exchange-andalusia"></p>
 								</li>
 								<li>
-									<h6>
-										Stage :
-									</h6>
-									<p>
-										3 mois à Salamanque
-									</p>
+									<h6 data-key="internship-label"></h6>
+									<p data-key="internship-sal"></p>
 								</li>
 							</ul>
 						</li>
 						<li class="element arabic">
 							<h5>
-								Arabe (MSA) - Découverte (A1)
+								<span data-key="lang-ar"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 								</svg>
 							</h5>
 							<ul class="list details">
 								<li>
-									<h6>
-										Cours à la mairie de Paris (<a href="https://scap.paris.fr/Home/ShowAllPeriods" target="_blank">SCAP</a>) :
-									</h6>
-									<p>
-										60h en 2024/2025
-									</p>
+									<h6><span data-key="paris-courses"></span> (<a href="https://scap.paris.fr/Home/ShowAllPeriods" target="_blank">SCAP</a>) :</h6>
+									<p data-key="ar-hours"></p>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 
-
 				<div class="box small-categorie">
 					<h3 class="no-margin">
-						Informatique
+						<span data-key="it-title"></span>
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
-								</svg>
+							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+						</svg>
 					</h3>
 					<ul class="list marginleft details">
 						<li class="element programming-languages">
-							<h5>
-								Languages et Frameworks
-							</h5>
+							<h5 data-key="it-frameworks"></h5>
 							<ul class="list">
 								<li>
-									<h6>
-										Avancé :
-									</h6>
-									<p>
-										Python, <a href="https://kivy.org/#home" title = "Python framework to build mobile, tablet and computer applications" target = "_blank">Kivy</a>, Flutter, R, HTML, CSS, JavaScript, SQL
-									</p>
+									<h6 data-key="it-advanced"></h6>
+									<p>Python, <a href="https://kivy.org/#home" title="Python framework to build mobile, tablet and computer applications" target="_blank">Kivy</a>, Flutter, R, HTML, CSS, JavaScript, SQL</p>
 								</li>
 								<li>
-									<h6>
-										Basique :
-									</h6>
-									<p>
-										C++
-									</p>
+									<h6 data-key="it-basic"></h6>
+									<p>C++</p>
 								</li>
 							</ul>
 						</li>
 						<li class="element tools">
-							<h5>
-								Outils
-							</h5>
-							<p>
-								Visual Studio Code, Jupyter Notebook, R Studio, AWS, Databricks, PySpark
-							</p>
+							<h5 data-key="it-tools"></h5>
+							<p>Visual Studio Code, Jupyter Notebook, R Studio, AWS, Databricks, PySpark</p>
 						</li>
 						<li class="element os">
-							<h5>
-								Systèmes d'exploitation
-							</h5>
-							<p>
-								Linux (Ubuntu), MacOS, Windows
-							</p>
+							<h5 data-key="it-os"></h5>
+							<p>Linux (Ubuntu), MacOS, Windows</p>
 						</li>
 					</ul>
 				</div>
 
-
 				<div class="box small-categorie">
 					<h3 class="no-margin">
-						Centres d'intérêt
+						<span data-key="interests-title"></span>
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
-								</svg>
+							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+						</svg>
 					</h3>
 					<ul class="list marginleft details">
 						<li class="element">
 							<p>
-								Goût pour les <span class = "bold">sciences</span> (génétique, neurosciences, biotechnologies, maraîchage).
+								<span data-key="interest-science-1"></span> <span class="bold" data-key="interest-science-bold"></span> <span data-key="interest-science-2"></span>
 							</p>
 						</li>
 						<li class="element">
 							<p>
-								<span class="bold">Développement personnel</span> (sciences comportementales, psychologie et TCC, philosophie).
+								<span class="bold" data-key="interest-dev-bold"></span> <span data-key="interest-dev-text"></span>
 							</p>
 						</li>
 						<li class="element">
 							<p>
-								Goût pour l'<span class="bold">interculturalité</span> à travers les voyages et appétence pour les cultures d'<span class = "bold">Asie du Sud-Est</span>.
+								<span data-key="interest-travel-1"></span><span class="bold" data-key="interest-travel-bold-1"></span> <span data-key="interest-travel-2"></span><span class="bold" data-key="interest-travel-bold-2"></span>.
 							</p>
 						</li>
 						<li class="element">
 							<p>
-								<span class="bold">Rangement</span> et <span class="bold">optimisation</span> de l'espace (Marie Kondo).
+								<span class="bold" data-key="interest-organize-bold-1"></span> <span data-key="interest-organize-and"></span> <span class="bold" data-key="interest-organize-bold-2"></span> <span data-key="interest-organize-text"></span>
 							</p>
 						</li>
 						<li class="element">
 							<p>
-								<span class="bold">Alimentation</span> saine et durable, <span class="bold">économie</span> d'énergie.
+								<span class="bold" data-key="interest-food-bold"></span> <span data-key="interest-food-text"></span> <span class="bold" data-key="interest-energy-bold"></span>.
 							</p>
 						</li>
 						<li class="element">
 							<p>
-								<span class="bold">Musculation</span> et <span class="bold">cardio</span> 6 à 8h/semaine.
+								<span class="bold" data-key="interest-sport-bold-1"></span> <span data-key="interest-sport-and"></span> <span class="bold" data-key="interest-sport-bold-2"></span> <span data-key="interest-sport-text"></span>
 							</p>
 						</li>
 					</ul>
 				</div>
 			</div>
-
 
 
 			<!-- Colonne de droite -->
@@ -326,134 +245,113 @@
 			<div class="main-column">
 
 				<div class="description-little">
-					<p class = "description-text">
-						Célibataire, 27 ans,<br />Permis B, Nationalité française
-					</p>
+					<p class = "description-text" data-key="description-text"></p>
 					<div class = "div-button-go-map">
-						<button class = "map-button go-map">Voir CV dynamique</button>
+						<button class = "map-button go-map" data-key="go-to-map"></button>
 					</div>
 				</div>
 
 
 				<div class="box big-categorie">
-					<h3>
-						Activités professionnelles
-					</h3>
-		
-					<div class="sub-box">
-						<h4>
-							Emplois
-						</h4>
-						<ul class="list">
+					<h3 data-key="pro-activities-title"></h3>
 
-							<li class = "element axa">
+					<div class="sub-box">
+						<h4 data-key="jobs-subtitle"></h4>
+						<ul class="list">
+							<li class="element axa">
 								<h5>
-									Apprenti chargé de mission numérique éco-responsable - Data scientist
+									<span data-key="axa-job-title"></span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  								<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+										<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 									</svg>
 								</h5>
-								<p class="h7">
-									AXA Group Operations, Paris 17 | Octobre 2023 - Avril 2025 | 1 an et demi
-								</p>
+								<p class="h7" data-key="axa-duration"></p>
 								<div class="details">
-									
 									<ul>
-										<li class = "no-chip">
-											<a href = "http://www.axa.com/" target = "_blank">
-												<p>
-													Site web de l'entreprise
-												</p>
+										<li class="no-chip">
+											<a href="http://www.axa.com/" target="_blank">
+												<p data-key="company-website"></p>
 											</a>
 										</li>
 										<li>
+											<p data-key="axa-task-ghg"></p>
+										</li>
+										<li>
 											<p>
-												Participation à la collecte de données pour la mesure de l'empreinte carbone du numérique de l'entreprise selon le GHG Protocol
+												<span data-key="axa-task-awareness"></span>
+												<a href="https://www.fresquedunumerique.org/" target="_blank" data-key="fresque-link"></a>)
 											</p>
 										</li>
 										<li>
 											<p>
-												Sensibilisation de la communauté à l'impact environnemental du numérique à travers différents ateliers de travail (notamment <a href="https://www.fresquedunumerique.org/" target="_blank">Fresque du Numérique</a>)
+												- <span data-key="axa-task-ai-research"></span>
+												<br>- <span data-key="axa-task-ai-tool"></span>
+												<br>- <span data-key="axa-task-ai-best-practices"></span>
 											</p>
 										</li>
 										<li>
-											<p>
-												- Recherche et développement de la mesure de l'empreinte carbone de l'IA générative (ChatGPT, Copilot, ...) en étroite collaboration avec l'équipe de recherche "Sustainable AI"
-												<br>- Mise en place d'un outil interne de mesure de l'empreinte carbone de l'IA générative
-												<br>- Elaborations de bonnes pratiques pour la réduction des émissions de GES côté utilisateur final et développeur
-											</p>
+											<p data-key="axa-task-water"></p>
 										</li>
 										<li>
 											<p>
-												Recherche et mise en place de l'évaluation de l'empreinte hydrique des data centers de l'entreprise
-											</p>
-										</li>
-										<li>
-											<p>
-												Contribution aux recherches sur l'IA générative avec <a href="https://theshiftproject.org/" target="_blank">The Shift Project</a> dans le cadre d'un partenariat
+												<span data-key="axa-task-shift-project"></span>
+												<a href="https://theshiftproject.org/" target="_blank">The Shift Project</a>
+												<span data-key="axa-task-shift-partnership"></span>
 											</p>
 										</li>
 									</ul>
 								</div>
 							</li>
-							
 
-							<li class = "element vergers-urbains">
+							<li class="element vergers-urbains">
 								<h5>
-									Apprenti agriculteur urbain
+									<span data-key="vu-job-title"></span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
-								</svg>
+										<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									</svg>
 								</h5>
-								<p class="h7">
-									Vergers Urbains, Paris 18 | Mai 2021 - Septembre 2023 | 2 ans et 4 mois
-								</p>
+								<p class="h7" data-key="vu-job-meta"></p>
 								<div class="details">
 									<ul>
-										<li class = "no-chip">
-											<a href = "http://www.vergersurbains.org/" target = "_blank">
-												<p>
-													Site web de l'association
-												</p>
+										<li class="no-chip">
+											<a href="http://www.vergersurbains.org/" target="_blank">
+												<p data-key="assoc-website-link"></p>
 											</a>
 										</li>
 										<li>
 											<p>
-												Expérimentation sur la pollution des sols dans le "Jardin Espérence" à Aubervilliers :
-												<br>- Recherche bibliographique sur la phyto-immobilisation des métaux lourds (Zinc, Mercure)
-												<br>- Conception du plan d'expérimentation
-												<br>- Encadrement d'ateliers participatifs pour la mise en place et le suivi de l'expérimentation (amendement, plantation, prélèvement, analyse des résultats)
+												<span data-key="vu-exp-pollution-title"></span>
+												<br>- <span data-key="vu-exp-pollution-item1"></span>
+												<br>- <span data-key="vu-exp-pollution-item2"></span>
+												<br>- <span data-key="vu-exp-pollution-item3"></span>
 											</p>
 										</li>
 										<li>
 											<p>
-												Référent du <a href="http://www.toitsvivants.org/le-toit-du-bout-du-monde-lance-une-campagne-de-financement/" target="_blank">"Toit du Bout du Monde"</a> :
-												<br>- Planification des cultures
-												<br>- Encadrement des adhérents et réalisation d'ateliers pédagogiques
-												<br>- Expérimentation sur le meilleur substrat sur toiture
+												<span data-key="vu-tbm-ref-title"></span> <a href="http://www.toitsvivants.org/le-toit-du-bout-du-monde-lance-une-campagne-de-financement/" target="_blank" data-key="vu-tbm-name"></a> :
+												<br>- <span data-key="vu-tbm-item1"></span>
+												<br>- <span data-key="vu-tbm-item2"></span>
+												<br>- <span data-key="vu-tbm-item3"></span>
 											</p>
 										</li>
 										<li>
 											<p>
-												Aménagement d'une pépinière sur le toit de l'<a href="https://www.google.com/maps/place/%C3%89cole+de+la+Propret%C3%A9/@48.8898442,2.3316856,21z/data=!4m13!1m7!3m6!1s0x47e66e516d791c0b:0x20ee2338be254696!2s56-58+Rue+Joseph+de+Maistre,+75018+Paris!3b1!8m2!3d48.8898752!4d2.3316058!3m4!1s0x47e66e51506013ab:0xe0b2f9cd17318df9!8m2!3d48.8898705!4d2.331574" target="_blank">École de la Propreté</a> :
-												<br>- Élaboration d'un modèle économique
-												<br>- Planification des cultures
-												<br>- Installation du projet
-												<br>- Entretien et vente des produits (communication, vente, facturation)
+												<span data-key="vu-pepiniere-title"></span><a href="https://www.google.com/maps/place/%C3%89cole+de+la+Propret%C3%A9/@48.8898442,2.3316856,21z/data=!4m13!1m7!3m6!1s0x47e66e516d791c0b:0x20ee2338be254696!2s56-58+Rue+Joseph+de+Maistre,+75018+Paris!3b1!8m2!3d48.8898752!4d2.3316058!3m4!1s0x47e66e51506013ab:0xe0b2f9cd17318df9!8m2!3d48.8898705!4d2.331574" target="_blank" data-key="vu-pepiniere-location"></a> :
+												<br>- <span data-key="vu-pepiniere-item1"></span>
+												<br>- <span data-key="vu-pepiniere-item2"></span>
+												<br>- <span data-key="vu-pepiniere-item3"></span>
+												<br>- <span data-key="vu-pepiniere-item4"></span>
 											</p>
 										</li>
 										<li>
-											<p>
-												Participation à la mise en place de différents projets d'agriculture urbaine répondant aux enjeux de résilience de la ville, intégrant tant les enjeux alimentaires, énergétiques que sociaux et économiques.
-												<br>Mise en place en s'inspirant de l'agro-écologie, en permaculture, suivant une démarche participative, inclusive et reproductible, complémentaire avec l'agriculture périurbaine.
-											</p>
+											<p data-key="vu-resilience-desc"></p>
 										</li>
 										<li>
 											<p>
-												Aide à l'organisation interne de l'association :
-												<br>- Réorganisation de la gestion électronique de documents
-												<br>- Formation interne à la gestion de projet
-												<br>- Animation de la réunion d'équipe hebdomadaire
+												<span data-key="vu-org-internal-title"></span>
+												<br>- <span data-key="vu-org-item1"></span>
+												<br>- <span data-key="vu-org-item2"></span>
+												<br>- <span data-key="vu-org-item3"></span>
 											</p>
 										</li>
 									</ul>
@@ -461,41 +359,32 @@
 							</li>
 
 						
-							<li class = "element syngenta">
+							<li class="element syngenta">
 								<h5>
-									Apprenti gestion de données
+									<span data-key="syngenta-job-title"></span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
-								</svg>
+										<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									</svg>
 								</h5>
-								<p class="h7">
-									Syngenta, Saint-Sauveur | Septembre 2020 - Mai 2021 | 8 mois
-								</p>
+								<p class="h7" data-key="syngenta-subtitle"></p>
 								<div class="details">
-									
 									<ul>
-										<li class = "no-chip">
-											<a href = "https://www.syngenta.fr/" target = "_blank">
-												<p>
-													Site web de l'entreprise
-												</p>
+										<li class="no-chip">
+											<a href="https://www.syngenta.fr/" target="_blank">
+												<p data-key="company-website"></p>
 											</a>
 										</li>
 										<li>
-											<p>
-												Mise en place d'un outil de gestion de projets et de portefeuille de projets avec SmartSheet
-											</p>
+											<p data-key="syngenta-task-1"></p>
+										</li>
+										<li>
+											<p data-key="syngenta-task-2"></p>
 										</li>
 										<li>
 											<p>
-												Mise en place d'un site vitrine pour l'utilisation des outils statistiques de l'entreprise
-											</p>
-										</li>
-										<li>
-											<p>
-												Analyse statistique de la qualité de tous les lots de semences produits :
-												<br>- Régression linéaire et matrice de confusion avec Excel
-												<br>- ANOVA et diagrammes en boîte avec RStudio
+												<span data-key="syngenta-task-3-title"></span>
+												<br>- <span data-key="syngenta-task-3-detail-1"></span>
+												<br>- <span data-key="syngenta-task-3-detail-2"></span>
 											</p>
 										</li>
 									</ul>
@@ -630,83 +519,61 @@
 				
 
 					<div class="sub-box">
-						<h4>
-							Stages
-						</h4>
+						<h4 data-key="internships-title"></h4>
 						<ul class="list">
+							<li class="element spain">
+								<h5>
+									<span data-key="internship-spain-title"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+										<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									</svg>
+								</h5>
+								<p class="h7" data-key="internship-spain-meta"></p>
+								<div class="details">
+									<ul>
+										<li class="no-chip">
+											<a href="https://fcaa.usal.es/" target="_blank">
+												<p data-key="web-site-link"></p>
+											</a>
+										</li>
+										<li>
+											<p data-key="internship-spain-task1"></p>
+										</li>
+										<li>
+											<p data-key="internship-spain-task2"></p>
+										</li>
+										<li>
+											<p data-key="internship-spain-task3"></p>
+										</li>
+										<li>
+											<p data-key="internship-spain-task4"></p>
+										</li>
+									</ul>
+								</div>
+							</li>
 
-							<li class = "element spain">
+							<li class="element vietnam">
 								<h5>
-									Stage international - Assistant chercheur dans un laboratoire de biologie fonctionnelle et génomique en Espagne
+									<span data-key="internship-vietnam-title"></span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
-								</svg>
+										<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									</svg>
 								</h5>
-								<p class="h7">
-									Universidad de Salamanca, Salamanque, ESPAGNE | Avril 2023 - Juin 2023 | 3 mois
-								</p>
+								<p class="h7" data-key="internship-vietnam-meta"></p>
 								<div class="details">
-									
 									<ul>
-										<li class = "no-chip">
-											<a href = "https://fcaa.usal.es/" target = "_blank">
-												<p>
-													Site web de l'établissement
-												</p>
+										<li class="no-chip">
+											<a href="http://en.hcmuaf.edu.vn/" target="_blank">
+												<p data-key="web-site-link"></p>
 											</a>
 										</li>
 										<li>
-											<p>
-												Etude de l'effet inhibiteur de 2 composants phénoliques présents dans les feuilles de pistachier sur la germination de 4 adventices
-											</p>
-										</li>
-										<li>
-											<p>
-												Etude de l'effet inhibiteur d'extraits de plantes sur la croissance de 3 champignons pathogènes
-											</p>
-										</li>
-										<li>
-											<p>
-												Etude de l'effet biostimulant du thé de compost sur la croissance des tomates et de son effet inhibiteur sur Fusarium
-											</p>
-										</li>
-										<li>
-											<p>
-												Etude de l'effet préventif du thé de compost sur un stress hydrique sur tomates
-											</p>
+											<p data-key="internship-vietnam-task1"></p>
 										</li>
 									</ul>
 								</div>
 							</li>
-							
-							<li class = "element vietnam">
-								<h5>
-									Stage de fin d'étude - Assistant chercheur dans un laboratoire de biologie moléculaire au Vietnam
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
-								</svg>
-								</h5>
-								<p class="h7">
-									Nong Lam University, Ho-Chi-Minh Ville, VIETNAM | Avril 2019 - Juin 2019 | 3 mois
-								</p>
-								<div class="details">
-									
-									<ul>
-										<li class = "no-chip">
-											<a href = "http://en.hcmuaf.edu.vn/" target = "_blank">
-												<p>
-													Site web de l'établissement
-												</p>
-											</a>
-										</li>
-										<li>
-											<p>
-												Identification de micro-organismes à l'aide de techniques de biologie moléculaire (notamment PCR)
-											</p>
-										</li>
-									</ul>
-								</div>
-							</li>
+               
 							
 							<!-- <li class = "element gardening">
 								<h5>
@@ -747,89 +614,63 @@
 				
 
 				<div class="box big-categorie">
-					<h3>
-						Formations
-					</h3>
+					<h3 data-key="education-title"></h3>
 					<ul class="list">
 
-						<li class = "element datascience">
+						<li class="element datascience">
 							<h5>
-								Master en data science
+								<span data-key="master-ds-title"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 								</svg>
 							</h5>
-							<p class="h7">
-								CentraleSupélec, Paris | Octobre 2023 - Avril 2025 | 1 an et demi
-							</p>
+							<p class="h7" data-key="master-ds-subtitle"></p>
 							<div class="details">
-								
 								<ul>
-									<li class = "no-chip">
-										<a href = "https://openclassrooms.com/fr/paths/793-data-scientist" target = "_blank">
-											<p>
-												Site web de la formation
-											</p>
+									<li class="no-chip">
+										<a href="https://openclassrooms.com/fr/paths/793-data-scientist" target="_blank">
+											<p data-key="course-website"></p>
 										</a>
 									</li>
 									<li>
-										<p>
-											Collecte, nettoyage, analyse exploratoire, préparation et modélisation (supervisée/non-supervisée) de données structurées avec Python et son ensemble de bibliothèques Data Science
-										</p>
+										<p data-key="master-ds-p1"></p>
 									</li>
 									<li>
-										<p>
-											Mise en place de traitements (extractions de features, réduction de dimensions) et modélisations avancées (NLP traditionnel, LLM, Computer vision)
-										</p>
+										<p data-key="master-ds-p2"></p>
 									</li>
 									<li>
-										<p>
-											Gestion du cycle de vie d’un modèle avec MLFlow et déploiement sur le web en intégrant une interface graphique
-										</p>
+										<p data-key="master-ds-p3"></p>
 									</li>
 									<li>
-										<p>
-											Réalisation d'un traitement de calcul distribué (PySpark) sur AWS
-										</p>
+										<p data-key="master-ds-p4"></p>
 									</li>
 								</ul>
 							</div>
 						</li>
-						
-						<li class = "element engineer">
+
+						<li class="element engineer">
 							<h5>
-								Ingénieur agronome
+								<span data-key="eng-agro-title"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 								</svg>
 							</h5>
-							<p class="h7">
-								École Nationale Supérieure Agronomique de Toulouse, Toulouse | Septembre 2020 - Septembre 2023 | 3 ans
-							</p>
+							<p class="h7" data-key="eng-agro-subtitle"></p>
 							<div class="details">
-								
 								<ul>
-									<li class = "no-chip">
-										<a href = "https://www.ensat.fr/fr/formations/formation-ingenieur-par-apprentissage.html" target = "_blank">
-											<p>
-												Site web de la formation
-											</p>
+									<li class="no-chip">
+										<a href="https://www.ensat.fr/fr/formations/formation-ingenieur-par-apprentissage.html" target="_blank">
+											<p data-key="course-website"></p>
 										</a>
 									</li>
 									<li>
-										<p>
-											Sciences fondamentales, agronomie, écologie, agriculture urbaine, bilan carbone, ACV
-										</p>
+										<p data-key="eng-agro-p1"></p>
 									</li>
 									<li>
-										<p>
-											Sciences économiques, marketing, gestion de projet, comptabilité, économie sociale et solidaire, innovation, stratégie d'entreprise, RSE, étude de marché
-										</p>
+										<p data-key="eng-agro-p2"></p>
 									</li>
 									<li>
-										<p>
-											Statistiques, modélisation, physique, SIG, informatique de base
-										</p>
+										<p data-key="eng-agro-p3"></p>
 									</li>
 								</ul>
 							</div>
@@ -945,73 +786,51 @@
 
 
 				<div class="box big-categorie">
-					<h3>
-						Volontariat
-					</h3>
+					<h3 data-key="volunteering-title"></h3>
 					<ul class="list">
 
-						<li class = "element fdn">
+						<li class="element fdn">
 							<h5>
-								Animateur de La Fresque du Numérique
+								<span data-key="fdn-role"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 								</svg>
 							</h5>
-							<p class="h7">
-								La Fresque du Numérique, Paris | Février 2025 - Aujourd'hui
-							</p>
+							<p class="h7" data-key="fdn-location-date"></p>
 							<div class="details">
-								
 								<ul>
-									<li class = "no-chip">
-										<a href = "https://www.fresquedunumerique.org/" target = "_blank">
-											<p>
-												Site web de l'association
-											</p>
+									<li class="no-chip">
+										<a href="https://www.fresquedunumerique.org/" target="_blank">
+											<p data-key="assoc-website-link"></p>
 										</a>
 									</li>
-									<li class = "standard-chip">
-										<p>
-											 Animateur professionnel de La Fresque du Numérique, un serious game de 3 heures destiné à sensibiliser à l'impact environnemental et social des technologies numériques.
-										</p>
-										<p>
-											Possibilité d'animer un atelier pour 16 personnes en même temps, en français, anglais ou espagnol.
-										</p>
+									<li class="standard-chip">
+										<p data-key="fdn-desc-1"></p>
+										<p data-key="fdn-desc-2"></p>
 									</li>
 								</ul>
 							</div>
 						</li>
 
-						<li class = "element tresorier">
+						<li class="element tresorier">
 							<h5>
-								Trésorier de l'association Les Toits Vivants
+								<span data-key="treasurer-role"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-		  							<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
+									<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" stroke="#164E98" stroke-width="4"/>
 								</svg>
 							</h5>
-							<p class="h7">
-								Toits Vivants, Paris 18 | Septembre 2023 - Aujourd'hui
-							</p>
+							<p class="h7" data-key="treasurer-location-date"></p>
 							<div class="details">
-								
 								<ul>
-									<li class = "no-chip">
-										<a href = "http://www.toitsvivants.org/" target = "_blank">
-											<p>
-												Site web de l'association
-											</p>
+									<li class="no-chip">
+										<a href="http://www.toitsvivants.org/" target="_blank">
+											<p data-key="assoc-website-link"></p>
 										</a>
 									</li>
-									<li class = "standard-chip">
-										<p>
-											Suivi des comptes (ventes, adhésions, dons, subventions, achats, frais de fonctionnement)
-										</p>
-										<p>
-											Entretien des relations avec les partenaires et les adhérents
-										</p>
-										<p>
-											Participation à la vie de l'association (réunions, événements, jardinage, etc ...)
-										</p>
+									<li class="standard-chip">
+										<p data-key="treasurer-desc-1"></p>
+										<p data-key="treasurer-desc-2"></p>
+										<p data-key="treasurer-desc-3"></p>
 									</li>
 								</ul>
 							</div>
@@ -1060,9 +879,7 @@
 
 	
 		<footer>
-			<p class = credits>
-				CV en HTML, CSS et JavaScript - 23 Juin 2025
-			</p>
+			<p class = credits data-key="footer"></p>
 		</footer>
 	
 
