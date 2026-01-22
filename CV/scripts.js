@@ -17,11 +17,23 @@ async function changeLanguage(lang) {
 
   // Optionnel : Sauvegarder la langue dans le navigateur
   localStorage.setItem('preferredLang', lang);
+
+  // GESTION DES BOUTONS
+    // On affiche d'abord tous les boutons
+    document.querySelectorAll('.other-language-button button').forEach(btn => {
+        btn.style.display = 'inline-block'; 
+    });
+
+    // On cache le bouton correspondant à la langue actuelle
+    const currentBtn = document.getElementById(`btn-${lang}`);
+    if (currentBtn) {
+        currentBtn.style.display = 'none';
+    }
 }
 
 // Au chargement de la page, charger la langue par défaut ou sauvegardée
 window.onload = () => {
-  const savedLang = localStorage.getItem('preferredLang') || 'fr';
+  const savedLang = localStorage.getItem('preferredLang') || 'en';
   changeLanguage(savedLang);
 };
 
