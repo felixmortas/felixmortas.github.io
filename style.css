@@ -125,6 +125,11 @@ h2 {
   padding-left: 10px;
 }
 
+.skills li .clickable-card {
+  text-decoration: none;
+  color: inherit; /* Hérite de la couleur du li */
+}
+
 /* Optionnel : Transformer le texte brut en "Badges/Tags" visuels */
 /* Si tu veux garder le texte tel quel, ignore ce qui suit. 
    Mais pour un effet visuel fort, on peut styliser le contenu. */
