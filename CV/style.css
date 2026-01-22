@@ -135,13 +135,24 @@ p {
 }
 
 .other-language-button {
-	width: auto;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 401;
-	padding: 0 5px 0 5px;
-	background-color: white;
+    position: absolute;
+    top: 10px;    /* Un peu d'espace avec le bord haut */
+    right: 10px;   /* Aligné sur la marge de votre classe .main */
+    z-index: 401;
+    display: flex;
+    gap: 5px;     /* Espace entre les drapeaux */
+}
+
+.other-language-button button {
+    border-color: white;
+    border-radius: 2px; /* Optionnel : pour adoucir les angles */
+    padding: 0;
+    cursor: pointer;
+    line-height: 0; /* Évite les décalages sous l'image */
+}
+
+.other-language-button img {
+    height: auto;
 }
 
 
