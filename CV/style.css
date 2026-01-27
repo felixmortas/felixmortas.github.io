@@ -300,18 +300,18 @@ h5, .small-categorie h3 {
 
 .details {
 	transition: visibility 0.5s, max-height 0.5s ease-out, opacity 0.5s ease-out;
-  max-height: 200em; /* A augmenter si chevauchement des détails sur plusieurs régions */
-  opacity: 1;
-  visibility: visible;
-  background-color: #eff5f1;
-  border-radius: 15px;
+	max-height: 200em; /* A augmenter si chevauchement des détails sur plusieurs régions */
+	opacity: 1;
+	visibility: visible;
+	background-color: #eff5f1;
+	border-radius: 15px;
 }
 
 .details.close {
 	transition: visibility 0.5s, max-height 0.5 ease-in, opacity 0.5s ease-in;
 	max-height: 0em;
-  opacity: 0;
-  visibility: hidden;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .bi-chevron-compact-down {
@@ -319,7 +319,7 @@ h5, .small-categorie h3 {
 	float: right;
 	color: #164E98;
 	transform: rotate(180deg);
-  transition: transform 0.5s ease-out;
+  	transition: transform 0.5s ease-out;
 }
 
 .bi-chevron-compact-down.close {
@@ -327,7 +327,7 @@ h5, .small-categorie h3 {
 	float: right;
 	color: #164E98;
 	transform: rotate(0deg);
-  transition: transform 0.5s ease-in;
+  	transition: transform 0.5s ease-in;
 }
 
 
@@ -526,13 +526,6 @@ a:hover {
 
 @media screen and (max-width: 1200px)
 {
-
-
-
-
-
-/* CV */
-
 	.main {
 		margin: 0;
 	}
@@ -592,11 +585,5 @@ a:hover {
 
 	h2 {
 		margin: 0 30px 30px 30px;
-
 	}
-	
-
-
-
-
 }
