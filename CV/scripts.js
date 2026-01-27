@@ -1,3 +1,21 @@
+// REORGANIZE SECTIONS WHEN ON MOBILE VIEWPORT
+
+function reorganizeForMobile() {
+    if (window.innerWidth <= 1200) {
+        const itSkills = document.querySelector('[data-key="it-title"]').closest('.box');
+        const volunteering = document.querySelector('[data-key="volunteering-title"]').closest('.box');
+        
+        // Insérer IT skills avant volunteering
+        volunteering.parentNode.insertBefore(itSkills, volunteering);
+    }
+}
+
+// Exécuter au chargement et au redimensionnement
+window.addEventListener('load', reorganizeForMobile);
+window.addEventListener('resize', reorganizeForMobile);
+
+
+
 // CHANGE LANGUAGE FUNCTIONNALITY
 
 async function changeLanguage(lang) {
@@ -64,15 +82,6 @@ function display_details(event) {
 		this.parentNode.getElementsByTagName('svg')[0].classList.add('close');
 	}
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -334,8 +343,6 @@ function goToByScroll(div) {
 			scrollTop: $(div).offset().top
 		}, 'slow')
 	});
-
-	
 
 	let otherDiv;
 
