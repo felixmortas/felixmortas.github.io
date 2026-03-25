@@ -170,16 +170,14 @@
                         </div>
                     </div>
 
-                    <!-- Visualizations -->
+                    <!-- Comparisons -->
                     <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-                        <div class="flex items-center justify-between mb-8">
-                            <div class="flex items-center gap-2">
-                                <i data-lucide="bar-chart-3" class="w-5 h-5 text-gray-400"></i>
-                                <h2 class="text-lg font-bold">Impact Breakdown</h2>
-                            </div>
+                        <div class="flex items-center gap-2 mb-6">
+                            <i data-lucide="scale" class="w-5 h-5 text-gray-400"></i>
+                            <h2 class="text-lg font-bold">Real-world Comparisons</h2>
                         </div>
-                        <div id="chartContainer" class="h-[300px] w-full flex items-end justify-around gap-4 pb-8 border-b border-gray-100">
-                            <!-- Bars rendered by JS -->
+                        <div id="comparisonContainer" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Comparisons rendered by JS -->
                         </div>
                     </div>
                 </div>
@@ -421,42 +419,63 @@
             document.getElementById('resCarbon').textContent = co2g.toFixed(2);
             document.getElementById('resWater').textContent = waterL.toFixed(2);
 
-            renderChart(energyKWh * 1000, co2g, waterL * 100);
+            renderComparisons(energyKWh, co2g, waterL);
         }
 
-        function renderChart(energy, carbon, water) {
-            const container = document.getElementById('chartContainer');
+        function renderComparisons(energyKWh, co2g, waterL) {
+            const container = document.getElementById('comparisonContainer');
             container.innerHTML = '';
-            
-            // We use normalized values for the chart so they are visually comparable
-            // while keeping the tooltips/labels accurate in the summary cards
-            const data = [
-                { label: 'Energy', value: energy, color: '#EAB308' },
-                { label: 'CO2e', value: carbon * 10, color: '#EF4444' }, // Scaled for visibility
-                { label: 'Water', value: water * 2, color: '#3B82F6' }   // Scaled for visibility
+
+            const comparisons = [
+                {
+                    title: "Smartphone Charges",
+                    value: Math.round(energyKWh / 0.01),
+                    icon: "battery-charging",
+                    color: "text-yellow-600",
+                    bg: "bg-yellow-50",
+                    unit: "charges"
+                },
+                {
+                    title: "Driving (Gas Car)",
+                    value: (co2g / 250).toFixed(2),
+                    icon: "car",
+                    color: "text-red-600",
+                    bg: "bg-red-50",
+                    unit: "km"
+                },
+                {
+                    title: "Boiling Water (Kettle)",
+                    value: (energyKWh / 0.1).toFixed(1),
+                    icon: "coffee",
+                    color: "text-orange-600",
+                    bg: "bg-orange-50",
+                    unit: "times"
+                },
+                {
+                    title: "Drinking Water",
+                    value: (waterL / 0.25).toFixed(1),
+                    icon: "glass-water",
+                    color: "text-blue-600",
+                    bg: "bg-blue-50",
+                    unit: "glasses"
+                }
             ];
 
-            const max = Math.max(...data.map(d => d.value), 1);
-
-            data.forEach(d => {
-                const height = (d.value / max) * 100;
-                const barWrapper = document.createElement('div');
-                barWrapper.className = 'flex flex-col items-center justify-end gap-2 w-full max-w-[80px] h-full';
-                
-                const bar = document.createElement('div');
-                bar.className = 'w-full rounded-t-lg transition-all duration-700 ease-out';
-                // Ensure a minimum visible height of 4px
-                bar.style.height = `calc(${Math.max(height, 2)}% - 20px)`; 
-                bar.style.backgroundColor = d.color;
-                
-                const label = document.createElement('span');
-                label.className = 'text-[10px] font-bold text-gray-400 uppercase text-center truncate w-full';
-                label.textContent = d.label;
-
-                barWrapper.appendChild(bar);
-                barWrapper.appendChild(label);
-                container.appendChild(barWrapper);
+            comparisons.forEach(c => {
+                const card = document.createElement('div');
+                card.className = 'flex items-center gap-4 p-4 rounded-xl border border-gray-100 bg-gray-50/30';
+                card.innerHTML = `
+                    <div class="p-3 ${c.bg} rounded-xl">
+                        <i data-lucide="${c.icon}" class="w-6 h-6 ${c.color}"></i>
+                    </div>
+                    <div>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">${c.title}</p>
+                        <p class="text-lg font-bold">${c.value} <span class="text-xs font-medium text-gray-400">${c.unit}</span></p>
+                    </div>
+                `;
+                container.appendChild(card);
             });
+            lucide.createIcons();
         }
 
         // Modals

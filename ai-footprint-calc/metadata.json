@@ -1,0 +1,5 @@
+{
+  "name": "AI Eco-Footprint Calculator",
+  "description": "Calculate the environmental impact of AI model inference, including carbon emissions and water usage based on model size, tokens, and data center efficiency.",
+  "requestFramePermissions": []
+}
