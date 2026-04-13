@@ -94,7 +94,7 @@
         </div>
 
         <p>
-          This project features a sophisticated <strong>ReAct (Reasoning and Acting)</strong> agent deployed as a serverless WhatsApp chatbot. It combines real-time decision-making with a custom Retrieval-Augmented Generation (RAG) system to provide accurate, domain-specific responses.
+          This project features a sophisticated <strong>ReAct (Reasoning and Acting)</strong> agent deployed as a serverless WhatsApp chatbot for the Free Spirit Hostel. It uses a custom Retrieval-Augmented Generation (RAG) system to provide accurate and specific responses.
         </p>
 
         <p>
@@ -104,13 +104,13 @@
         <p><strong>Technical Highlights:</strong></p>
           <ul>
             <li>
-              <strong>Advanced Agentic Workflow:</strong> Built using <strong>LangChain</strong> to implement a ReAct loop. The agent maintains short-term memory through stateful checkpointers, allowing for coherent multi-turn conversations.
+              <strong>Advanced Agentic Workflow:</strong> Built using <strong>LangChain</strong> to implement a ReAct loop. The agent maintains short-term memory (conversations history) through stateful checkpointers.
             </li>
             <li>
-              <strong>Serverless WhatsApp Integration:</strong> Deployed on <strong>AWS Lambda</strong> using the Meta Cloud API. The architecture is optimized for cold starts, initializing the LLM engine once and reusing sessions for warm invocations to ensure low-latency interactions.
+              <strong>Serverless WhatsApp Integration:</strong> Deployed for free on <strong>AWS Lambda</strong> using the WhatsApp Developer API. The architecture is optimized for cold starts, initializing the LLM engine once and reusing sessions for warm invocations to ensure low-latency interactions.
             </li>
             <li>
-              <strong>End-to-End RAG Ingestion:</strong> A custom ETL pipeline that crawls, cleans, and deduplicates web content. Text is processed using <strong>Mistral Embeddings</strong> and stored in a <strong>Redis Vector Database</strong> for high-performance semantic search.
+              <strong>End-to-End RAG Ingestion:</strong> A custom ETL pipeline that crawls, cleans, and deduplicates web content. Text is processed using <strong>Mistral Embeddings</strong> and stored in a <strong>Redis Vector Database</strong> for high-performance free of charge semantic search.
             </li>
             <li>
               <strong>Observability & Governance:</strong> Fully integrated with <strong>Langfuse</strong> for detailed tracing of the agent's "thought process," monitoring latency, tracking token costs, and debugging tool execution.
