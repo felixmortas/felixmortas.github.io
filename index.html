@@ -287,61 +287,11 @@
       </div>
 
       <div class="project">
-        <h3>🤖 Autonomous Agentic System – GAIA Benchmark Solver</h3>
-
-        <div class="project-logos">
-          <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg" alt="Logo Hugging Face">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Logo Gemini">
-          <img src="assets/logos/langchain_logo.svg" alt="Logo LangGraph">
-          <img src="assets/logos/langfuse_logo.svg" alt="Logo LangFuse">
-        </div>
-
-        <p>
-          Final project for the <strong>Hugging Face Agents Course</strong>. I developed a high-level autonomous agent capable of solving complex, multi-step tasks from the <strong>GAIA Benchmark</strong> (General AI Assistants), involving real-world tool usage and multimodal reasoning.
-        </p>
-        
-        <p>
-          <strong>The concept:</strong> A robust agentic workflow built with <strong>LangGraph</strong> that follows a Thought-Action-Observation cycle to decompose 20 validation queries into executable steps, navigating through technical constraints like API rate limits and data extraction challenges.
-        </p>
-        
-        <p><strong>Technical highlights:</strong></p>
-        <ul>
-          <li>
-            <strong>Resilient Model Orchestration:</strong> Implemented a <strong>fallback & routing strategy</strong> using Gemini 2.5 Pro as the primary brain, with automatic switching to Gemini Flash, Mistral, or Groq-hosted models to bypass free-tier rate limits without interrupting the execution flow.
-          </li>
-          <li>
-            <strong>Advanced Tool Engineering:</strong> Instead of overloading the context window with many small tools, I developed a <code>utils.py</code> library of complex functions. The agent uses a refined set of "Super-Tools" (Web Search, Excel manipulation, Audio Transcription, API interaction) that handle internal logic complexity autonomously.
-          </li>
-          <li>
-            <strong>Multimodal Innovation:</strong> Engineered a <strong>custom Video Analysis sub-agent</strong>. Since no free direct video-to-text API was available, I built a pipeline that intelligently extracts frames and metadata to reconstruct temporal context for the LLM.
-          </li>
-          <li>
-            <strong>Custom RAG Architecture:</strong> Integrated <strong>ChromaDB</strong> with a specialized retrieval algorithm optimized for the specific nuances of the GAIA dataset, ensuring the agent retrieves only the most relevant context for its reasoning steps.
-          </li>
-          <li>
-            <strong>Observability & Evaluation:</strong> Self-hosted <strong>LangFuse</strong> locally to monitor traces, evaluate agent costs, and debug the Reasoning-on-Action (Re-Act) loops without incurring cloud platform fees.
-          </li>
-          <li>
-            <strong>Full-Stack Deployment:</strong> Interface built with <strong>Gradio</strong> and hosted on Hugging Face Spaces, managed via Git for version control and CI/CD.
-          </li>
-        </ul>
-        
-        <p>
-          <strong>Results:</strong> Successfully validated 16 "Level 1" GAIA tasks, demonstrating a high degree of autonomy in tool selection and the ability to maintain long-term state across multiple reasoning cycles.
-        </p>
-
-        <div>
-          <a class="cta-button" href="https://huggingface.co/spaces/felixmortas/Hf_Agent_Course_Final_Assignment/tree/main" target="_blank">View the project on Hugging Face</a>
-          <a class="cta-button" href="https://cas-bridge.xethub.hf.co/xet-bridge-us/6800ea554845e4edbca48825/5348431f62a3761b560f14e536cde6005f7dcd9eeda8ac8c7d5835edebe00c15?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260118T175600Z&X-Amz-Expires=3600&X-Amz-Signature=27ccefa0283d59c99512a9117a28a66f52bfb9e73c32ffe509ae1a9dfefc4504&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=65c927db2ba32c95416eb25d&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-07-06.png%3B+filename%3D%222025-07-06.png%22%3B&response-content-type=image%2Fpng&x-id=GetObject&Expires=1768762560&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2ODc2MjU2MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82ODAwZWE1NTQ4NDVlNGVkYmNhNDg4MjUvNTM0ODQzMWY2MmEzNzYxYjU2MGYxNGU1MzZjZGU2MDA1ZjdkY2Q5ZWVkYThhYzhjN2Q1ODM1ZWRlYmUwMGMxNSoifV19&Signature=S5%7EtuLDo36TB8V5mk8x03P2Pqo5NIOqCLS2XlFkJglZGz%7EOx6ePM8d0he166d%7E6s-KzLXenUv86%7EdSfJ8VWhDpZc7hpsrNsFqltLFYMGXAcmnflST0sZcReTqC3qx3gUlJ1H7%7Ea8geI55JvmcF36RiU-N5fQyBb-oFkOv8A47WjgEngEwSDMrGxq8FmYnKT3vDMu98HNSVQJoVDoBQG5uQxzYn2KmGTLwzWUqVHmRAMMXPoqxwCtRLsu7ZdyP1H0qQDJkD0TvTAegl3fLC2m0I1S0kSW3MQhT2SzOTOFHKKtn10lrPG7GG4iDmW487sZ7g-gU1rFoaGVezvc-W63dw__&Key-Pair-Id=K2L8F4GPSG1IFC" target="_blank">View certification</a>
-        </div>
-      </div>
-
-      <div class="project">
         <h3>🧠 Flasholator – Spaced Repetition Flashcards & Instant Translation</h3>
         
         <div class="project-logos">
           <img src="https://storage.googleapis.com/cms-storage-bucket/flutter-logo.6a07d8a62f4308d2b854.svg" alt="Logo Flutter">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" alt="Logo Firebase">
+          <img src="assets/logos/firebase_logo.svg" alt="Logo Firebase">
           <img src="https://www.deepl.com/img/logo/deepl-logo-blue_24x24.svg" alt="Logo DeepL">
           <img src="https://www.revenuecat.com/static/logo-10968976818e28fd8eee91f66d535d9a.svg" alt="Logo RevenueCat">
           <img src="assets/logos/playstore_logo.svg" alt="Logo Playstore">
@@ -393,6 +343,56 @@
           <a class="cta-button" href="https://github.com/felixmortas/flasholator" target="_blank">View the project on GitHub</a>
           <a class="cta-button" href="https://play.google.com/store/apps/details?id=com.felinx18.flasholator" target="_blank">Download on Playstore</a>
           <a class="cta-button" href="" target="_blank">Download on Appstore (soon)</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>🤖 Autonomous Agentic System – GAIA Benchmark Solver</h3>
+
+        <div class="project-logos">
+          <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg" alt="Logo Hugging Face">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Logo Gemini">
+          <img src="assets/logos/langchain_logo.svg" alt="Logo LangGraph">
+          <img src="assets/logos/langfuse_logo.svg" alt="Logo LangFuse">
+        </div>
+
+        <p>
+          Final project for the <strong>Hugging Face Agents Course</strong>. I developed a high-level autonomous agent capable of solving complex, multi-step tasks from the <strong>GAIA Benchmark</strong> (General AI Assistants), involving real-world tool usage and multimodal reasoning.
+        </p>
+        
+        <p>
+          <strong>The concept:</strong> A robust agentic workflow built with <strong>LangGraph</strong> that follows a Thought-Action-Observation cycle to decompose 20 validation queries into executable steps, navigating through technical constraints like API rate limits and data extraction challenges.
+        </p>
+        
+        <p><strong>Technical highlights:</strong></p>
+        <ul>
+          <li>
+            <strong>Resilient Model Orchestration:</strong> Implemented a <strong>fallback & routing strategy</strong> using Gemini 2.5 Pro as the primary brain, with automatic switching to Gemini Flash, Mistral, or Groq-hosted models to bypass free-tier rate limits without interrupting the execution flow.
+          </li>
+          <li>
+            <strong>Advanced Tool Engineering:</strong> Instead of overloading the context window with many small tools, I developed a <code>utils.py</code> library of complex functions. The agent uses a refined set of "Super-Tools" (Web Search, Excel manipulation, Audio Transcription, API interaction) that handle internal logic complexity autonomously.
+          </li>
+          <li>
+            <strong>Multimodal Innovation:</strong> Engineered a <strong>custom Video Analysis sub-agent</strong>. Since no free direct video-to-text API was available, I built a pipeline that intelligently extracts frames and metadata to reconstruct temporal context for the LLM.
+          </li>
+          <li>
+            <strong>Custom RAG Architecture:</strong> Integrated <strong>ChromaDB</strong> with a specialized retrieval algorithm optimized for the specific nuances of the GAIA dataset, ensuring the agent retrieves only the most relevant context for its reasoning steps.
+          </li>
+          <li>
+            <strong>Observability & Evaluation:</strong> Self-hosted <strong>LangFuse</strong> locally to monitor traces, evaluate agent costs, and debug the Reasoning-on-Action (Re-Act) loops without incurring cloud platform fees.
+          </li>
+          <li>
+            <strong>Full-Stack Deployment:</strong> Interface built with <strong>Gradio</strong> and hosted on Hugging Face Spaces, managed via Git for version control and CI/CD.
+          </li>
+        </ul>
+        
+        <p>
+          <strong>Results:</strong> Successfully validated 16 "Level 1" GAIA tasks, demonstrating a high degree of autonomy in tool selection and the ability to maintain long-term state across multiple reasoning cycles.
+        </p>
+
+        <div>
+          <a class="cta-button" href="https://huggingface.co/spaces/felixmortas/Hf_Agent_Course_Final_Assignment/tree/main" target="_blank">View the project on Hugging Face</a>
+          <a class="cta-button" href="https://cas-bridge.xethub.hf.co/xet-bridge-us/6800ea554845e4edbca48825/5348431f62a3761b560f14e536cde6005f7dcd9eeda8ac8c7d5835edebe00c15?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260118T175600Z&X-Amz-Expires=3600&X-Amz-Signature=27ccefa0283d59c99512a9117a28a66f52bfb9e73c32ffe509ae1a9dfefc4504&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=65c927db2ba32c95416eb25d&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-07-06.png%3B+filename%3D%222025-07-06.png%22%3B&response-content-type=image%2Fpng&x-id=GetObject&Expires=1768762560&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2ODc2MjU2MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82ODAwZWE1NTQ4NDVlNGVkYmNhNDg4MjUvNTM0ODQzMWY2MmEzNzYxYjU2MGYxNGU1MzZjZGU2MDA1ZjdkY2Q5ZWVkYThhYzhjN2Q1ODM1ZWRlYmUwMGMxNSoifV19&Signature=S5%7EtuLDo36TB8V5mk8x03P2Pqo5NIOqCLS2XlFkJglZGz%7EOx6ePM8d0he166d%7E6s-KzLXenUv86%7EdSfJ8VWhDpZc7hpsrNsFqltLFYMGXAcmnflST0sZcReTqC3qx3gUlJ1H7%7Ea8geI55JvmcF36RiU-N5fQyBb-oFkOv8A47WjgEngEwSDMrGxq8FmYnKT3vDMu98HNSVQJoVDoBQG5uQxzYn2KmGTLwzWUqVHmRAMMXPoqxwCtRLsu7ZdyP1H0qQDJkD0TvTAegl3fLC2m0I1S0kSW3MQhT2SzOTOFHKKtn10lrPG7GG4iDmW487sZ7g-gU1rFoaGVezvc-W63dw__&Key-Pair-Id=K2L8F4GPSG1IFC" target="_blank">View certification</a>
         </div>
       </div>
 
