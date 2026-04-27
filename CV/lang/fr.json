@@ -31,7 +31,7 @@
     "it-title": "Compétences informatiques",
     "it-programming": "Langages de programmation",
     "it-llms": "LLMs & Agents",
-    "it-llms-details": "Prompt engineering, Observation & Évaluation, Gestion du contexte, Mémoire, MCP, Outils, Sous-agents",
+    "it-llms-details": "Prompt engineering, Observation & Évaluation, Gestion du contexte, RAG, Mémoire à court & à long terme, MCP, Outils, Orchestration des sous-agents",
     "it-datascience-details": "ETL, ML supervisé & non-supervisé, Deep Learning, MLOps",
     "it-services": "Services externes",
     "it-tools": "Outils de développement",

@@ -31,7 +31,7 @@
     "it-title": "IT Skills",
     "it-programming": "Programming languages",
     "it-llms": "LLMs & Agents",
-    "it-llms-details": "Prompt engineering, Observation & Evaluation, Context management, Memory, MCP, Tools, Sub-agents",
+    "it-llms-details": "Prompt engineering, Observation & Evaluation, Context management, RAG, Short term & long term memory, MCP, Tools, Sub-agents orchestration",
     "it-datascience-details": "ETL, Supervised & Unsupervised ML, Deep Learning, MLOps",
     "it-services": "External services",
     "it-tools": "Development tools",
