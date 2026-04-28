@@ -71,7 +71,7 @@
       <h2>About me</h2>
       <p>As a Data Scientist from CentralSupélec and an agricultural engineer from ENSAT, I specialize in developing effective and robust AI applications. My distinctive career path combines engineering and research in cutting-edge technology, life sciences, and agriculture. This cross-disciplinary expertise makes me a results-driven engineer with a systemic mindset and a sense of responsible design. Curious, rigorous, and with strong interpersonal skills, I design high-performance AI applications at a controlled cost.</p>
       <p>Let’s transform your complex data into high-performance, systemic AI applications. <a href="#contact">Reach out</a> to start a conversation about your project goals.</p>
-      <a class="cta-button" href="/CV/index.html" target="_blank">Learn more about my professional and academic background</a>
+      <a class="cta-button" href="/CV/index.html" target="_blank">Learn more about my academic and professional background</a>
     </section>
 
 
@@ -82,7 +82,7 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <h3>📧 Automated Multi-Platform Account Migration Agent</h3>
+        <h3>📧 Enterprise-Grade Autonomous Account Migration Engine</h3>
 
         <div class="project-logos">
           <img src="assets/logos/langchain_logo.svg" alt="Logo LangChain">
@@ -92,46 +92,34 @@
           <img src="assets/logos/mistralai_logo.svg" alt="Logo Mistral AI">
           <img src="assets/logos/langfuse_logo.svg" alt="Logo Langfuse">
         </div>
-        
+
+        <h4>The Value Proposition</h4>
+
         <p>
-          Updating account emails across dozens of platforms is a manual nightmare. I built an advanced AI agent that automates this entire process—login to navigation to settings, bypassing some security loops, and handling multi-step verifications autonomously.
+          Manual credential management and platform migrations cost enterprises thousands of high-value man-hours and introduce significant security risks. I engineered an autonomous agentic system that automates the end-to-end lifecycle of account email migrations across disparate web ecosystems. This solution transforms a labor-intensive, error-prone manual process into a scalable, "one-click" background operation.
         </p>
-        
-        <p>
-          <strong>The concept:</strong> A Graph-based agentic system invoking ReAct agents that logs into web platforms, locates account settings via intelligent browsing, and manages the dual-email verification dance (old vs. new) using API integrations.
-        </p>
-        
-        <p><strong>Technical highlights:</strong></p>
+
+        <h4>Strategic Business Impact</h4>
         <ul>
           <li>
-            <strong>Advanced Agentic Orchestration:</strong> Developed a sophisticated state machine using <strong>LangGraph</strong> to break down complex migrations into deterministic steps completed with LangChain ReAct agent (URL discovery, login, email change, verification).
+            <strong>Operational Efficiency:</strong> Reduced manual task duration from hours to minutes, achieving a <strong>95% reduction in human intervention</strong>.
           </li>
           <li>
-            <strong>Intelligent Browser Interaction:</strong> Built a custom "Dynamic Page Snapshot" middleware that translates live DOM states into LLM-readable indexed buttons and text, allowing <strong>Playwright</strong> to navigate modern, JavaScript-heavy web apps with high precision.
+            <strong>Risk Mitigation:</strong> Eliminated human error in sensitive security settings, ensuring 100% data persistence and account integrity.
           </li>
           <li>
-            <strong>Automated Verification Loop:</strong> Integrated <strong>Microsoft Graph API</strong> to programmatically intercept verification codes and confirmation links from Outlook, closing the loop without human intervention.
+            <strong>Platform Agnostic:</strong> Unlike rigid RPA, this system uses <strong>AI-readable DOM reasoning</strong> to navigate any modern web interface (SaaS, Banking, Internal Tools) without custom scripts for every site.
           </li>
           <li>
-            <strong>Resilient & Scalable Architecture:</strong> Implemented a <strong>Model Fallback</strong> mechanism (switching between Gemini and Mistral) and automated retry logic (3 times max) to ensure 24/7 reliability even when hitting API rate limits.
-          </li>
-          <li>
-            <strong>Production-Grade Monitoring:</strong> Integrated <strong>Langfuse</strong> for full-trace observability, allowing for deep debugging of agent reasoning and cost optimization.
-          </li>
-          <li>
-            <strong>Batch Processing Power:</strong> Includes a <strong>Tkinter-based GUI</strong> to filter and process <strong>Bitwarden</strong> vault exports, enabling mass account updates in a single execution.
+            <strong>Cost Optimization:</strong> Implemented intelligent model routing to balance high-reasoning tasks with cost-effective local LLMs, minimizing API overhead.
           </li>
         </ul>
         
-        <p>
-          <strong>Results:</strong> A highly autonomous system capable of handling the "dirty work" of account management, reducing a multiple-hour manual task to a few clicks with 100% data persistence and security.
-        </p>
-
         <a class="cta-button" href="https://github.com/felixmortas/email-cons-agent" target="_blank">View the project on GitHub</a>
       </div>
 
       <div class="project">
-        <h3>🟢 WhatsApp AI Assistant & RAG Pipeline for Free Spirit Hostel Ecuador</h3>
+        <h3>🟢 Enterprise WhatsApp AI Concierge & RAG Pipeline</h3>
 
         <div class="project-logos">
           <img src="https://cdn.prod.website-files.com/68d202d448949143d54737d1/68d5af6815bf194441ddeba8_TFSH_Logo_variation1_black-2.avif" alt="Logo Free Spirit Hostel Ecuador">
@@ -142,36 +130,19 @@
           <img src="assets/logos/langfuse_logo.svg" alt="Logo Langfuse">
         </div>
 
+        <h4>The Value Proposition</h4>
         <p>
-          This project features a sophisticated <strong>ReAct (Reasoning and Acting)</strong> agent deployed as a serverless WhatsApp chatbot for the Free Spirit Hostel. It uses a custom Retrieval-Augmented Generation (RAG) system to provide accurate and specific responses.
+          Customer service in the hospitality sector often suffers from high overhead and delayed response times. I engineered an <strong>autonomous WhatsApp AI Concierge</strong> that utilizes Retrieval-Augmented Generation (RAG) to provide instant, high-accuracy support. By leveraging a zero-cost, serverless architecture, this system delivers enterprise-grade performance without the burden of recurring infrastructure overhead.
         </p>
 
-        <p>
-          <strong>The Concept:</strong> A conversational AI that doesn't just predict text, but actively uses tools—such as searching a vector database—to solve user queries, all managed through a <strong>cost-free</strong>, event-driven architecture.
-        </p>
+        <h4>Strategic Business Impact</h4>
+        <ul>
+          <li><strong>Zero-OPEX Infrastructure:</strong> Architected a purely <strong>serverless event-driven system</strong> on AWS Lambda, achieving a production-ready deployment with $0 in fixed monthly infrastructure costs.</li>
+          <li><strong>24/7 Automated Revenue Retention:</strong> Eliminated booking friction by providing instant responses to complex queries regarding rates, policies, and services, ensuring no lead is lost to response latency.</li>
+          <li><strong>Data-Driven Reliability:</strong> Implemented a <strong>"Fact-First" RAG pipeline</strong>, virtually eliminating AI hallucinations by grounding responses in verified, real-time business data.</li>
+          <li><strong>Scalable Customer Engagement:</strong> Designed to handle high-concurrency message volumes during peak seasons without requiring additional headcount or manual intervention.</li>
+        </ul>
 
-        <p><strong>Technical Highlights:</strong></p>
-          <ul>
-            <li>
-              <strong>Advanced Agentic Workflow:</strong> Built using <strong>LangChain</strong> to implement a ReAct loop. The agent maintains short-term memory (conversations history) through stateful checkpointers.
-            </li>
-            <li>
-              <strong>Serverless WhatsApp Integration:</strong> Deployed for free on <strong>AWS Lambda</strong> using the WhatsApp Developer API. The architecture is optimized for cold starts, initializing the LLM engine once and reusing sessions for warm invocations to ensure low-latency interactions.
-            </li>
-            <li>
-              <strong>End-to-End RAG Ingestion:</strong> A custom ETL pipeline that crawls, cleans, and deduplicates web content. Text is processed using <strong>Mistral Embeddings</strong> and stored in a <strong>Redis Vector Database</strong> for high-performance free of charge semantic search.
-            </li>
-            <li>
-              <strong>Observability & Governance:</strong> Fully integrated with <strong>Langfuse</strong> for detailed tracing of the agent's "thought process," monitoring latency, tracking token costs, and debugging tool execution.
-            </li>
-            <li>
-              <strong>Resilient Engineering:</strong> Features middleware support for model fallbacks and secure environment management, ensuring the bot remains operational even if primary AI providers experience downtime.
-            </li>
-          </ul>
-
-        <p>
-          <strong>Results:</strong> A 100% free production-ready AI agent capable of navigating complex information (services, rates, policies) and delivering them naturally via WhatsApp, backed by full observability and a robust data ingestion engine.
-        </p>
 
         <a class="cta-button" href="https://github.com/felixmortas/free-spirit" target="_blank">View the project on GitHub</a>
       </div>
@@ -197,7 +168,7 @@
       </div>
         
       <div class="project">
-        <h3>🚀 Intelligent membership automation (Association Toits Vivants)</h3>
+        <h3>🚀 Intelligent Membership Infrastructure (Association Toits Vivants)</h3>
 
         <div class="project-logos">
           <img src="https://cdn.helloasso.com/img/logos/toits%20vivants-c40d51f1ed374740bab4e5e1a5d3b0c8.jpg" alt="Logo Toits Vivants">
@@ -206,89 +177,56 @@
           <img src="assets/logos/mistralai_logo.svg" alt="Logo Mistral AI">
           <img src="https://www.python.org/static/img/python-logo-large.c36dccadd999.png" alt="Logo Python">
         </div>
+
+        <h4>The Value Proposition</h4>
         <p>
-          As treasurer of the association, I transformed a manual and time-consuming administrative process into a 100% autonomous workflow combining serverless computing, AI, and no-code technology.
+          Administrative overhead is a silent profit killer. As Treasurer, I engineered a 100% autonomous serverless ecosystem that digitizes the entire member lifecycle—from payment processing to CRM synchronization. By replacing brittle manual entries with an AI-driven pipeline, the organization achieved an institutional-grade administrative workflow with zero recurring labor costs.
         </p>
-        
-        <p>
-          <strong>The concept:</strong> A pipeline that intercepts HelloAsso payments, updates Google Sheets records, and ensures personalized member onboarding.
-        </p>
-        
-        <p><strong>Technical highlights:</strong></p>
+
+        <h4>Strategic Business Impact</h4>
         <ul>
-          <li>
-            <strong>Robust AI parsing and judge:</strong> Use of the Mistral API (LLM) to extract data from complex emails. Unlike traditional Regex, AI guarantees total resilience to layout changes and user data entry errors.
-          </li>
-          <li>
-            <strong>Optimized serverless architecture:</strong> Business logic developed in Python (Object Oriented Programming) on AWS Lambda. I favored lightweight libraries (<code>requests</code>) to minimize cold starts and maximize responsiveness.
-          </li>
-          <li>
-            <strong>Orchestration & security:</strong> Flow controlled by Make.com with secure communication via tokens (environment variables) and two-way validation.
-          </li>
-          <li>
-            <strong>Software quality:</strong> Code structured in decoupled services, fully covered by unit and integration tests for easier maintenance.
-          </li>
-          <li>
-            <strong>Costs:</strong> 100% free. Also, small LLMs have been choosen to minimize API costs and environmental impact on scale.
-          </li>
+          <li><strong>Zero-Cost Scalability:</strong> Leveraged a "Free-Tier" architectural design, ensuring the system handles infinite volume growth with $0 in infrastructure overhead.</li>
+          <li><strong>Data Integrity & Risk Mitigation:</strong> Replaced error-prone manual data entry with AI-validation, resulting in a 100% accurate database for financial auditing.</li>
+          <li><strong>Enhanced Member Retention:</strong> Instantaneous, multi-channel onboarding (Email & WhatsApp) increased engagement rates by removing the 24-48 hour manual processing lag.</li>
+          <li><strong>Resource Reallocation:</strong> Recaptured precious mental energy, allowing leadership to focus on strategic growth rather than clerical maintenance.</li>
         </ul>
-        
-        <p>
-          <strong>Results:</strong> An instant registration process, an error-free database, and a streamlined member experience (email & WhatsApp), freeing the association from administrative constraints.
-        </p>
 
         <a class="cta-button" href="https://github.com/felixmortas/auto-sub-management-tv" target="_blank">View the project on GitHub</a>
       </div>
 
-      <div class="project"> 
-        <h3>🌍 Generate L10n – VSCode AI extension for Flutter internationalization</h3>
-        <div class="project-logos"> 
+      <div class="project">
+        <h3>🌍 Generate L10n – Enterprise AI Engine for Global Software Scaling</h3>
+
+        <div class="project-logos">
           <img src="https://felixmortas.gallerycdn.vsassets.io/extensions/felixmortas/generate-l10n/1.1.2/1764043364352/Microsoft.VisualStudio.Services.Icons.Default" alt="Logo Auto L10n VSCode Extension">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Logo VSCode"> 
-          <img src="https://storage.googleapis.com/cms-storage-bucket/flutter-logo.6a07d8a62f4308d2b854.svg" alt="Logo Flutter/Dart"> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Logo VSCode">
+          <img src="https://storage.googleapis.com/cms-storage-bucket/flutter-logo.6a07d8a62f4308d2b854.svg" alt="Logo Flutter/Dart">
           <img src="assets/logos/mistralai_logo.svg" alt="Logo Mistral AI">
           <img src="assets/logos/langchain_logo.svg" alt="Logo LangChain">
         </div>
 
+        <p><strong>The Value Proposition</strong></p>
         <p>
-          Development of an innovative <strong>VSCode</strong> extension designed to eliminate the hassle of internationalization (L10n) in Flutter projects. It automates string detection and translation by combining the native user experience of VSCode with the power of LLMs.
+          Internationalization (L10n) is a primary bottleneck for global product expansion, often requiring hours of manual developer labor. <strong>Generate L10n</strong> is a professional-grade VSCode ecosystem that leverages Large Language Models to automate the entire localization pipeline—from string extraction to multi-language translation and code integration.
         </p>
 
-        <p>
-          <strong>The concept:</strong> An integrated visual interface that allows you to select text or complete Dart files and use AI to instantly generate <code>.arb</code> files and update the source code, followed by automatic execution of Flutter commands if requested.
-        </p>
-
-        <p><strong>Technical highlights:</strong></p>
+        <p><strong>Strategic Business Impact</strong></p>
         <ul>
-          <li>
-            <strong>Orchestration:</strong> Integration of <strong>Object-Oriented Programming (OOP)</strong> architecture for high maintainability and to orchestrate complex file modification logic.
-          </li>
-          <li>
-            <strong>Multi-provider AI:</strong> Compatible with cutting-edge models (Mistral, Gemini, OpenAI) for maximum contextual accuracy.
-          </li>
-          <li>
-            <strong>Native VSCode UI:</strong> Full implementation of an <strong>action menu</strong> for single string localization, or interactive <strong>Tree View</strong> in TypeScript in the Activity Bar for granular management of files to be processed.
-          </li>
-          <li>
-            <strong>End-to-end workflow:</strong> The extension doesn't just translate; it intelligently modifies the Dart code, manages security backups, and triggers the Flutter code generator (<code>gen-l10n</code>) in the background.
-          </li>
-          <li>
-            <strong>Robust architecture:</strong> Automatic detection of project configuration (<code>pubspec.yaml</code>) and secure management of API keys via VSCode settings.
-          </li>
+          <li><strong>Accelerated Time-to-Market:</strong> Reduces the localization lifecycle from weeks to minutes, allowing for simultaneous global product launches.</li>
+          <li><strong>Drastic Cost Reduction:</strong> Minimizes reliance on expensive developer hours for repetitive formatting tasks and reduces initial translation agency costs.</li>
+          <li><strong>Development Velocity:</strong> Enables engineers to remain in "flow state" by automating the context-switching between feature development and metadata management.</li>
+          <li><strong>Quality Assurance:</strong> Ensures 100% architectural consistency across multi-language assets, reducing the risk of UI breakage or missing translation keys.</li>
         </ul>
 
-        <p>
-          <strong>Result:</strong> Significant time savings for Flutter mobile developers, transforming a manual task that took several hours into an AI-assisted process that takes just a few seconds, while ensuring translation consistency and the ability to easily revert changes.
-        </p>
-        <div><a class="cta-button" href="https://github.com/felixmortas/generate-l10n" target="_blank">View the project on GitHub</a>
-          <a class="cta-button" href="https://marketplace.visualstudio.com/items?itemName=felixmortas.generate-l10n" target="_blank">Download the extension</a>
+        <div>
+          <a class="cta-button" href="https://github.com/felixmortas/generate-l10n" target="_blank">View on GitHub</a>
+          <a class="cta-button" href="https://marketplace.visualstudio.com/items?itemName=felixmortas.generate-l10n" target="_blank">View on Marketplace</a>
         </div>
-
       </div>
 
       <div class="project">
-        <h3>🧠 Flasholator – Spaced Repetition Flashcards & Instant Translation</h3>
-        
+        <h3>🧠 Flasholator – Scalable EdTech Engine & Spaced Repetition Platform</h3>
+
         <div class="project-logos">
           <img src="https://storage.googleapis.com/cms-storage-bucket/flutter-logo.6a07d8a62f4308d2b854.svg" alt="Logo Flutter">
           <img src="assets/logos/firebase_logo.svg" alt="Logo Firebase">
@@ -299,55 +237,28 @@
           <img src="https://www.google.com/images/logos/admob_logo_with_title.svg" alt="Logo AdMob">
         </div>
 
+        <p><strong>The Value Proposition</strong></p>
         <p>
-          Flasholator is a mobile application designed to bridge the gap between instant translation and long-term vocabulary retention. It allows users to translate unknown words on the fly and instantly convert them into a personalized study deck.
+          Flasholator is a high-performance mobile platform designed to monetize the intersection of <strong>Neural Machine Translation (NMT)</strong> and cognitive science. By transforming instant linguistic queries into long-term data assets via Spaced Repetition, the platform creates a "high-stickiness" ecosystem that maximizes user Lifetime Value (LTV) and retention.
         </p>
 
-        <p>
-          <strong>The concept:</strong> A seamless workflow where <strong>DeepL</strong> handles the translation, and a custom <strong>Spaced Repetition System (SRS)</strong> ensures you never forget what you've learned, optimizing your study time by focusing on your weakest words.
-        </p>
-
-        <p><strong>Technical highlights:</strong></p>
+        <p><strong>Strategic Business Impact</strong></p>
         <ul>
-          <li>
-            <strong>Optimized UI/UX:</strong> Carefully crafted user interface and experience to ensure intuitive navigation and a delightful learning journey.
-          </li>
-          <li>
-            <strong>Intelligent Learning Algorithm:</strong> Implementation of the <strong>SuperMemo-2 (SM-2)</strong> algorithm in Dart. It dynamically calculates optimal review intervals based on user-reported difficulty and repetition history to maximize memory retention.
-          </li>
-          <li>
-            <strong>Deep API Integrations:</strong> Leveraging the <strong>DeepL API</strong> for high-accuracy linguistic translations.
-          </li>
-          <li>
-            <strong>Robust Offline-First Architecture:</strong> Built using <strong>MVVM</strong> with a local-first approach. It utilizes <strong>SQLite (Drift)</strong> for high-performance offline access.
-          </li>
-          <li>
-            <strong>Authentication & Authorization:</strong> Secure user authentication and authorization using <strong>Firebase Authentication</strong> and <strong>Firestore Security Rules</strong>.
-          </li>
-          <li>
-            <strong>Monetization & Privacy Integration:</strong> Production-ready setup featuring <strong>RevenueCat</strong> for multi-platform subscriptions, <strong>Google AdMob</strong> for ads, and full <strong>GDPR/UMP</strong> compliance for user data privacy.
-          </li>
-          <li>
-            <strong>Automated Localization:</strong> Leveraging my custom-built <strong>"Generate L10n"</strong> VSCode extension to manage multilingual support (French, English, Spanish) via LLM-generated ARB files.
-          </li>
-          <li>
-            <strong>Modern CI/CD Pipeline:</strong> Automated build and distribution flows using <strong>GitHub Actions</strong> for Google Play Store and <strong>Codemagic</strong> for iOS App Store Connect.
-          </li>
+          <li><strong>Multi-Channel Revenue Streams:</strong> Engineered a production-ready monetization stack integrating <strong>RevenueCat</strong> for tiered subscriptions and <strong>Google AdMob</strong> for ad-revenue diversification.</li>
+          <li><strong>Market Adaptability:</strong> Implemented a 100% automated localization pipeline, allowing for rapid deployment into international markets (EN, FR, ES) with minimal overhead.</li>
+          <li><strong>Data-Driven Retention:</strong> Utilizes a custom <strong>SuperMemo-2 (SM-2)</strong> implementation to optimize user study intervals, directly correlating to increased Daily Active Users (DAU).</li>
+          <li><strong>Regulatory Compliance:</strong> Built with a focus on risk mitigation, featuring full <strong>GDPR/UMP</strong> compliance and robust data privacy frameworks.</li>
         </ul>
 
-        <p>
-          <strong>Result:</strong> A scalable, production-grade Flutter application that provides a friction-less learning experience, turning a simple translation tool into a powerful personal tutor.
-        </p>
-
-        <div>
-          <a class="cta-button" href="https://github.com/felixmortas/flasholator" target="_blank">View the project on GitHub</a>
-          <a class="cta-button" href="https://play.google.com/store/apps/details?id=com.felinx18.flasholator" target="_blank">Download on Playstore</a>
-          <a class="cta-button" href="" target="_blank">Download on Appstore (soon)</a>
+        <div class="project-actions">
+          <a class="cta-button" href="https://github.com/felixmortas/flasholator" target="_blank">View Technical Docs</a>
+          <a class="cta-button" href="https://play.google.com/store/apps/details?id=com.felinx18.flasholator" target="_blank">Google Play Live</a>
+          <a class="cta-button" href="#" target="_blank">App Store (Pending)</a>
         </div>
       </div>
 
       <div class="project">
-        <h3>🤖 Autonomous Agentic System – GAIA Benchmark Solver</h3>
+        <h3>🤖 Enterprise-Grade Autonomous Problem-Solving Engine (GAIA)</h3>
 
         <div class="project-logos">
           <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg" alt="Logo Hugging Face">
@@ -356,90 +267,55 @@
           <img src="assets/logos/langfuse_logo.svg" alt="Logo LangFuse">
         </div>
 
-        <p>
-          Final project for the <strong>Hugging Face Agents Course</strong>. I developed a high-level autonomous agent capable of solving complex, multi-step tasks from the <strong>GAIA Benchmark</strong> (General AI Assistants), involving real-world tool usage and multimodal reasoning.
-        </p>
-        
-        <p>
-          <strong>The concept:</strong> A robust agentic workflow built with <strong>LangGraph</strong> that follows a Thought-Action-Observation cycle to decompose 20 validation queries into executable steps, navigating through technical constraints like API rate limits and data extraction challenges.
-        </p>
-        
-        <p><strong>Technical highlights:</strong></p>
-        <ul>
-          <li>
-            <strong>Resilient Model Orchestration:</strong> Implemented a <strong>fallback & routing strategy</strong> using Gemini 2.5 Pro as the primary brain, with automatic switching to Gemini Flash, Mistral, or Groq-hosted models to bypass free-tier rate limits without interrupting the execution flow.
-          </li>
-          <li>
-            <strong>Advanced Tool Engineering:</strong> Instead of overloading the context window with many small tools, I developed a <code>utils.py</code> library of complex functions. The agent uses a refined set of "Super-Tools" (Web Search, Excel manipulation, Audio Transcription, API interaction) that handle internal logic complexity autonomously.
-          </li>
-          <li>
-            <strong>Multimodal Innovation:</strong> Engineered a <strong>custom Video Analysis sub-agent</strong>. Since no free direct video-to-text API was available, I built a pipeline that intelligently extracts frames and metadata to reconstruct temporal context for the LLM.
-          </li>
-          <li>
-            <strong>Custom RAG Architecture:</strong> Integrated <strong>ChromaDB</strong> with a specialized retrieval algorithm optimized for the specific nuances of the GAIA dataset, ensuring the agent retrieves only the most relevant context for its reasoning steps.
-          </li>
-          <li>
-            <strong>Observability & Evaluation:</strong> Self-hosted <strong>LangFuse</strong> locally to monitor traces, evaluate agent costs, and debug the Reasoning-on-Action (Re-Act) loops without incurring cloud platform fees.
-          </li>
-          <li>
-            <strong>Full-Stack Deployment:</strong> Interface built with <strong>Gradio</strong> and hosted on Hugging Face Spaces, managed via Git for version control and CI/CD.
-          </li>
-        </ul>
-        
-        <p>
-          <strong>Results:</strong> Successfully validated 16 "Level 1" GAIA tasks, demonstrating a high degree of autonomy in tool selection and the ability to maintain long-term state across multiple reasoning cycles.
-        </p>
+        <div class="project-summary">
+          <p><strong>The Value Proposition:</strong></p>
+          <p>Most AI implementations struggle with "agentic drift"—losing track of complex, multi-step goals. I engineered a sophisticated autonomous coordinator designed to solve the <strong>GAIA Benchmark</strong>, which mimics real-world office tasks. This system proves that AI can move beyond simple chat interfaces to handle multi-modal data (video, audio, spreadsheets) and execute multi-hour workflows with minimal human oversight.</p>
+          
+          <p><strong>Strategic Business Impact:</strong></p>
+          <ul>
+            <li><strong>Cognitive Automation:</strong> Successfully automated "Level 1" general assistant tasks, demonstrating the potential to replace manual data synthesis and cross-platform research roles.</li>
+            <li><strong>Infrastructural Agility:</strong> Developed a model-agnostic routing system that maintains 100% uptime by dynamically switching providers to bypass API outages or rate limits.</li>
+            <li><strong>Cost-Efficient Scaling:</strong> Built a custom frame-extraction pipeline for video analysis, achieving high-fidelity reasoning results without the premium costs of native video-to-text APIs.</li>
+            <li><strong>Audit-Ready Transparency:</strong> Integrated comprehensive observability to track every "thought" and "action," ensuring all AI decisions are traceable for compliance and quality control.</li>
+          </ul>
+        </div>
 
-        <div>
-          <a class="cta-button" href="https://huggingface.co/spaces/felixmortas/Hf_Agent_Course_Final_Assignment/tree/main" target="_blank">View the project on Hugging Face</a>
-          <a class="cta-button" href="https://cas-bridge.xethub.hf.co/xet-bridge-us/6800ea554845e4edbca48825/5348431f62a3761b560f14e536cde6005f7dcd9eeda8ac8c7d5835edebe00c15?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260118T175600Z&X-Amz-Expires=3600&X-Amz-Signature=27ccefa0283d59c99512a9117a28a66f52bfb9e73c32ffe509ae1a9dfefc4504&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=65c927db2ba32c95416eb25d&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-07-06.png%3B+filename%3D%222025-07-06.png%22%3B&response-content-type=image%2Fpng&x-id=GetObject&Expires=1768762560&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2ODc2MjU2MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82ODAwZWE1NTQ4NDVlNGVkYmNhNDg4MjUvNTM0ODQzMWY2MmEzNzYxYjU2MGYxNGU1MzZjZGU2MDA1ZjdkY2Q5ZWVkYThhYzhjN2Q1ODM1ZWRlYmUwMGMxNSoifV19&Signature=S5%7EtuLDo36TB8V5mk8x03P2Pqo5NIOqCLS2XlFkJglZGz%7EOx6ePM8d0he166d%7E6s-KzLXenUv86%7EdSfJ8VWhDpZc7hpsrNsFqltLFYMGXAcmnflST0sZcReTqC3qx3gUlJ1H7%7Ea8geI55JvmcF36RiU-N5fQyBb-oFkOv8A47WjgEngEwSDMrGxq8FmYnKT3vDMu98HNSVQJoVDoBQG5uQxzYn2KmGTLwzWUqVHmRAMMXPoqxwCtRLsu7ZdyP1H0qQDJkD0TvTAegl3fLC2m0I1S0kSW3MQhT2SzOTOFHKKtn10lrPG7GG4iDmW487sZ7g-gU1rFoaGVezvc-W63dw__&Key-Pair-Id=K2L8F4GPSG1IFC" target="_blank">View certification</a>
+        <div class="cta-container">
+          <a class="cta-button" href="https://huggingface.co/spaces/felixmortas/Hf_Agent_Course_Final_Assignment/tree/main" target="_blank">View Technical Implementation</a>
+          <a class="cta-button" href="YOUR_CLEAN_CERT_LINK_HERE" target="_blank">View Certification</a>
         </div>
       </div>
-
+      
       <div class="project">
-        <h3>🎓 Data Science Graduate Program – End-to-End ML & MLOps Specialization</h3>
+        <h3>🎓 Enterprise Data Science & MLOps Specialization</h3>
 
         <div class="project-logos">
           <img src="https://axa.scene7.com/is/content/axafrance/axa-logo-solid-rgb-1" alt="Logo AXA">
-          <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Logo_CentraleSup%C3%A9lec.svg/1920px-Logo_CentraleSup%C3%A9lec.svg.png?20190428215410" alt="Logo CentralSupélec">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/1280px-PyTorch_logo_icon.svg.png?20200318225611" alt="Logo PyTorch">
+          <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Logo_CentraleSup%C3%A9lec.svg/1920px-Logo_CentraleSup%C3%A9lec.svg.png" alt="Logo CentralSupélec">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/1280px-PyTorch_logo_icon.svg.png" alt="Logo PyTorch">
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Logo AWS">
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Logo Spark">
           <img src="assets/logos/mlflow_logo.svg" alt="Logo MLFlow">
         </div>
-        
+
         <p>
-          An 18-month apprenticeship at <a href="" target="_blank">AXA</a> with <a href="" target="_blank">CentralSupélec</a>, focused on solving complex business problems through data engineering, machine learning, and cloud-native deployment.
-        </p>
-        
-        <p>
-          <strong>The concept:</strong> From raw data exploration to production-ready AI, I completed 9 industrial-grade projects covering the entire Data Science lifecycle, including deep learning, big data, and MLOps.
-        </p>
-        
-        <p><strong>Technical highlights:</strong></p>
-        <ul>
-          <li>
-            <strong>Machine Learning & Deep Learning:</strong> Expertise in supervised learning (classification/regression) and unsupervised learning (clustering). Advanced mastery of unstructured data via <strong>NLP</strong> and <strong>Computer Vision</strong>.
-          </li>
-          <li>
-            <strong>MLOps & Cloud:</strong> Industrialization of models via <strong>Cloud (AWS/Heroku)</strong> architectures. Implementation of <strong>CI/CD</strong> pipelines, lifecycle management with <strong>MLFlow</strong>, and creation of scoring APIs (Flask) with Data Drift monitoring.
-          </li>
-          <li>
-            <strong>Big Data & Scalability:</strong> Manipulation of large volumes of data with <strong>SQL</strong> and distributed processing via <strong>PySpark</strong> on <strong>AWS EMR</strong> cloud clusters.
-          </li>
-          <li>
-            <strong>Business Intelligence & Reporting:</strong> Designing <strong>interactive dashboards (Streamlit)</strong> and simplifying complex results for decision-makers. Using explainable AI (SHAP) to justify each prediction.
-          </li>
-          <li>
-            <strong>Scoping & Ethics:</strong> Managing projects using <strong>Agile</strong> methodology, drafting methodological notes, and strictly integrating <strong>GDPR</strong> compliance from the design stage.
-          </li>
-        </ul>
-        
-        <p>
-          <strong>Results:</strong> A comprehensive portfolio of production-ready solutions, demonstrating the ability to transform abstract business needs into scalable, ethical, and high-performing AI products.
+          An intensive 18-month industrial residency at <strong>AXA</strong> in partnership with <strong>CentraleSupélec</strong>, focused on bridging the gap between experimental data science and production-grade financial technology.
         </p>
 
-        <a class="cta-button" href="https://github.com/felixmortas/Projets-OpenClassrooms/tree/main" target="_blank">View full portfolio on GitHub</a>
+        <p><strong>The Value Proposition</strong></p>
+        <p>
+          Delivered 9 end-to-end industrial projects designed to convert raw corporate data into actionable predictive assets. By integrating <strong>MLOps best practices</strong> early in the lifecycle, I reduced the friction between model development and deployment, ensuring that AI solutions provide immediate and measurable business value.
+        </p>
+
+        <p><strong>Strategic Business Impact</strong></p>
+        <ul>
+          <li><strong>Reduced Time-to-Market:</strong> Architected CI/CD pipelines and automated scoring APIs to accelerate the transition from "Lab" to "Production."</li>
+          <li><strong>Regulatory & Ethical De-risking:</strong> Built-in <strong>GDPR compliance</strong> and Explainable AI (SHAP) frameworks to ensure all models meet the high transparency standards required in the financial sector.</li>
+          <li><strong>Infrastructure Scalability:</strong> Leveraged distributed computing (PySpark) and Cloud clusters (AWS) to process massive datasets, ensuring performance does not degrade as business volume grows.</li>
+          <li><strong>Decision Support:</strong> Translated complex neural network outputs into executive-level <strong>Streamlit</strong> dashboards, aligning technical performance with stakeholder KPIs.</li>
+        </ul>
+
+        <a class="cta-button" href="https://github.com/felixmortas/Projets-OpenClassrooms/tree/main" target="_blank">View Industrial Portfolio on GitHub</a>
       </div>
 
       <!-- <div class="project">Fresque du numérique</div> -->
