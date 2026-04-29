@@ -48,8 +48,8 @@ header {
 }
 
 .other-language-button button {
-    border-color: white;
-    border-radius: 15px; /* Optionnel : pour adoucir les angles */
+    background: none;
+    border: none;
     padding: 0;
     cursor: pointer;
     line-height: 0; /* Évite les décalages sous l'image */
