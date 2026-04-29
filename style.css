@@ -37,6 +37,28 @@ header {
   border-bottom: 2px solid #e0e0e0;
 }
 
+/* LANGUAGE BUTTONS */
+.other-language-button {
+    position: absolute;
+    top: 10px;    /* Un peu d'espace avec le bord haut */
+    right: 10px;   /* Aligné sur la marge de votre classe .main */
+    z-index: 401;
+    display: flex;
+    gap: 5px;     /* Espace entre les drapeaux */
+}
+
+.other-language-button button {
+    border-color: white;
+    border-radius: 15px; /* Optionnel : pour adoucir les angles */
+    padding: 0;
+    cursor: pointer;
+    line-height: 0; /* Évite les décalages sous l'image */
+}
+
+.other-language-button img {
+    height: auto;
+}
+
 .profile-pic {
   width: 150px;
   height: 150px;
