@@ -20,12 +20,12 @@
   "skills_datascience": "<strong>Data Science:</strong> ETL, Supervised & Unsupervised ML, Deepl Learning, MLOps",
   "skills_cloud": "<strong>Cloud:</strong> AWS (Lambda, S3, EC2, EMR), Heroku",
   "skills_cicd": "<strong>CI/CD:</strong> GitHub Actions, Google Play, AppStore Connect",
-  "skills_external": "<strong>External services:</strong> RevenueCat (Online payment), Firebase (Firestore, Auth), Google AdMob, API WhatsApp, API Outlook",
+  "skills_external": "<strong>External services:</strong> RevenueCat (Online payment), Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...)",
   "skills_tools": "<strong>Development tools:</strong> VS Code, Databricks, Git",
-  "skills_os": "<strong>OS:</strong> Linux, Windows, MacOS",
+  "skills_os": "<strong>OS:</strong> MacOS, Linux, Windows",
 
   "about_p1": "As a Data Scientist from CentralSupélec and an agricultural engineer from ENSAT, I specialize in developing effective and robust AI applications. My distinctive career path combines engineering and research in cutting-edge technology, life sciences, and agriculture. This cross-disciplinary expertise makes me a results-driven engineer with a systemic mindset and a sense of responsible design. Curious, rigorous, and with strong interpersonal skills, I design high-performance AI applications at a controlled cost.",
-  "about_p2": "Let's transform your complex data into high-performance, systemic AI applications. <a href=\"#contact\">Reach out</a> to start a conversation about your project goals.",
+  "about_p2": "Let's transform your complex data into high-performance, systemic AI applications. <a href=\"#contact\">Reach out</a> to start a conversation about your services transformation.",
   "about_cta": "Learn more about my academic and professional background",
 
   "label_value_proposition": "The Value Proposition",
@@ -37,9 +37,8 @@
   "migration_title": "📧 Enterprise-Grade Autonomous Account Migration Engine",
   "migration_value": "Manual credential management and platform migrations cost enterprises thousands of high-value man-hours and introduce significant security risks. I engineered an autonomous agentic system that automates the end-to-end lifecycle of account email migrations across disparate web ecosystems. This solution transforms a labor-intensive, error-prone manual process into a scalable, \"one-click\" background operation.",
   "migration_business_1": "<strong>Operational Efficiency:</strong> Reduced manual task duration from hours to minutes, achieving a <strong>95% reduction in human intervention</strong>.",
-  "migration_business_2": "<strong>Risk Mitigation:</strong> Eliminated human error in sensitive security settings, ensuring 100% data persistence and account integrity.",
   "migration_business_3": "<strong>Platform Agnostic:</strong> Unlike rigid RPA, this system uses <strong>AI-readable DOM reasoning</strong> to navigate any modern web interface (SaaS, Banking, Internal Tools) without custom scripts for every site.",
-  "migration_business_4": "<strong>Cost Optimization:</strong> Implemented intelligent model routing to balance high-reasoning tasks with cost-effective local LLMs, minimizing API overhead.",
+  "migration_business_4": "<strong>Cost Optimization:</strong> Implemented intelligent model routing to balance high-reasoning tasks with cost-effective small LLMs, minimizing API overhead.",
 
   "whatsapp_title": "🟢 Enterprise WhatsApp AI Concierge & RAG Pipeline",
   "whatsapp_value": "Customer service in the hospitality sector often suffers from high overhead and delayed response times. I engineered an <strong>autonomous WhatsApp AI Concierge</strong> that utilizes Retrieval-Augmented Generation (RAG) to provide instant, high-accuracy support. By leveraging a zero-cost, serverless architecture, this system delivers enterprise-grade performance without the burden of recurring infrastructure overhead.",
@@ -56,34 +55,33 @@
   "toits_value": "Administrative overhead is a silent profit killer. As Treasurer, I engineered a 100% autonomous serverless ecosystem that digitizes the entire member lifecycle—from payment processing to CRM synchronization. By replacing brittle manual entries with an AI-driven pipeline, the organization achieved an institutional-grade administrative workflow with zero recurring labor costs.",
   "toits_business_1": "<strong>Zero-Cost Scalability:</strong> Leveraged a \"Free-Tier\" architectural design, ensuring the system handles infinite volume growth with $0 in infrastructure overhead.",
   "toits_business_2": "<strong>Data Integrity & Risk Mitigation:</strong> Replaced error-prone manual data entry with AI-validation, resulting in a 100% accurate database for financial auditing.",
-  "toits_business_3": "<strong>Enhanced Member Retention:</strong> Instantaneous, multi-channel onboarding (Email & WhatsApp) increased engagement rates by removing the 24-48 hour manual processing lag.",
+  "toits_business_3": "<strong>Enhanced Member Retention:</strong> Instantaneous, multi-channel onboarding (Email & WhatsApp) increased engagement rates by removing the manual processing lag.",
   "toits_business_4": "<strong>Resource Reallocation:</strong> Recaptured precious mental energy, allowing leadership to focus on strategic growth rather than clerical maintenance.",
 
   "l10n_title": "🌍 Generate L10n – Enterprise AI Engine for Global Software Scaling",
   "l10n_value": "Internationalization (L10n) is a primary bottleneck for global product expansion, often requiring hours of manual developer labor. <strong>Generate L10n</strong> is a professional-grade VSCode ecosystem that leverages Large Language Models to automate the entire localization pipeline—from string extraction to multi-language translation and code integration.",
-  "l10n_business_1": "<strong>Accelerated Time-to-Market:</strong> Reduces the localization lifecycle from weeks to minutes, allowing for simultaneous global product launches.",
-  "l10n_business_2": "<strong>Drastic Cost Reduction:</strong> Minimizes reliance on expensive developer hours for repetitive formatting tasks and reduces initial translation agency costs.",
+  "l10n_business_1": "<strong>Accelerated Time-to-Market:</strong> Reduces the localization lifecycle from hours to minutes, allowing for simultaneous global product launches.",
+  "l10n_business_2": "<strong>Drastic Cost Reduction:</strong> Minimizes reliance on expensive developer hours for repetitive formatting tasks.",
   "l10n_business_3": "<strong>Development Velocity:</strong> Enables engineers to remain in \"flow state\" by automating the context-switching between feature development and metadata management.",
   "l10n_business_4": "<strong>Quality Assurance:</strong> Ensures 100% architectural consistency across multi-language assets, reducing the risk of UI breakage or missing translation keys.",
 
   "flasholator_title": "🧠 Flasholator – Scalable EdTech Engine & Spaced Repetition Platform",
-  "flasholator_value": "Flasholator is a high-performance mobile platform designed to monetize the intersection of <strong>Neural Machine Translation (NMT)</strong> and cognitive science. By transforming instant linguistic queries into long-term data assets via Spaced Repetition, the platform creates a \"high-stickiness\" ecosystem that maximizes user Lifetime Value (LTV) and retention.",
+  "flasholator_value": "Flasholator is a high-performance mobile platform designed to monetize the intersection of <strong>Neural Machine Translation</strong> and cognitive science. By transforming instant linguistic queries into long-term data assets via Spaced Repetition, the platform creates a \"high-stickiness\" ecosystem that maximizes user Lifetime Value and retention.",
   "flasholator_business_1": "<strong>Multi-Channel Revenue Streams:</strong> Engineered a production-ready monetization stack integrating <strong>RevenueCat</strong> for tiered subscriptions and <strong>Google AdMob</strong> for ad-revenue diversification.",
   "flasholator_business_2": "<strong>Market Adaptability:</strong> Implemented a 100% automated localization pipeline, allowing for rapid deployment into international markets (EN, FR, ES) with minimal overhead.",
-  "flasholator_business_3": "<strong>Data-Driven Retention:</strong> Utilizes a custom <strong>SuperMemo-2 (SM-2)</strong> implementation to optimize user study intervals, directly correlating to increased Daily Active Users (DAU).",
+  "flasholator_business_3": "<strong>Data-Driven Retention:</strong> Utilizes a custom <strong>SuperMemo-2</strong> implementation to optimize user study intervals, directly correlating to increased Daily Active Users.",
   "flasholator_business_4": "<strong>Regulatory Compliance:</strong> Built with a focus on risk mitigation, featuring full <strong>GDPR/UMP</strong> compliance and robust data privacy frameworks.",
   "flasholator_cta_github": "View Technical Docs",
-  "flasholator_cta_playstore": "Google Play Live",
+  "flasholator_cta_playstore": "Google Play Store",
   "flasholator_cta_appstore": "App Store (Pending)",
 
   "gaia_title": "🤖 Enterprise-Grade Autonomous Problem-Solving Engine (GAIA)",
   "gaia_value": "Most AI implementations struggle with \"agentic drift\"—losing track of complex, multi-step goals. I engineered a sophisticated autonomous coordinator designed to solve the <strong>GAIA Benchmark</strong>, which mimics real-world office tasks. This system proves that AI can move beyond simple chat interfaces to handle multi-modal data (video, audio, spreadsheets) and execute multi-hour workflows with minimal human oversight.",
-  "gaia_business_1": "<strong>Cognitive Automation:</strong> Successfully automated \"Level 1\" general assistant tasks, demonstrating the potential to replace manual data synthesis and cross-platform research roles.",
+
   "gaia_business_2": "<strong>Infrastructural Agility:</strong> Developed a model-agnostic routing system that maintains 100% uptime by dynamically switching providers to bypass API outages or rate limits.",
   "gaia_business_3": "<strong>Cost-Efficient Scaling:</strong> Built a custom frame-extraction pipeline for video analysis, achieving high-fidelity reasoning results without the premium costs of native video-to-text APIs.",
   "gaia_business_4": "<strong>Audit-Ready Transparency:</strong> Integrated comprehensive observability to track every \"thought\" and \"action,\" ensuring all AI decisions are traceable for compliance and quality control.",
-  "gaia_cta_impl": "View Technical Implementation",
-  "gaia_cta_cert": "View Certification",
+  "gaia_cta_impl": "View on HuggingFace",
 
   "axa_title": "🎓 Enterprise Data Science & MLOps Specialization",
   "axa_intro": "An intensive 18-month industrial residency at <strong>AXA</strong> in partnership with <strong>CentraleSupélec</strong>, focused on bridging the gap between experimental data science and production-grade financial technology.",
@@ -92,7 +90,6 @@
   "axa_business_2": "<strong>Regulatory & Ethical De-risking:</strong> Built-in <strong>GDPR compliance</strong> and Explainable AI (SHAP) frameworks to ensure all models meet the high transparency standards required in the financial sector.",
   "axa_business_3": "<strong>Infrastructure Scalability:</strong> Leveraged distributed computing (PySpark) and Cloud clusters (AWS) to process massive datasets, ensuring performance does not degrade as business volume grows.",
   "axa_business_4": "<strong>Decision Support:</strong> Translated complex neural network outputs into executive-level <strong>Streamlit</strong> dashboards, aligning technical performance with stakeholder KPIs.",
-  "axa_cta": "View Industrial Portfolio on GitHub",
 
   "section_inspirations": "Inspirations",
   "inspiration_hamant": "<strong>Olivier Amant</strong> Researcher on the topic of the balance between efficiency and robustness",
@@ -101,7 +98,5 @@
   "inspiration_kondo": "<strong>Marie Kondo</strong> Expert in tidying and organization",
   "inspiration_lescop": "<strong>Céline Lescop</strong> Digital sustainability program director at AXA",
   "inspiration_perel": "<strong>Esther Perel</strong> Psychologist of desire",
-  "inspiration_ruf": "<strong>Boris Ruf</strong> Data-scientist researcher in ethical and sustainable AI at AXA",
-
-  "footer_copy": "&copy; 2026 Félix Mortas. Eco-designed website using HTML, CSS, and native JS. Minimalist hosting."
+  "inspiration_ruf": "<strong>Boris Ruf</strong> Data-scientist researcher in ethical and sustainable AI at AXA"
 }
