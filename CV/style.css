@@ -336,7 +336,7 @@ h5, .small-categorie h3 {
 
 	/* Chips */
 
-.vergers-urbains, .engineer, .dut, .gardening, .tresorier {
+.vergers-urbains, .engineer, .dut, .gardening, .tresorier, .ica {
 	list-style-image: url('images/puces/tomato.png');
 }
 

@@ -81,6 +81,8 @@
     "axa-task-water": "Recherche et mise en place de l'évaluation de l'empreinte hydrique des data centers de l'entreprise",
     "axa-task-shift-project": "Contribution aux recherches sur l'IA générative avec ",
     "axa-task-shift-partnership": " dans le cadre d'un partenariat",
+    "axa-task-datascience": "Science des données et gestion de projet",
+    "axa-task-genai": "Développement de preuves de concept (POC) en IA générative",
 
     "vu-job-title": "Apprenti agriculteur urbain",
     "vu-job-meta": "Vergers Urbains, Paris 18 | 2 ans et 4 mois",
@@ -155,5 +157,15 @@
     "treasurer-desc-2": "Entretien des relations avec les partenaires et les adhérents",
     "treasurer-desc-3": "Participation à la vie de l'association (réunions, événements, jardinage, etc ...)",
 
-    "footer": "CV en HTML, CSS et JavaScript - 21 Janvier 2026"
+    "professor-role": "Coordinateur d'un projet de revégétalisation",
+    "professor-location-date": "Université nationale San Luis Gonzaga d'Ica, Pérou | 1 mois",
+    "professor-desc-1": "Restauration d'un tronçon de l'acequia (canal traditionnel) reliant la rivière Ica au désert, comprenant : évaluation technique et environnementale du tronçon ; Élaboration d’un plan d’action et d’un plan de financement des travaux ; animation d’ateliers participatifs avec les acteurs locaux : nettoyage du canal, analyse des sols, aménagement paysager et plantation d’espèces adaptées.",
+    "professor-desc-2": "Présentation scientifique : présentation des travaux menés en agriculture urbaine à Paris ; application des enseignements tirés de ces projets aux initiatives de revégétalisation dans le désert d’Ica.",
+
+    "ica-role": "Éducateur social",
+    "ica-location-date": "Hilo Rijo, Trujillo, Pérou | 1 mois",
+    "ica-desc-1": "Enseignement des matières fondamentales (anglais, mathématiques et développement personnel/professionnel) à des enfants défavorisés exclus du système éducatif public.",
+    "ica-desc-2": "Contribution à l’autonomisation des jeunes vulnérables par le biais de l’éducation non formelle, conformément à la mission de Hilo Rojo qui consiste à combler les fossés sociaux et à favoriser l’égalité des chances au sein des communautés marginalisées.",
+
+    "footer": "CV en HTML, CSS et JavaScript - 31 Juillet 2026"
 }

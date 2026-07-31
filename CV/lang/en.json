@@ -81,6 +81,8 @@
     "axa-task-water": "Research and implementation of the water footprint assessment for the company's data centers",
     "axa-task-shift-project": "Contribution to generative AI research with ",
     "axa-task-shift-partnership": " as part of a partnership",
+    "axa-task-datascience": "Data science and project management",
+    "axa-task-genai": "Development of POCs in generative AI",
 
     "vu-job-title": "Urban Farmer Apprentice",
     "vu-job-meta": "Vergers Urbains, Paris 18 | 2 years and 4 months",
@@ -155,5 +157,15 @@
     "treasurer-desc-2": "Maintaining relationships with partners and members",
     "treasurer-desc-3": "Participation in association activities (meetings, events, gardening, etc.)",
 
-    "footer": "CV in HTML, CSS, and JavaScript - January 21, 2026"
+    "professor-role": "Revegetation Project Coordinator",
+    "professor-location-date": "Universidad Nacional San Luis Gonzaga de Ica, Peru | 1 month ",
+    "professor-desc-1": "Restoration of a section of the acequia (traditional canal) connecting the Ica River to the desert, including: Technical and environmental assessment of the section; Development of an action plan and a financing plan for the work; Facilitation of participatory workshops with local stakeholders: cleaning the canal, soil analysis, landscaping, and planting of suitable species.",
+    "professor-desc-2": "Scientific presentation: Presentation of work conducted in urban agriculture in Paris; Application of lessons learned from these projects to revegetation initiatives in the Ica Desert.",
+
+    "ica-role": "Social Educator",
+    "ica-location-date": "Hilo Rijo, Trujillo, Peru | 1 month ",
+    "ica-desc-1": "Taught foundational subjects (English, mathematics, and personal/professional development) to underprivileged children excluded from public education.",
+    "ica-desc-2": "Contributed to empowering vulnerable youth through non-formal education, aligning with Hilo Rojo’s mission to bridge social gaps and foster equal opportunities in marginalized communities.",
+
+    "footer": "CV in HTML, CSS, and JavaScript - July 31, 2026"
 }

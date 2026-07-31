@@ -81,6 +81,8 @@
     "axa-task-water": "Investigación e implementación de la evaluación de la huella hídrica de los centros de datos de la empresa",
     "axa-task-shift-project": "Contribución a las investigaciones sobre la IA generativa con ",
     "axa-task-shift-partnership": " en el marco de una asociación",
+    "axa-task-datascience": "Ciencia de datos y gestión de proyectos",
+    "axa-task-genai": "Desarrollo de pruebas de concepto (POC) en IA generativa",
 
     "vu-job-title": "Aprendiz de agricultor urbano",
     "vu-job-meta": "Vergers Urbains, París 18 | 2 años y 4 meses",
@@ -155,5 +157,15 @@
     "treasurer-desc-2": "Mantenimiento de relaciones con socios y miembros",
     "treasurer-desc-3": "Participación en la vida asociativa (reuniones, eventos, jardinería, etc.)",
 
-    "footer": "CV en HTML, CSS y JavaScript - 21 de enero de 2026"
+    "professor-role": "Coordinador del proyecto de revegetación",
+    "professor-location-date": "Universidad Nacional San Luis Gonzaga de Ica, Perú | 1 mes",
+    "professor-desc-1": "Restauración de un tramo de la acequia (canal tradicional) que conecta el río Ica con el desierto, lo que incluye: evaluación técnica y ambiental del tramo; elaboración de un plan de acción y un plan de financiamiento para los trabajos; facilitación de talleres participativos con actores locales: limpieza del canal, análisis de suelos, paisajismo y plantación de especies adecuadas.",
+    "professor-desc-2": "Presentación científica: presentación del trabajo realizado en agricultura urbana en París; aplicación de las lecciones aprendidas de estos proyectos a iniciativas de revegetación en el desierto de Ica.",
+
+    "ica-role": "Educador social",
+    "ica-location-date": "Hilo Rijo, Trujillo, Perú | 1 mes",
+    "ica-desc-1": "Impartí materias básicas (inglés, matemáticas y desarrollo personal y profesional) a niños en situación de vulnerabilidad excluidos de la educación pública.",
+    "ica-desc-2": "Contribuyó al empoderamiento de jóvenes vulnerables a través de la educación no formal, en consonancia con la misión de Hilo Rojo de cerrar las brechas sociales y fomentar la igualdad de oportunidades en comunidades marginadas.",
+
+    "footer": "CV en HTML, CSS y JavaScript - 31 de julio de 2026"
 }
