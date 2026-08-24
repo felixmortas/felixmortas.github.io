@@ -1,7 +1,7 @@
 {
   "tagline" : "Ingénieur IA Full-Stack : conception d'IA robustes pour des environnements complexes",
   "img_alt_profile" : "Photo de Félix Mortas",
-  "meta_description" : "Portfolio Félix Mortas - Ingénieur IA Full-Stack",
+  "meta_description" : "Portfolio Félix Mortas - Ingénieur IA Agentique",
 
   "skills": "Compétences",
   "about": "À propos de moi",
@@ -14,14 +14,14 @@
   "linkedin": "Félix MORTAS",
 
   "section_skills": "Compétences techniques",
-  "skills_languages": "<strong>Langages de programmation :</strong> Python, SQL, JavaScript/HTML/CSS, Dart, R, LaTeX",
-  "skills_frameworks": "<strong>Frameworks :</strong> Langgraph & Langchain, Langfuse, Playwright, PySpark, MLFlow, Flutter, Redis",
-  "skills_llm": "<strong>LLM et agents :</strong> Ingénierie des prompts, observation et évaluation, gestion du contexte, RAG, mémoire à court et long terme, MCP, outils, orchestration des sous-agents",
+  "skills_languages": "<strong>Langages de programmation :</strong> Python, SQL, JavaScript/HTML/CSS, Dart, LaTeX",
+  "skills_frameworks": "<strong>Frameworks :</strong> BMad Method & Builder, Langgraph & Langchain, Langfuse, Flutter, Playwright, PySpark, MLFlow, FastAPI/Flask",
+  "skills_llm": "<strong>LLM et agents :</strong> Ingénierie des prompts, observation et évaluation, gestion du contexte, RAG, mémoire à court et long terme, MCP, skills, outils, orchestration des sous-agents",
   "skills_datascience": "<strong>Data science :</strong> ETL, machine learning supervisé et non supervisé, deep learning, MLOps",
-  "skills_cloud": "<strong>Cloud :</strong> AWS (Lambda, S3, EC2, EMR), Heroku",
+  "skills_cloud": "<strong>Cloud :</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP, Heroku",
   "skills_cicd": "<strong>CI/CD :</strong> GitHub Actions, Google Play, AppStore Connect",
-  "skills_external": "<strong>Services externes :</strong> RevenueCat (paiement en ligne), Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...",
-  "skills_tools": "<strong>Outils de développement :</strong> VS Code, Databricks, Git",
+  "skills_external": "<strong>Services externes :</strong> RevenueCat (paiement en ligne), Stripe, Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...",
+  "skills_tools": "<strong>Outils de développement :</strong> VS Code, Claude Code, Codex, Git, Databricks",
   "skills_os": "<strong>Systèmes d'exploitation :</strong> macOS, Linux, Windows",
 
   "about_p1": "En tant que data scientist diplômé de CentralSupélec et ingénieur agronome de l'ENSAT, je me spécialise dans le développement d'applications d'IA efficaces et robustes. Mon parcours professionnel unique allie ingénierie et recherche dans les domaines des nouvelles technologies, des sciences de la vie et de l'agriculture. Cette expertise interdisciplinaire fait de moi un ingénieur axé sur les résultats, doté d'un esprit systémique et d'un sens de la conception responsable. Curieux, rigoureux et doté de solides compétences relationnelles, je conçois des applications d'IA hautement performantes à un coût maîtrisé.",

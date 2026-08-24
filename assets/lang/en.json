@@ -1,7 +1,7 @@
 {
   "tagline": "Full-Stack AI Engineer: Designing robust AI for complex environments",
   "img_alt_profile": "Photo de Félix Mortas",
-  "meta_description": "Portfolio Félix Mortas - Full-Stack AI Engineer",
+  "meta_description": "Portfolio Félix Mortas - AI Agent Engineer",
 
   "skills": "Skills",
   "about": "About me",
@@ -14,14 +14,14 @@
   "linkedin": "Félix MORTAS",
 
   "section_skills": "Technical skills",
-  "skills_languages": "<strong>Programming languages:</strong> Python, SQL, JavaScript/HTML/CSS, Dart, R, LaTeX",
-  "skills_frameworks": "<strong>Frameworks:</strong> Langgraph & Langchain, Langfuse, Playwright, PySpark, MLFlow, Flutter, Redis",
-  "skills_llm": "<strong>LLMs & Agents:</strong> Prompt engineering, Observation & Evaluation, Context management, RAG, Short term & long term memory, MCP, Tools, Sub-agents orchestration",
+  "skills_languages": "<strong>Programming languages:</strong> Python, SQL, JavaScript/HTML/CSS, Dart, LaTeX",
+  "skills_frameworks": "<strong>Frameworks:</strong> BMad Method & Builder, Langgraph & Langchain, Langfuse, Flutter, Playwright, PySpark, MLFlow, FastAPI/Flask",
+  "skills_llm": "<strong>LLMs & Agents:</strong> Prompt engineering, Observation & Evaluation, Context management, RAG, Short term & long term memory, MCP, Skills, Tools, Sub-agents orchestration",
   "skills_datascience": "<strong>Data Science:</strong> ETL, Supervised & Unsupervised ML, Deepl Learning, MLOps",
-  "skills_cloud": "<strong>Cloud:</strong> AWS (Lambda, S3, EC2, EMR), Heroku",
+  "skills_cloud": "<strong>Cloud:</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP, Heroku",
   "skills_cicd": "<strong>CI/CD:</strong> GitHub Actions, Google Play, AppStore Connect",
-  "skills_external": "<strong>External services:</strong> RevenueCat (Online payment), Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...)",
-  "skills_tools": "<strong>Development tools:</strong> VS Code, Databricks, Git",
+  "skills_external": "<strong>External services:</strong> RevenueCat (Online payment), Stripe, Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...)",
+  "skills_tools": "<strong>Development tools:</strong> VS Code, Claude Code, Codex, Git, Databricks",
   "skills_os": "<strong>OS:</strong> MacOS, Linux, Windows",
 
   "about_p1": "As a Data Scientist from CentralSupélec and an agricultural engineer from ENSAT, I specialize in developing effective and robust AI applications. My distinctive career path combines engineering and research in cutting-edge technology, life sciences, and agriculture. This cross-disciplinary expertise makes me a results-driven engineer with a systemic mindset and a sense of responsible design. Curious, rigorous, and with strong interpersonal skills, I design high-performance AI applications at a controlled cost.",
