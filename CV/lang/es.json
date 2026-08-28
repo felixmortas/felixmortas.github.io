@@ -24,7 +24,7 @@
     "exchange-andalusia": "Intercambio escolar en Andalucía",
     "internship-sal": "3 meses en Salamanca",
     "trip-label": "Viaje:",
-    "latam-life": "6 meses viviendo en America Latina",
+    "latam-life": "8 meses viviendo en America Latina",
     
     "lang-ar": "Árabe (MSA) - Descubrimiento (A1)",
     "paris-courses": "Cursos en el ayuntamiento de París",
@@ -69,13 +69,21 @@
     "pro-activities-title": "Actividades profesionales",
     "jobs-subtitle": "Empleos",
 
+    "freelance-job-title": "Ingeniero freelance de IA agéntica",
+    "freelance-duration": "Independiente | 6 meses",
+    "freelance-website": "Ver mi sitio web",
+    "freelance-task-genai-workflow": "Desarrollo de un módulo de skills para usar en Claude Code y apoyar el diseño de capacitaciones profesionales siguiendo la metodología ADDIE",
+    "freelance-task-chatbot-hotel": "Desarrollo de un concierge de IA en WhatsApp basado en una arquitectura RAG que aprovecha la base de conocimientos de un hotel en Ecuador",
+    "freelance-task-contract-assistant": "Diseño y desarrollo de un asistente de IA orientado a agilizar y mejorar la confiabilidad de la redacción de contratos de tierras mediante el uso seguro de datos públicos, internos y confidenciales",
+    "freelance-task-arc-orders": "Liderazgo de la implementación de una solución para la toma de pedidos que permite a los representantes comerciales del sector agrícola operar en zonas con conectividad limitada",
+    "freelance-task-tv-sub": "Automatización de punta a punta del proceso de afiliación, transformando un proceso manual y lento en un pipeline inteligente y robusto que conecta servicios de pago, gestión de afiliados y herramientas de comunicación",
+    "freelance-task-extension-vscode": "Creación y despliegue de una extensión open source para VS Code que automatiza la internacionalización de aplicaciones Flutter mediante IA",
+
     "axa-job-title": "Data scientist - Experto en digital eco-responsable",
     "axa-duration": "AXA Group Operations, París 17 | 1 año y medio",
     "company-website": "Sitio web de la empresa",
     "axa-task-agent-loop": "(POC) Diseño y creación de un prototipo de agente de IA autónomo capaz de navegar por sitios web y modificar la información de una cuenta de cliente, con gestión segura de las credenciales",
     "axa-task-ai-chatbot": "Desarrollo ágil de un chatbot con inteligencia artificial capaz de interactuar con los usuarios en relación con su contrato de seguro",
-    "axa-task-extension-vscode": "Creación e implementación de una extensión de código abierto para VSCode que automatiza la internacionalización de aplicaciones Flutter mediante IA",
-    "axa-task-genai-workflow": "Desarrollo de un módulo de skills que se pueden utilizar en Claude Code para apoyar el diseño de capacitaciones profesionales según el método ADDIE",
     "axa-task-ghg": "Sensibilización sobre los retos de la tecnología digital sostenible a través del taller «La Fresque Du Numérique» y contribución a la recopilación de datos ESG en el marco del cumplimiento de la CSRD",
     "axa-task-ai-research": "Investigación y desarrollo de la medición de la huella ambiental de la IA generativa con la implementación de una herramienta de cálculo, en estrecha colaboración con el equipo de investigación \"Sustainable AI\" y \"The Shift Project\"",
     "axa-task-ai-best-practices": "Elaboración de buenas prácticas para reducir el impacto ambiental tanto por parte del usuario final como del desarrollador",
@@ -143,12 +151,12 @@
     "assoc-website-link": "Sitio web de la asociación",
     
     "fdn-role": "Facilitador del Mural del Digital",
-    "fdn-location-date": "La Fresque du Numérique, París",
+    "fdn-location-date": "La Fresque du Numérique, París | Actual",
     "fdn-desc-1": "Facilitador profesional del Mural del Digital, un serious game de 3 horas diseñado para sensibilizar sobre el impacto ambiental y social de las tecnologías digitales.",
     "fdn-desc-2": "Capacidad para facilitar talleres para 16 personas simultáneamente, en francés, inglés o español.",
     
     "treasurer-role": "Tesorero de la asociación Les Toits Vivants",
-    "treasurer-location-date": "Toits Vivants, París 18",
+    "treasurer-location-date": "Toits Vivants, París 18 | Actual",
     "treasurer-desc-1": "Seguimiento de cuentas (ventas, membresías, donaciones, subvenciones, compras, gastos de funcionamiento)",
     "treasurer-desc-2": "Mantenimiento de relaciones con socios y miembros",
     "treasurer-desc-3": "Participación en la vida asociativa (reuniones, eventos, jardinería, etc.)",
@@ -163,5 +171,5 @@
     "ica-desc-1": "Impartí materias básicas (inglés, matemáticas y desarrollo personal y profesional) a niños en situación de vulnerabilidad excluidos de la educación pública.",
     "ica-desc-2": "Contribuyó al empoderamiento de jóvenes vulnerables a través de la educación no formal, en consonancia con la misión de Hilo Rojo de cerrar las brechas sociales y fomentar la igualdad de oportunidades en comunidades marginadas.",
 
-    "footer": "CV en HTML, CSS y JavaScript - 31 de julio de 2026"
+    "footer": "CV en HTML, CSS y JavaScript - 28 de agosto de 2026"
 }

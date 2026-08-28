@@ -24,7 +24,7 @@
     "exchange-andalusia": "School exchange in Andalusia",
     "internship-sal": "3 months in Salamanca",
     "trip-label": "Travel:",
-    "latam-life": "6 months living in Latin America",
+    "latam-life": "8 months living in Latin America",
     
     "lang-ar": "Arabic (MSA) - Beginner (A1)",
     "paris-courses": "Courses at Paris City Hall",
@@ -69,13 +69,21 @@
     "pro-activities-title": "Professional Experience",
     "jobs-subtitle": "Employment",
 
+    "freelance-job-title": "Freelance Agentic AI Engineer",
+    "freelance-duration": "Independent | 6 months",
+    "freelance-website": "View my website",
+    "freelance-task-genai-workflow": "Development of a skills module for use in Claude Code to support the design of professional training programs following the ADDIE methodology",
+    "freelance-task-chatbot-hotel": "Development of an AI concierge on WhatsApp based on a RAG architecture leveraging the knowledge base of a hotel in Ecuador",
+    "freelance-task-contract-assistant": "Design and development of an AI assistant aimed at accelerating and improving the reliability of land contract drafting by securely leveraging public, internal, and confidential data",
+    "freelance-task-arc-orders": "Led the implementation of an order-taking solution enabling agricultural sales representatives to operate in areas with limited connectivity",
+    "freelance-task-tv-sub": "End-to-end automation of the membership enrollment journey, transforming a time-consuming manual process into an intelligent and robust pipeline connecting payment services, member management, and communication tools",
+    "freelance-task-extension-vscode": "Creation and deployment of an open-source VS Code extension that automates the internationalization of Flutter applications using AI",
+
     "axa-job-title": "Data Scientist - Sustainable Digital Expert",
     "axa-duration": "AXA Group Operations, Paris 17 | 1 year and a half",
     "company-website": "Company website",
     "axa-task-agent-loop": "(POC) Design and prototyping of an autonomous AI agent capable of navigating websites and modifying customer account information, with secure management of login credentials",
     "axa-task-ai-chatbot": "Agile development of an AI chatbot capable of interacting with users regarding their insurance policy",
-    "axa-task-extension-vscode": "Development and deployment of an open-source VSCode extension that automates the internationalization of Flutter applications using AI",
-    "axa-task-genai-workflow": "Development of a skills module for use in Claude Code to support the design of professional training programs using the ADDIE method",
     "axa-task-ghg": "Raising awareness of sustainable digital issues through the \"Digital Collage\" workshop and contributing to ESG data collection as part of CSRD compliance",
     "axa-task-ai-research": "Research and development of a method for measuring the environmental footprint of generative AI, including the implementation of a calculator, in close collaboration with the \"Sustainable AI\" research team and \"The Shift Project\"",
     "axa-task-ai-best-practices": "Development of best practices for reducing environmental impact on the end-user and developer sides",
@@ -143,12 +151,12 @@
     "assoc-website-link": "Association website",
     
     "fdn-role": "Digital Collage Facilitator",
-    "fdn-location-date": "Digital Collage, Paris",
+    "fdn-location-date": "Digital Collage, Paris | Current",
     "fdn-desc-1": "Professional facilitator for the Digital Collage (Fresque du Numérique), a 3-hour serious game designed to raise awareness about the environmental and social impacts of digital technology.",
     "fdn-desc-2": "Capable of facilitating workshops for 16 people simultaneously in French, English, or Spanish.",
     
     "treasurer-role": "Treasurer of the association \"Les Toits Vivants\"",
-    "treasurer-location-date": "Toits Vivants, Paris 18",
+    "treasurer-location-date": "Toits Vivants, Paris 18 | Current",
     "treasurer-desc-1": "Financial tracking (sales, memberships, donations, grants, purchases, operating costs)",
     "treasurer-desc-2": "Maintaining relationships with partners and members",
     "treasurer-desc-3": "Participation in association activities (meetings, events, gardening, etc.)",
@@ -163,5 +171,5 @@
     "ica-desc-1": "Taught foundational subjects (English, mathematics, and personal/professional development) to underprivileged children excluded from public education.",
     "ica-desc-2": "Contributed to empowering vulnerable youth through non-formal education, aligning with Hilo Rojo’s mission to bridge social gaps and foster equal opportunities in marginalized communities.",
 
-    "footer": "CV in HTML, CSS, and JavaScript - July 31, 2026"
+    "footer": "CV in HTML, CSS, and JavaScript - August 28, 2026"
 }

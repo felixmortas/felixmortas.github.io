@@ -24,7 +24,7 @@
     "exchange-andalusia": "Echange scolaire en Andalousie",
     "internship-sal": "3 mois à Salamanque",
     "trip-label": "Voyage :",
-    "latam-life": "6 mois à vivre en Amerique Latine",
+    "latam-life": "8 mois à vivre en Amerique Latine",
     
     "lang-ar": "Arabe (MSA) - Découverte (A1)",
     "paris-courses": "Cours à la mairie de Paris",
@@ -33,7 +33,7 @@
     "it-title": "Compétences informatiques",
     "it-programming": "Langages de programmation",
     "it-llms": "LLMs & Agents",
-    "it-llms-details": "Prompt engineering, Observation & Évaluation, Gestion du contexte, RAG, Mémoire à court & à long terme, MCP, Skills, Outils, Orchestration des sous-agents",
+    "it-llms-details": "Prompt engineering, Observation & Évaluation, Gestion du contexte, RAG, Mémoire à court & long terme, MCP, Skills, Outils, Orchestration des sous-agents",
     "it-datascience-details": "ETL, ML supervisé & non-supervisé, Deep Learning, MLOps",
     "it-services": "Services externes",
     "it-tools": "Outils de développement",
@@ -69,13 +69,21 @@
     "pro-activities-title": "Activités professionnelles",
     "jobs-subtitle": "Emplois",
 
+    "freelance-job-title": "Freelance Ingénieur IA Agentique",
+    "freelance-duration": "Indépendant | 6 mois",
+    "freelance-website": "Voir mon site web",
+    "freelance-task-genai-workflow": "Elaboration d'un module de skills utilisables dans Claude Code pour accompagner la conception de formations professionnelles selon la méthode ADDIE",
+    "freelance-task-chatbot-hotel": "Développement d’un concierge IA sur WhatsApp basé sur une architecture RAG exploitant la base de connaissances d’un hôtel en Équateur",
+    "freelance-task-contract-assistant": "Conception et développement d’un assistant IA visant à accélérer et fiabiliser la rédaction de contrats fonciers en exploitant de manière sécurisée des données publiques, internes et confidentielles",
+    "freelance-task-arc-orders": "Pilotage de la mise en place d’une solution de prise de commandes permettant aux commerciaux du secteur agricole d’opérer dans les zones à connectivité limitée",
+    "freelance-task-tv-sub": "Automatisation de bout en bout du parcours d’adhésion transformant un processus manuel chronophage en un pipeline intelligent et robuste reliant services de paiement, gestion des adhérents et outils de communication",
+    "freelance-task-extension-vscode": "Création et déploiement d'une extension VS Code open-source automatisant l'internationalisation d'applications Flutter à l'aide de l'IA",
+
     "axa-job-title": "Data scientist - Expert numérique éco-responsable",
     "axa-duration": "AXA Group Operations, Paris 17 | 1 an et demi",
     "company-website": "Site web de l'entreprise",
     "axa-task-agent-loop": "(POC) Conception et prototypage d’un agent IA autonome capable de naviguer sur des sites web et de modifier les informations d’un compte client, avec gestion sécurisée des identifiants",
     "axa-task-ai-chatbot": "Développement agile d'un chatbot IA capable d’interagir avec les utilisateurs autour de leur contrat d’assurance",
-    "axa-task-extension-vscode": "Création et déploiement d'une extension VSCode open-source automatisant l'internationalisation d'applications Flutter à l'aide de l'IA",
-    "axa-task-genai-workflow": "Elaboration d'un module de skills utilisables dans Claude Code pour accompagner la conception de formations professionnelles selon la méthode ADDIE",
     "axa-task-ghg": "Sensibilisation aux enjeux du numérique éco-responsable via l'atelier \"La Fresque du Numérique\" et contribution à la collecte des données ESG dans le cadre de la conformité à la CSRD",
     "axa-task-ai-research": "Recherche et développement de la mesure de l'empreinte carbone de l'IA générative avec mise en place d'un calculateur, en étroite collaboration avec l'équipe de recherche \"Sustainable AI\" et The Shift Project",
     "axa-task-ai-best-practices": "Elaborations de bonnes pratiques pour la réduction des émissions de GES côté utilisateur final et développeur",
@@ -143,12 +151,12 @@
     "assoc-website-link": "Site web de l'association",
     
     "fdn-role": "Animateur de La Fresque du Numérique",
-    "fdn-location-date": "La Fresque du Numérique, Paris",
+    "fdn-location-date": "La Fresque du Numérique, Paris | Actuel",
     "fdn-desc-1": "Animateur professionnel de La Fresque du Numérique, un serious game de 3 heures destiné à sensibiliser à l'impact environnemental et social des technologies numériques.",
     "fdn-desc-2": "Possibilité d'animer un atelier pour 16 personnes en même temps, en français, anglais ou espagnol.",
     
     "treasurer-role": "Trésorier de l'association Les Toits Vivants",
-    "treasurer-location-date": "Toits Vivants, Paris 18",
+    "treasurer-location-date": "Toits Vivants, Paris 18 | Actuel",
     "treasurer-desc-1": "Suivi des comptes (ventes, adhésions, dons, subventions, achats, frais de fonctionnement)",
     "treasurer-desc-2": "Entretien des relations avec les partenaires et les adhérents",
     "treasurer-desc-3": "Participation à la vie de l'association (réunions, événements, jardinage, etc ...)",
@@ -163,5 +171,5 @@
     "ica-desc-1": "Enseignement des matières fondamentales (anglais, mathématiques et développement personnel/professionnel) à des enfants défavorisés exclus du système éducatif public.",
     "ica-desc-2": "Contribution à l’autonomisation des jeunes vulnérables par le biais de l’éducation non formelle, conformément à la mission de Hilo Rojo qui consiste à combler les fossés sociaux et à favoriser l’égalité des chances au sein des communautés marginalisées.",
 
-    "footer": "CV en HTML, CSS et JavaScript - 31 Juillet 2026"
+    "footer": "CV en HTML, CSS et JavaScript - 28 Août 2026"
 }
