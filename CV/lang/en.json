@@ -161,15 +161,14 @@
     "treasurer-desc-2": "Maintaining relationships with partners and members",
     "treasurer-desc-3": "Participation in association activities (meetings, events, gardening, etc.)",
 
-    "professor-role": "Revegetation Project Coordinator",
-    "professor-location-date": "Universidad Nacional San Luis Gonzaga de Ica, Peru | 1 month ",
-    "professor-desc-1": "Restoration of a section of the acequia (traditional canal) connecting the Ica River to the desert, including: Technical and environmental assessment of the section; Development of an action plan and a financing plan for the work; Facilitation of participatory workshops with local stakeholders: cleaning the canal, soil analysis, landscaping, and planting of suitable species.",
-    "professor-desc-2": "Scientific presentation: Presentation of work conducted in urban agriculture in Paris; Application of lessons learned from these projects to revegetation initiatives in the Ica Desert.",
+    "ica-role": "Revegetation Project Coordinator",
+    "ica-location-date": "Universidad Nacional San Luis Gonzaga de Ica, Peru | 1 month ",
+    "ica-desc-1": "Restoration of a section of the acequia (traditional canal) connecting the Ica River to the desert, including: Technical and environmental assessment of the section; Development of an action plan and a financing plan for the work; Facilitation of participatory workshops with local stakeholders: cleaning the canal, soil analysis, landscaping, and planting of suitable species.",
+    "ica-desc-2": "Scientific presentation: Presentation of work conducted in urban agriculture in Paris; Application of lessons learned from these projects to revegetation initiatives in the Ica Desert.",
 
-    "ica-role": "Social Educator",
-    "ica-location-date": "Hilo Rojo, Trujillo, Peru | 1 month ",
-    "ica-desc-1": "Taught foundational subjects (English, mathematics, and personal/professional development) to underprivileged children excluded from public education.",
-    "ica-desc-2": "Contributed to empowering vulnerable youth through non-formal education, aligning with Hilo Rojo’s mission to bridge social gaps and foster equal opportunities in marginalized communities.",
+    "professor-role": "Social Educator",
+    "professor-location-date": "Hilo Rojo, Trujillo, Peru | 1 month ",
+    "professor-desc-1": "Taught foundational subjects (English, mathematics, and personal/professional development) to underprivileged children excluded from public education.",
 
     "footer": "CV in HTML, CSS, and JavaScript - August 28, 2026"
 }

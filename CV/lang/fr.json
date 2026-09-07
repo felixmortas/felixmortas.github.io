@@ -161,15 +161,14 @@
     "treasurer-desc-2": "Entretien des relations avec les partenaires et les adhérents",
     "treasurer-desc-3": "Participation à la vie de l'association (réunions, événements, jardinage, etc ...)",
 
-    "professor-role": "Coordinateur d'un projet de revégétalisation",
-    "professor-location-date": "Université nationale San Luis Gonzaga d'Ica, Pérou | 1 mois",
-    "professor-desc-1": "Restauration d'un tronçon de l'acequia (canal traditionnel) reliant la rivière Ica au désert, comprenant : évaluation technique et environnementale du tronçon ; Élaboration d’un plan d’action et d’un plan de financement des travaux ; animation d’ateliers participatifs avec les acteurs locaux : nettoyage du canal, analyse des sols, aménagement paysager et plantation d’espèces adaptées.",
-    "professor-desc-2": "Présentation scientifique : présentation des travaux menés en agriculture urbaine à Paris ; application des enseignements tirés de ces projets aux initiatives de revégétalisation dans le désert d’Ica.",
+    "ica-role": "Coordinateur d'un projet de revégétalisation",
+    "ica-location-date": "Université nationale San Luis Gonzaga d'Ica, Pérou | 1 mois",
+    "ica-desc-1": "Restauration d'un tronçon de l'acequia (canal traditionnel) reliant la rivière Ica au désert, comprenant : évaluation technique et environnementale du tronçon ; Élaboration d’un plan d’action et d’un plan de financement des travaux ; animation d’ateliers participatifs avec les acteurs locaux : nettoyage du canal, analyse des sols, aménagement paysager et plantation d’espèces adaptées.",
+    "ica-desc-2": "Présentation scientifique : présentation des travaux menés en agriculture urbaine à Paris ; application des enseignements tirés de ces projets aux initiatives de revégétalisation dans le désert d’Ica.",
 
-    "ica-role": "Éducateur social",
-    "ica-location-date": "Hilo Rojo, Trujillo, Pérou | 1 mois",
-    "ica-desc-1": "Enseignement des matières fondamentales (anglais, mathématiques et développement personnel/professionnel) à des enfants défavorisés exclus du système éducatif public.",
-    "ica-desc-2": "Contribution à l’autonomisation des jeunes vulnérables par le biais de l’éducation non formelle, conformément à la mission de Hilo Rojo qui consiste à combler les fossés sociaux et à favoriser l’égalité des chances au sein des communautés marginalisées.",
+    "professor-role": "Éducateur social",
+    "professor-location-date": "Hilo Rojo, Trujillo, Pérou | 1 mois",
+    "professor-desc-1": "Enseignement des matières fondamentales (anglais, mathématiques et développement personnel/professionnel) à des enfants défavorisés exclus du système éducatif public.",
 
     "footer": "CV en HTML, CSS et JavaScript - 28 Août 2026"
 }
