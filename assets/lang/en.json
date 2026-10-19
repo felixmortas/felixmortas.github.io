@@ -15,14 +15,14 @@
 
   "section_skills": "Technical skills",
   "skills_languages": "<strong>Programming languages:</strong> Python, SQL, JavaScript/HTML/CSS, Dart, LaTeX",
-  "skills_frameworks": "<strong>Frameworks:</strong> BMad Method & Builder, Langgraph & Langchain, Langfuse, Flutter, Playwright, PySpark, MLFlow, FastAPI/Flask",
-  "skills_llm": "<strong>LLMs & Agents:</strong> Prompt engineering, Observation & Evaluation, Context management, RAG, Short term & long term memory, MCP, Skills, Tools, Sub-agents orchestration",
+  "skills_frameworks": "<strong>Frameworks:</strong> LangGraph, LangChain, LangSmith, Langfuse, MLflow, PySpark, FastAPI, Flask, Flutter, Playwright, React, Astro",
+  "skills_llm": "<strong>LLMs & Agents:</strong> Prompt engineering, Observation & Evaluation, Context management, Action loops, RAG, Short & long term memory, MCP, Skills, Tools, Sub-agents orchestration",
   "skills_datascience": "<strong>Data Science:</strong> ETL, Supervised & Unsupervised ML, Deepl Learning, MLOps",
-  "skills_cloud": "<strong>Cloud:</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP, Heroku",
-  "skills_cicd": "<strong>CI/CD:</strong> GitHub Actions, Google Play, AppStore Connect",
+  "skills_cloud": "<strong>Cloud:</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP",
+  "skills_cicd": "<strong>CI/CD:</strong> GitHub Actions, Software testing, Google Play, AppStore Connect",
   "skills_external": "<strong>External services:</strong> RevenueCat (Online payment), Stripe, Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...)",
   "skills_tools": "<strong>Development tools:</strong> VS Code, Claude Code, Codex, Git, Databricks",
-  "skills_os": "<strong>OS:</strong> MacOS, Linux, Windows",
+  "skills_project": "<strong>Project management:</strong> Agile methodology, Jira & Confluence, Test-Driven Development, BMAD-Method, Business and technical communication",
 
   "about_p1": "As a Data Scientist from CentralSupélec and an agricultural engineer from ENSAT, I specialize in developing effective and robust AI applications. My distinctive career path combines engineering and research in cutting-edge technology, life sciences, and agriculture. This cross-disciplinary expertise makes me a results-driven engineer with a systemic mindset and a sense of responsible design. Curious, rigorous, and with strong interpersonal skills, I design high-performance AI applications at a controlled cost.",
   "about_p2": "Let's transform your complex data into high-performance, systemic AI applications. <a href=\"#contact\">Reach out</a> to start a conversation about your services transformation.",
@@ -50,6 +50,10 @@
   "carbon_title": "📞 Assessing the Carbon Footprint of Virtual Meetings: A Quantitative Analysis of Camera Usage",
   "carbon_abstract": "<strong>Abstract:</strong> This paper quantifies the carbon emissions related to data consumption during video calls, focusing on the impact of having the camera on versus off. The findings regarding the environmental benefits achieved by turning off cameras during meetings challenge the claims of some prevalent articles. The experiment was carried out using a 4G connection via a cell phone to measure the varying data transfer associated with videos. The outcomes indicate that turning the camera off can halve data consumption and associated carbon emissions, particularly on mobile networks. The paper concludes with recommendations to optimize data usage and reduce the environmental impact during calls.",
   "carbon_comments": "<strong>Comments:</strong> [v1] 4 pages, 3 figures, submited and accepted as a short paper by <a href=\"https://www.iaria.org/conferences2025/CfPGREEN25.html\" target=\"_blank\">IARIA GREEN 2025</a> with some fixable issues that must be addressed before the article is ready for publication (Scientific and technical; English & punctuation; Sections and presentation flow)<br> <strong>[v2]</strong> Corrected with the help of <a href=\"https://checkmymanuscript.com\" target=\"_blank\">checkmymanuscript.com</a>, and rearrangement of sections and presentation flow",
+
+  "good_practices_title": "The Environmental Impact of Generative AI: How Reducing It Can Make You More Efficient?",
+  "good_practices_abstract": "In this article, which includes over 60 scientific references, discover what drives the environmental impact of generative AI, how to measure it when possible, and how to reduce it at both the user and developer levels.",
+  "good_practices_comments": "You can then test the best practices discussed in an impact calculator designed and developed specifically for this article.",
 
   "toits_title": "🚀 Intelligent Membership Infrastructure (Association Toits Vivants)",
   "toits_value": "Administrative overhead is a silent profit killer. As Treasurer, I engineered a 100% autonomous serverless ecosystem that digitizes the entire member lifecycle—from payment processing to CRM synchronization. By replacing brittle manual entries with an AI-driven pipeline, the organization achieved an institutional-grade administrative workflow with zero recurring labor costs.",

@@ -15,16 +15,16 @@
 
   "section_skills": "Compétences techniques",
   "skills_languages": "<strong>Langages de programmation :</strong> Python, SQL, JavaScript/HTML/CSS, Dart, LaTeX",
-  "skills_frameworks": "<strong>Frameworks :</strong> BMad Method & Builder, Langgraph & Langchain, Langfuse, Flutter, Playwright, PySpark, MLFlow, FastAPI/Flask",
-  "skills_llm": "<strong>LLM et agents :</strong> Ingénierie des prompts, observation et évaluation, gestion du contexte, RAG, mémoire à court et long terme, MCP, skills, outils, orchestration des sous-agents",
+  "skills_frameworks": "<strong>Frameworks :</strong>LangGraph, LangChain, LangSmith, Langfuse, MLflow, PySpark, FastAPI, Flask, Flutter, Playwright, React, Astro",
+  "skills_llm": "<strong>LLM et agents :</strong> Ingénierie des prompts, observation et évaluation, gestion du contexte, boucles d'action, RAG, mémoire à court et long terme, MCP, skills, outils, orchestration des sous-agents",
   "skills_datascience": "<strong>Data science :</strong> ETL, machine learning supervisé et non supervisé, deep learning, MLOps",
-  "skills_cloud": "<strong>Cloud :</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP, Heroku",
-  "skills_cicd": "<strong>CI/CD :</strong> GitHub Actions, Google Play, AppStore Connect",
-  "skills_external": "<strong>Services externes :</strong> RevenueCat (paiement en ligne), Stripe, Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...",
+  "skills_cloud": "<strong>Cloud :</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP",
+  "skills_cicd": "<strong>CI/CD :</strong> GitHub Actions, Tests logiciels, Google Play, AppStore Connect",
+  "skills_external": "<strong>Services externes :</strong> RevenueCat (paiement en ligne), Stripe, Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...)",
   "skills_tools": "<strong>Outils de développement :</strong> VS Code, Claude Code, Codex, Git, Databricks",
-  "skills_os": "<strong>Systèmes d'exploitation :</strong> macOS, Linux, Windows",
+  "skills_project": "<strong>Gestion de projet :</strong> Méthode agile, Jira & Confluence, Test-Driven Development, BMAD-Method, Communication métier et technique",
 
-  "about_p1": "En tant que data scientist diplômé de CentralSupélec et ingénieur agronome de l'ENSAT, je me spécialise dans le développement d'applications d'IA efficaces et robustes. Mon parcours professionnel unique allie ingénierie et recherche dans les domaines des nouvelles technologies, des sciences de la vie et de l'agriculture. Cette expertise interdisciplinaire fait de moi un ingénieur axé sur les résultats, doté d'un esprit systémique et d'un sens de la conception responsable. Curieux, rigoureux et doté de solides compétences relationnelles, je conçois des applications d'IA hautement performantes à un coût maîtrisé.",
+  "about_p1": "En tant que data scientist diplômé de CentralSupélec et ingénieur agronome de l'ENSAT, je suis spécialisé dans le développement d'applications d'IA efficaces et robustes. Mon parcours professionnel unique allie ingénierie et recherche dans les domaines des nouvelles technologies, des sciences de la vie et de l'agriculture. Cette expertise interdisciplinaire fait de moi un ingénieur axé sur les résultats, doté d'un esprit systémique et d'un sens de la conception responsable. Curieux, rigoureux et doté de solides compétences relationnelles, je conçois des applications d'IA hautement performantes à un coût maîtrisé.",
   "about_p2": "Transformons vos données complexes en applications d'IA hautement performantes et systémiques. <a href=\"#contact\">Contactez-moi</a> pour discuter de la transformation de vos services.",
   "about_cta": "En savoir plus sur mon parcours universitaire et professionnel",
 
@@ -50,6 +50,10 @@
   "carbon_title": "📞 Évaluation de l'empreinte carbone des réunions virtuelles : une analyse quantitative de l'utilisation de la caméra",
   "carbon_abstract": "<strong>Résumé :</strong> Cet article quantifie les émissions carbone liées à la consommation de données lors des appels vidéo, en mettant l'accent sur l'impact du fait d'avoir la caméra allumée ou éteinte. Les conclusions concernant les avantages environnementaux obtenus en désactivant les caméras pendant les réunions remettent en question les affirmations de certains articles courants. L'expérience a été menée à l'aide d'une connexion 4G via un smartphone afin de mesurer les variations du transfert de données associées aux vidéos. Les résultats indiquent que la désactivation de la caméra peut réduire de moitié la consommation de données et les émissions carbone associées, en particulier sur les réseaux mobiles. L'article se termine par des recommandations visant à optimiser l'utilisation des données et à réduire l'impact environnemental des appels.",
   "carbon_comments": "<strong>Commentaires : </strong> [v1] 4 pages, 3 figures, soumis et accepté comme article court par <a href=\"https://www.iaria.org/conferences2025/CfPGREEN25.html\" target=\"_blank\">IARIA GREEN 2025</a> avec quelques problèmes corrigibles qui doivent être résolus avant que l'article ne soit prêt à être publié (Aspects scientifiques et techniques ; anglais et ponctuation ; sections et structure de présentation)<br> <strong>[v2]</strong> Corrigé avec l'aide de <a href=\"https://checkmymanuscript.com\" target=\"_blank\">checkmymanuscript.com</a>, et réorganisation des sections et de la structure de présentation",
+
+  "good_practices_title":"L'impact environnemental de l'IA générative : comment le réduire peut vous faire gagner en efficacité ?",
+  "good_practices_abstract": "Dans cet article incluant plus de 60 références scientifiques, découvrez ce qui fait varier l'impact environnemental de l'IA générative, comment le mesurer quand c'est possible, et comment le réduire au niveau de l'utilisateur et du développeur.",
+  "good_practices_comments": "Vous pourrez ensuite tester l'application les bonnes pratiques évoquées dans un calculateur d'impact conçu et développé spécialement pour cet article.",
 
   "toits_title": "🚀 Infrastructure intelligente de gestion des adhésions (Association Toits Vivants)",
   "toits_value": "Les frais administratifs sont un facteur silencieux qui sape les bénéfices. En tant que trésorier, j'ai mis au point un écosystème sans serveur 100 % autonome qui numérise l'ensemble du cycle de vie des membres, du traitement des paiements à la synchronisation du CRM. En remplaçant les saisies manuelles fragiles par un pipeline piloté par l'IA, l'organisation a mis en place un flux de travail administratif de niveau institutionnel sans aucun coût de main-d'œuvre récurrent.",

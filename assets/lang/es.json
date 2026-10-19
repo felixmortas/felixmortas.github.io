@@ -15,14 +15,14 @@
 
   "section_skills": "Habilidades técnicas",
   "skills_languages": "<strong>Lenguajes de programación:</strong> Python, SQL, JavaScript/HTML/CSS, Dart, LaTeX",
-  "skills_frameworks": "<strong>Frameworks:</strong> BMad Method & Builder, Langgraph & Langchain, Langfuse, Flutter, Playwright, PySpark, MLFlow, FastAPI/Flask",
-  "skills_llm": "<strong>LLMs & Agentes:</strong> Prompt engineering, Observación y Evaluación, Gestión de contexto, RAG, Memoria a corto y largo plazo, MCP, skills, Herramientas, Orquestación de sub-agentes",
+  "skills_frameworks": "<strong>Frameworks:</strong> LangGraph, LangChain, LangSmith, Langfuse, MLflow, PySpark, FastAPI, Flask, Flutter, Playwright, React, Astro",
+  "skills_llm": "<strong>LLMs & Agentes:</strong> Prompt engineering, Observación y Evaluación, Gestión de contexto, Bucles de acción, RAG, Memoria a corto y largo plazo, MCP, skills, Herramientas, Orquestación de sub-agentes",
   "skills_datascience": "<strong>Data science:</strong> ETL, ML Supervisado y No Supervisado, Deep Learning, MLOps",
-  "skills_cloud": "<strong>Cloud:</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP, Heroku",
-  "skills_cicd": "<strong>CI/CD:</strong> GitHub Actions, Google Play, AppStore Connect",
+  "skills_cloud": "<strong>Cloud:</strong> AWS (Lambda, S3, EC2, EMR), Azure, GCP",
+  "skills_cicd": "<strong>CI/CD:</strong> GitHub Actions, Pruebas de software, Google Play, AppStore Connect",
   "skills_external": "<strong>Servicios externos:</strong> RevenueCat (Pagos online), Stripe, Firebase (Firestore, Auth), Google AdMob, API (WhatsApp, Outlook, ...)",
   "skills_tools": "<strong>Herramientas de desarrollo:</strong> VS Code, Claude Code, Codex, Git, Databricks",
-  "skills_os": "<strong>Sistemas operativos:</strong> MacOS, Linux, Windows",
+  "skills_project": "<strong>Gestión de proyectos:</strong> Metodología ágil, Jira & Confluence, Desarrollo guiado por pruebas (TDD), BMAD-Method, Comunicación empresarial y técnica",
 
   "about_p1": "Como científico de datos de CentraleSupélec e ingeniero agrónomo de ENSAT, me especializo en el desarrollo de aplicaciones de IA eficaces y robustas. Mi trayectoria profesional distintiva combina ingeniería e investigación en tecnología de vanguardia, ciencias de la vida y agricultura. Esta experiencia interdisciplinaria me convierte en un ingeniero orientado a resultados con una mentalidad sistémica y un sentido de diseño responsable. Curioso, riguroso y con sólidas habilidades interpersonales, diseño aplicaciones de IA de alto rendimiento con un coste controlado.",
   "about_p2": "Transformemos sus datos complejos en aplicaciones de IA sistémicas y de alto rendimiento. <a href=\"#contact\">Contácteme</a> para iniciar una conversación sobre la transformación de su empresa.",
@@ -50,6 +50,10 @@
   "carbon_title": "📞 Evaluación de la huella de carbono de las reuniones virtuales: Un análisis cuantitativo del uso de la cámara",
   "carbon_abstract": "<strong>Resumen:</strong> Este artículo cuantifica las emisiones de carbono relacionadas con el consumo de datos durante las videollamadas, centrándose en el impacto de tener la cámara encendida frente a apagada. Los hallazgos sobre los beneficios ambientales logrados al apagar las cámaras durante las reuniones desafían las afirmaciones de algunos artículos frecuentes. El experimento se realizó utilizando una conexión 4G a través de un teléfono móvil para medir la transferencia de datos variable asociada con los videos. Los resultados indican que apagar la cámara puede reducir a la mitad el consumo de datos y las emisiones de carbono asociadas, particularmente en redes móviles. El artículo concluye con recomendaciones para optimizar el uso de datos y reducir el impacto ambiental durante las llamadas.",
   "carbon_comments": "<strong>Comentarios:</strong> [v1] 4 páginas, 3 figuras, enviado y aceptado como artículo corto por <a href=\"https://www.iaria.org/conferences2025/CfPGREEN25.html\" target=\"_blank\">IARIA GREEN 2025</a> con algunos problemas corregibles que deben abordarse antes de que el artículo esté listo para su publicación (Científicos y técnicos; inglés y puntuación; secciones y flujo de presentación)<br> <strong>[v2]</strong> Corregido con la ayuda de <a href=\"https://checkmymanuscript.com\" target=\"_blank\">checkmymanuscript.com</a>, y reordenación de secciones y flujo de presentación",
+
+  "good_practices_title": "El impacto ambiental de la IA generativa: ¿cómo reducirlo puede hacerle más eficiente?",
+  "good_practices_abstract": "En este artículo, que incluye más de 60 referencias científicas, descubra qué factores hacen variar el impacto ambiental de la IA generativa, cómo medirlo cuando sea posible y cómo reducirlo tanto a nivel de usuario como de desarrollador.",
+  "good_practices_comments": "Después podrá probar las buenas prácticas expuestas en una calculadora de impacto diseñada y desarrollada específicamente para este artículo.",
 
   "toits_title": "🚀 Infraestructura inteligente de membresía (Asociación Toits Vivants)",
   "toits_value": "La carga administrativa es un asesino silencioso de la rentabilidad. Como Tesorero, diseñé un ecosistema serverless 100% autónomo que digitaliza el ciclo de vida completo de los miembros, desde el procesamiento de pagos hasta la sincronización con el CRM. Al reemplazar las entradas manuales frágiles por un pipeline impulsado por IA, la organización logró un flujo de trabajo administrativo de nivel institucional con cero costes laborales recurrentes.",
